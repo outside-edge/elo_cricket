@@ -1,4 +1,4 @@
-## Over Time ELO Rankings of International Cricket Teams By Format
+## ELO Ratings of International Cricket Teams By Format
 
 The ICC only lists the [current ranking of cricket teams](https://www.icc-cricket.com/rankings/mens/team-rankings/odi). To address the paucity of historical ranking data, we generate ELO rankings.
 
