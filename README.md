@@ -10,11 +10,11 @@ To construct [dataset of outcomes of cricket matches by date](data/cricket_match
 
 To generate the Elo ratings and graphs, we wrote the [following script](scripts/elo.R)
 
-1. Monthly **men's test team** ratings (1881--2021) [here](data/test_ratings_1881_2021.csv)
+1. Download monthly **men's test team** ratings (1881--2021) [here](data/test_ratings_1881_2021.csv)
 
-2. Monthly **men's ODI team** ratings (1972--2021) [here](data/odi_ratings_1972_2021.csv)
+2. Download monthly **men's ODI team** ratings (1972--2021) [here](data/odi_ratings_1972_2021.csv)
 
-3. Monthly **men's T20I team** ratings (2006---2021) [here](data/t20i_ratings_2006_2021.csv)
+3. Download monthly **men's T20I team** ratings (2006---2021) [here](data/t20i_ratings_2006_2021.csv)
 
 #### Figures
 
