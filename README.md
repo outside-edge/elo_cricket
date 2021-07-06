@@ -6,7 +6,7 @@ The ICC only lists the [current ranking of cricket teams](https://www.icc-cricke
 
 To construct [dataset of outcomes of cricket matches by date](data/cricket_matches.csv), we used the [python wrapper to espncricinfo](https://github.com/outside-edge/python-espncricinfo).
 
-### ELO Ratings Data
+### Elo Ratings Data
 
 To generate the Elo ratings and graphs, we wrote the [following script](scripts/elo.R)
 
