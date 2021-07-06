@@ -4,9 +4,21 @@ The ICC only lists the [current ranking of cricket teams](https://www.icc-cricke
 
 ### Data, Scripts, and Outputs
 
+#### Underlying Data
+
 To build the [dataset of matches](data/cricket_matches.csv), we used the [python wrapper to espncricinfo](https://github.com/outside-edge/python-espncricinfo).
 
 * [ELO Script](scripts/elo.R)
+
+#### ELO Ratings Data
+
+1. Monthly **men's test team** ratings (1881--2021) [here](data/test_ratings_1881_2021.csv)
+
+2. Monthly **men's ODI team** ratings (1972--2021) [here](data/odi_ratings_1972_2021.csv)
+
+3. Monthly **men's T20I team** ratings (2006---2021) [here](data/t20i_ratings_2006_2021.csv)
+
+#### Figures
 
 **Men's Test Team Ratings as of 6/18/2021**
 
@@ -16,19 +28,14 @@ To build the [dataset of matches](data/cricket_matches.csv), we used the [python
 
 ![Men's Test ratings over time](figs/test_ratings_1881_2021.png)
 
-Download the complete monthly ratings [here](data/test_ratings_1881_2021.csv)
-
 **Smoothed Men's ODI Team Ratings (1972--2021)**
 
 ![Men's ODI ratings over time](figs/odi_ratings_1972_2021.png)
-
-Download the complete monthly ratings [here](data/odi_ratings_1972_2021.csv)
 
 **Smoothed Men's T20I Team Ratings (2006---2021)**
 
 ![Men's T20I ratings over time](figs/t20i_ratings_2006_2021.png)
 
-Download the complete monthly ratings [here](data/t20i_ratings_2006_2021.csv)
 
 ### Authors
 
