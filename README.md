@@ -6,9 +6,9 @@ The ICC only lists the [current ranking of cricket teams](https://www.icc-cricke
 
 To construct [dataset of outcomes of cricket matches by date](data/cricket_matches.csv), we used the [python wrapper to espncricinfo](https://github.com/outside-edge/python-espncricinfo).
 
-To generate the Elo ratings and graphs, we wrote the [following Script](scripts/elo.R)
-
 ### ELO Ratings Data
+
+To generate the Elo ratings and graphs, we wrote the [following script](scripts/elo.R)
 
 1. Monthly **men's test team** ratings (1881--2021) [here](data/test_ratings_1881_2021.csv)
 
