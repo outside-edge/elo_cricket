@@ -8,9 +8,15 @@ To build the [dataset of matches](data/), we used the [python wrapper to espncri
 
 * [ELO](scripts/elo.R)
 
-**Test Rankings as of 6/18/2021**
+**Test Ratings as of 6/18/2021**
 
-![Test rankings as of 6/18/2021](figs/test_rankings_2021-06-18.png)
+![Test ratings as of 6/18/2021](figs/test_ratings_2021-06-18.png)
+
+**Smoothed Test Ratings Over Time (1881--2021)**
+
+![Test ratings over time](figs/test_ratings_1881_2021.png.png)
+
+Download the complete monthly time series dataset [here](data/)
 
 ### Authors
 
