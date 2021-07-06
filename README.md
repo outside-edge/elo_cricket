@@ -1,16 +1,14 @@
-## ELO Ratings of International Cricket Teams By Format
+## Elo Ratings of International Cricket Teams By Format
 
-The ICC only lists the [current ranking of cricket teams](https://www.icc-cricket.com/rankings/mens/team-rankings/odi). To address the paucity of historical ranking data, we generate ELO rankings.
+The ICC only lists the [current ranking of cricket teams](https://www.icc-cricket.com/rankings/mens/team-rankings/odi). To address the paucity of historical ranking data, we generate monthly ELO ratings of all international cricket teams by format. We use
 
-### Data, Scripts, and Outputs
+### Cricket Match Outcome Data
 
-#### Underlying Data
+To construct [dataset of outcomes of cricket matches by date](data/cricket_matches.csv), we used the [python wrapper to espncricinfo](https://github.com/outside-edge/python-espncricinfo).
 
-To build the [dataset of matches](data/cricket_matches.csv), we used the [python wrapper to espncricinfo](https://github.com/outside-edge/python-espncricinfo).
+To generate the Elo ratings and graphs, we wrote the [following Script](scripts/elo.R)
 
-* [ELO Script](scripts/elo.R)
-
-#### ELO Ratings Data
+### ELO Ratings Data
 
 1. Monthly **men's test team** ratings (1881--2021) [here](data/test_ratings_1881_2021.csv)
 
@@ -35,7 +33,6 @@ To build the [dataset of matches](data/cricket_matches.csv), we used the [python
 **Smoothed Men's T20I Team Ratings (2006---2021)**
 
 ![Men's T20I ratings over time](figs/t20i_ratings_2006_2021.png)
-
 
 ### Authors
 
