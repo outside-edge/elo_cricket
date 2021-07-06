@@ -15,7 +15,7 @@ loser <- winner %>%
 mutate(loser= case_when(win_game == team1_id ~ team2_id, win_game == team2_id ~ team1_id, win_game == 0 ~ 0))
 
 drawn <- loser %>%
-mutate(drawn = if_else(outcome == 'Match drawn', 1, 0))
+mutate(drawn = if_else(str_detect(outcome,'Match drawn'), 1, 0))
 
 tied <- drawn %>%
 mutate(tied = if_else(outcome == 'Match tied', 1, 0))
