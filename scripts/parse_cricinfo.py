@@ -17,7 +17,7 @@ matches = list(set(matches)) # dedupe
 bad_matches = []
 
 ##################################START PROCESSING DATA#########################################
-with open("/Users/derekwillis/code/cricket-stats/data/final_output.csv", "w") as csvfile:
+with open("../data/cricket_matches.csv", "w") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(headers)
     for match in matches:
