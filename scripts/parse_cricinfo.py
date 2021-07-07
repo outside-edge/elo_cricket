@@ -11,7 +11,7 @@ from espncricinfo.exceptions import MatchNotFoundError, NoScorecardError
 
 headers = ["team1", "team1_id", "team2", "team2_id", "win_toss", "bat_or_bowl", "outcome", "win_game", "date", "day_n_night", "ground", "rain", "duckworth_lewis", "match_id", "type_of_match", "match_type_id", "home_team_id", "umpire_1_id", "umpire_1_name", "umpire_1_country", "umpire_2_id", "umpire_2_name", "umpire_2_country", "tv_umpire_id", "tv_umpire_name", "tv_umpire_country", "referree_id", "referee_name", "referee_country", "url"]
 
-matches = json.loads(open('/Users/derekwillis/code/elo_cricket/data/all_matches.json').read())
+matches = json.loads(open('../data/all_matches.json').read())
 matches = list(set(matches)) # dedupe
 
 bad_matches = []
