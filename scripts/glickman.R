@@ -6,7 +6,6 @@ setwd("elo_cricket/scripts/")
 
 # Load libs
 library(PlayerRatings)
-data(aflodds)
 
 # Ingest data
 cric <- read.csv("../data/cricket_matches.csv")
