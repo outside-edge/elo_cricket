@@ -1,8 +1,8 @@
 ## ELO Rankings
 # cribbing from: https://cran.r-project.org/web/packages/EloRating/vignettes/EloRating_tutorial.pdf
 
-setwd(githubdir)
-setwd("elo_cricket/scripts/")
+#setwd(githubdir)
+setwd("/Users/derekwillis/code/elo_cricket/scripts/")
 
 # load packages
 library(readr)
@@ -13,7 +13,7 @@ library(grid)
 library(directlabels)
 
 # Ingest data
-cric <- read.csv("../data/cricket_matches.csv")
+cric <- read.csv("/Users/derekwillis/code/elo_cricket/data/cricket_matches_for_elo.csv")
 
 # Recode
 cric$Date   <- as.Date(cric$date, format =  "%Y-%m-%d")
@@ -21,13 +21,13 @@ cric$winner <- as.character(cric$winner)
 cric$loser  <- as.character(cric$loser)
 cric$drawn  <- ifelse(is.na(cric$drawn), FALSE, cric$drawn == 1)
 
-cric$loser  <- ifelse(cric$loser == "", 
+cric$loser  <- ifelse(cric$loser == "",
 					  ifelse(cric$winner == as.character(cric$team1_id),
 					  as.character(cric$team2),
 					  as.character(cric$team1)),
 					  cric$loser) # For EloRating -- no NAs in loserre
 
-cric$winner  <- ifelse(cric$winner == "", 
+cric$winner  <- ifelse(cric$winner == "",
 					  ifelse(cric$winner == as.character(cric$team1_id),
 					  as.character(cric$team1),
 					  as.character(cric$team2)),
@@ -56,10 +56,10 @@ latest_ratings_df$teams <- as.factor(rownames(latest_ratings_df))
 
 latest_ratings_df %>%
   mutate(teams = fct_reorder(teams, desc(latest_ratings))) %>%
-  ggplot(aes(x = latest_ratings, y = teams)) + 
+  ggplot(aes(x = latest_ratings, y = teams)) +
 	geom_point() +
-	theme_minimal() + 
-	ylab("") + 
+	theme_minimal() +
+	ylab("") +
 	xlab("Test Ratings (6/18/2021)")
 ggsave("../figs/test_ratings_2021-06-18.png")
 dev.off()
@@ -79,8 +79,8 @@ max_year <- format(as.POSIXct(test_res$misc["maxDate"], format = "%Y-%m-%d"), fo
 month_ts <- seq(as.Date(test_res$misc["minDate"]), as.Date(test_res$misc["maxDate"]), by = "month")
 
 for(i in month_ts[1:length(month_ts)-1]) {
-	m_ratings <- extract_elo(test_res, 
-		        NA.interpolate = T, 
+	m_ratings <- extract_elo(test_res,
+		        NA.interpolate = T,
 		        extractdate	= as.Date(i),
 		        daterange = 30) # We are smoothing ratings by year
 	m_ratings_df <- data.frame(m_ratings, teams = names(m_ratings), date = as.Date(i), row.names = NULL)
@@ -92,15 +92,15 @@ write_csv(test_res_df, file = "../data/test_ratings_1881_2021.csv")
 small_test_df <- test_res_df[!(test_res_df$teams %in% c("Afghanistan", "ICC World XI")), ]
 
 p2 = ggplot(small_test_df, aes(x = date, y = m_ratings, color = teams)) +
-	geom_smooth(method = "loess", se = F,  span = .1, size = .5)+ 
+	geom_smooth(method = "loess", se = F,  span = .1, size = .5)+
 	scale_color_brewer(palette = "Paired") +
-	ylab("ELO Ratings") + 
-	xlab("") + 
+	ylab("ELO Ratings") +
+	xlab("") +
 	scale_x_continuous(breaks = seq(min(month_ts), max(month_ts) + 10, length.out = 15),
-					   labels = format(seq(min(month_ts), max(month_ts), length.out = 15), "%Y")) + 
+					   labels = format(seq(min(month_ts), max(month_ts), length.out = 15), "%Y")) +
 	scale_y_continuous(breaks = round(seq(min(small_test_df$m_ratings, na.rm = T), max(small_test_df$m_ratings, na.rm = T), by = 100), digits = -1),
-                       labels = round(seq(min(small_test_df$m_ratings, na.rm = T), max(small_test_df$m_ratings, na.rm = T), by = 100), digits = -1)) + 
-	theme_minimal() + 
+                       labels = round(seq(min(small_test_df$m_ratings, na.rm = T), max(small_test_df$m_ratings, na.rm = T), by = 100), digits = -1)) +
+	theme_minimal() +
 	theme(legend.position = "none",
           plot.margin = unit(c(1,4,1,1), "lines")) +
 	geom_dl(aes(label = teams), method = "last.points", cex = 0.4) +
@@ -137,8 +137,8 @@ max_year <- format(as.POSIXct(odi_res$misc["maxDate"], format = "%Y-%m-%d"), for
 month_ts <- seq(as.Date(odi_res$misc["minDate"]), as.Date(odi_res$misc["maxDate"]), by = "month")
 
 for(i in month_ts[1:length(month_ts)-1]) {
-	m_ratings <- extract_elo(odi_res, 
-		        NA.interpolate = T, 
+	m_ratings <- extract_elo(odi_res,
+		        NA.interpolate = T,
 		        extractdate	= as.Date(i),
 		        daterange = 30) # We are smoothing ratings by year
 	m_ratings_df <- data.frame(m_ratings, teams = names(m_ratings), date = as.Date(i), row.names = NULL)
@@ -152,15 +152,15 @@ odi_teams <- table(c(cric_odis$team1, cric_odis$team2)) # Some issues that we wa
 small_odi_df <- odi_res_df[(odi_res_df$teams %in%  names(odi_teams[odi_teams > 200])), ]
 
 p2 = ggplot(small_odi_df, aes(x = date, y = m_ratings, color = teams)) +
-	geom_smooth(method = "loess", se = F,  span = .1, size = .5)+ 
+	geom_smooth(method = "loess", se = F,  span = .1, size = .5)+
 	scale_color_brewer(palette = "Paired") +
-	ylab("ELO Ratings") + 
-	xlab("") + 
+	ylab("ELO Ratings") +
+	xlab("") +
 	scale_x_continuous(breaks = seq(min(month_ts), max(month_ts) + 10, length.out = 15),
-					   labels = format(seq(min(month_ts), max(month_ts), length.out = 15), "%Y")) + 
+					   labels = format(seq(min(month_ts), max(month_ts), length.out = 15), "%Y")) +
 	scale_y_continuous(breaks = round(seq(min(small_odi_df$m_ratings, na.rm = T), max(small_odi_df$m_ratings, na.rm = T), by = 100), digits = -1),
-                       labels = round(seq(min(small_odi_df$m_ratings, na.rm = T), max(small_odi_df$m_ratings, na.rm = T), by = 100), digits = -1)) + 
-	theme_minimal() + 
+                       labels = round(seq(min(small_odi_df$m_ratings, na.rm = T), max(small_odi_df$m_ratings, na.rm = T), by = 100), digits = -1)) +
+	theme_minimal() +
 	theme(legend.position = "none",
           plot.margin = unit(c(1,4,1,1), "lines")) +
 	geom_dl(aes(label = teams), method = list("last.points", cex = 0.6, vjust = 0)) +
@@ -197,8 +197,8 @@ max_year <- format(as.POSIXct(t20i_res$misc["maxDate"], format = "%Y-%m-%d"), fo
 month_ts <- seq(as.Date(t20i_res$misc["minDate"]), as.Date(t20i_res$misc["maxDate"]), by = "month")
 
 for(i in month_ts[1:length(month_ts)-1]) {
-	m_ratings <- extract_elo(t20i_res, 
-		        NA.interpolate = T, 
+	m_ratings <- extract_elo(t20i_res,
+		        NA.interpolate = T,
 		        extractdate	= as.Date(i),
 		        daterange = 30) # We are smoothing ratings by year
 	m_ratings_df <- data.frame(m_ratings, teams = names(m_ratings), date = as.Date(i), row.names = NULL)
@@ -212,15 +212,15 @@ t20i_teams <- table(c(cric_t20is$team1, cric_t20is$team2)) # Some issues that we
 small_t20i_df <- t20i_res_df[(t20i_res_df$teams %in%  names(t20i_teams[t20i_teams > 100])), ]
 
 p2 = ggplot(small_t20i_df, aes(x = date, y = m_ratings, color = teams)) +
-	geom_smooth(method = "loess", se = F,  span = .1, size = .5)+ 
+	geom_smooth(method = "loess", se = F,  span = .1, size = .5)+
 	scale_color_brewer(palette = "Paired") +
-	ylab("ELO Ratings") + 
-	xlab("") + 
+	ylab("ELO Ratings") +
+	xlab("") +
 	scale_x_continuous(breaks = seq(min(month_ts), max(month_ts) + 10, length.out = 15),
-					   labels = format(seq(min(month_ts), max(month_ts), length.out = 15), "%Y")) + 
+					   labels = format(seq(min(month_ts), max(month_ts), length.out = 15), "%Y")) +
 	scale_y_continuous(breaks = round(seq(min(small_t20i_df$m_ratings, na.rm = T), max(small_t20i_df$m_ratings, na.rm = T), by = 100), digits = -1),
-                       labels = round(seq(min(small_t20i_df$m_ratings, na.rm = T), max(small_t20i_df$m_ratings, na.rm = T), by = 100), digits = -1)) + 
-	theme_minimal() + 
+                       labels = round(seq(min(small_t20i_df$m_ratings, na.rm = T), max(small_t20i_df$m_ratings, na.rm = T), by = 100), digits = -1)) +
+	theme_minimal() +
 	theme(legend.position = "none",
           plot.margin = unit(c(1,4,1,1), "lines")) +
 	geom_dl(aes(label = teams), method = list("last.points", cex = 0.6, vjust = 0)) +
