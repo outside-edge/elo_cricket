@@ -1,7 +1,7 @@
 '''
 Parse Downloaded Cricket Data
 
-'''
+    '''
 
 import time
 import csv
@@ -9,10 +9,13 @@ import json
 from espncricinfo.match import Match
 from espncricinfo.exceptions import MatchNotFoundError, NoScorecardError
 
-headers = ["team1", "team1_id", "team2", "team2_id", "win_toss", "bat_or_bowl", "outcome", "win_game", "date", "day_n_night", "ground", "rain", "duckworth_lewis", "match_id", "type_of_match", "match_type_id", "home_team_id", "umpire_1_id", "umpire_1_name", "umpire_1_country", "umpire_2_id", "umpire_2_name", "umpire_2_country", "tv_umpire_id", "tv_umpire_name", "tv_umpire_country", "referree_id", "referee_name", "referee_country", "url"]
+headers = ["team1", "team1_id", "team2", "team2_id", "win_toss", "bat_or_bowl", "outcome", "win_game", "date", "day_n_night", "ground", "rain", "duckworth_lewis", "match_id", "type_of_match", "match_type_id", "home_team_id", "umpire_1_id", "umpire_1_name", "umpire_1_country", "umpire_2_id", "umpire_2_name", "umpire_2_country", "tv_umpire_id", "tv_umpire_name", "tv_umpire_country", "referree_id", "referee_name", "referee_country", "url", "home_team"]
 
 matches = json.loads(open('../data/all_matches.json').read())
-matches = list(set(matches)) # dedupe
+unique_matches = list(set(matches)) # dedupe
+
+unique_matches_with_ints = [int(x) for x in unique_matches]
+unique_matches_with_ints.sort()
 
 bad_matches = []
 
@@ -20,9 +23,9 @@ bad_matches = []
 with open("../data/cricket_matches.csv", "w") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(headers)
-    for match in matches:
+    for match in unique_matches_with_ints:
         print(match)
-        time.sleep(0.5)
+        time.sleep(0.25)
         try:
             m = Match(int(match))
             if m.match_json()['match_status'] == 'forthcoming':
@@ -38,14 +41,19 @@ with open("../data/cricket_matches.csv", "w") as csvfile:
             except KeyError:
                 continue
             if m.match_class == '':
-                if 'T20' in m.comms_json['props']['pageProps']['data']['content']['about']['series']['text']:
-                    type_of_match = 'T20'
-                elif 'ODI' in m.comms_json['props']['pageProps']['data']['content']['about']['series']['text']:
-                    type_of_match = 'ODI'
-                else:
+                try:
+                    if 'T20' in m.comms_json['props']['pageProps']['data']['content']['about']['series']['text']:
+                        type_of_match = 'T20'
+                    elif 'ODI' in m.comms_json['props']['pageProps']['data']['content']['about']['series']['text']:
+                        type_of_match = 'ODI'
+                except:
                     type_of_match = None
             else:
                 type_of_match = m.match_class
+            try:
+                home = m.home_team
+            except:
+                home = None
             try:
                 m.team_1['team_name']
             except KeyError:
@@ -89,7 +97,7 @@ with open("../data/cricket_matches.csv", "w") as csvfile:
                 mr_id = None
                 mr_name = None
                 mr_country = None
-            writer.writerow([m.team_1['team_name'], m.team_1_id, m.team_2['team_name'], m.team_2_id, m.toss_winner_team_id, m.toss_decision, m.result, m.match_json()['winner_team_id'], m.date, m.lighting, m.ground_name, None, duckworth_lewis, match, type_of_match, match_type_id, m.match_json()['home_team_id'], ump_1['object_id'], ump_1['known_as'], ump_1['team_name'], ump_2['object_id'], ump_2['known_as'], ump_2['team_name'], tvu_id, tvu_name, tvu_country, mr_id, mr_name, mr_country, m.match_url])
+            writer.writerow([m.team_1['team_name'], m.team_1_id, m.team_2['team_name'], m.team_2_id, m.toss_winner_team_id, m.toss_decision, m.result, m.match_json()['winner_team_id'], m.date, m.lighting, m.ground_name, None, duckworth_lewis, match, type_of_match, match_type_id, m.match_json()['home_team_id'], ump_1['object_id'], ump_1['known_as'], ump_1['team_name'], ump_2['object_id'], ump_2['known_as'], ump_2['team_name'], tvu_id, tvu_name, tvu_country, mr_id, mr_name, mr_country, m.match_url, home])
         except (json.JSONDecodeError, NoScorecardError, MatchNotFoundError, KeyError):
             bad_matches.append(match)
             continue
