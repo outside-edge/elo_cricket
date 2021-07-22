@@ -6,6 +6,9 @@ setwd("elo_cricket/")
 
 # Load libs
 library(PlayerRatings)
+library(ggplot2)
+library(tidyverse)
+library(directlabels)
 
 # Ingest data
 cric <- read.csv("data/cricket_matches.csv")
@@ -68,13 +71,20 @@ for(i in 1:dim(ratings[[2]])[2]) {
 	temp_res <- data.frame(date = i, teams = names(temp_ratings), ratings = temp_ratings)
 	res <- rbind(res, temp_res)
 }
-small_res <- res[!(res$teams %in% c("Afghanistan", "ICC World XI")), ]
+
+# Get the real date
+res_date <- res %>% 
+            left_join(cric_tests_o[, c("Date", "newdat")], by = c("date" = "newdat"))
+
+# Write output
+write.csv(res_date, file = "data/glicko2_test_ratings_1881_2021.csv")
+
+# Subset
+small_res <- res_date[!(res_date$teams %in% c("Afghanistan", "ICC World XI")), ]
 small_res[small_res$date == max(small_res$date), ]
 
-small_res_date <- small_res %>% 
-                  left_join(cric_tests_o[, c("Date", "newdat")], by = c("date" = "newdat"))
 
-gg = ggplot(small_res_date, aes(x = Date, y = ratings, color = teams)) +
+gg = ggplot(small_res, aes(x = Date, y = ratings, color = teams)) +
 	 geom_smooth(method = "loess", se = F,  span = .1, size = .5)+ 
 	 scale_color_brewer(palette = "Paired") +
 	 ylab("Glicko 2 Ratings") + 
