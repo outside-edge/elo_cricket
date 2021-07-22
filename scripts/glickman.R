@@ -79,11 +79,18 @@ res_date <- res %>%
 # Write output
 write.csv(res_date, file = "data/glicko2_test_ratings_1881_2021.csv")
 
+# Glicko2 vs. Elo
+elo     <- read.csv("data/glicko2_test_ratings_1881_2021.csv")
+elo$key <- paste0(elo$teams, elo$Date)
+res_date$key <- paste0(res_date$teams, res_date$Date)
+elo_glicko2 <- res_date %>% inner_join(elo, by = "key")
+with(elo_glicko2, cor(ratings.x, ratings.y))
+
 # Subset
 small_res <- res_date[!(res_date$teams %in% c("Afghanistan", "ICC World XI")), ]
 small_res[small_res$date == max(small_res$date), ]
 
-
+# Plot
 gg = ggplot(small_res, aes(x = Date, y = ratings, color = teams)) +
 	 geom_smooth(method = "loess", se = F,  span = .1, size = .5)+ 
 	 scale_color_brewer(palette = "Paired") +

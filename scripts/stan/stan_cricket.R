@@ -37,10 +37,10 @@ stan_run <- function(stanModel, ...) {
 
 # Ingest data
 cric <- read.csv("../data/cricket_matches.csv")
-cric$drawn  <- grepl("drawn", tolower(cric$outcome))
 
-cric$team1_score  <- ifelse(cric$win_game == cric$team1, 1, ifelse(cric$drawn, .5, 0))
-cric$team2_score  <- ifelse(cric$win_game == cric$team2, 1, ifelse(cric$drawn, .5, 0))
+cric$drawn  <- grepl("drawn", tolower(cric$outcome))
+cric$team1_score  <- ifelse(cric$win_game == cric$team1_id, 1, ifelse(cric$drawn == 1, .5, 0))
+cric$team2_score  <- ifelse(cric$win_game == cric$team2_id, 1, ifelse(cric$drawn == 1, .5, 0))
 
 # Subset on Tests
 cric_tests <- subset(cric, cric$type_of_match == "Test")
@@ -63,9 +63,6 @@ data <- c("nteams", "ngames", "team1", "score1", "team2", "score2", "prior_score
 fit <- stan_run("stan/basic.stan", data=data, chains=4, iter=2000)
 print(fit)
 
-fit <- stan_run("stan/noprior_matt.stan", data = data, chains=4, iter=500)
-print(fit)
-
 colVars <- function(a) {
   n <- dim(a)[[1]]; 
   c <- dim(a)[[2]]; 
@@ -86,7 +83,7 @@ ggplot(res, aes(a_hat, a_se)) +
   theme_minimal()
 dev.off()
 
-fit_noprior <- stan_run("stan/noprior_matt.stan", data=data, chains=4, iter=100)
+fit_noprior <- stan_run("stan/noprior_matt.stan", data=data, chains=4, iter=500)
 print(fit_noprior)
 fit_noprior <- stan_run("stan/noprior_matt.stan", data=data, chains=4, iter=1000)
 print(fit_noprior)
