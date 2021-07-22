@@ -12,24 +12,51 @@ cric <- read.csv("data/cricket_matches.csv")
 
 # Recode
 cric$Date    <- as.Date(cric$date, format =  "%Y-%m-%d")
-cric$numdate <- as.numeric(cric$Date)
 
 cric$drawn  <- grepl("drawn", tolower(cric$outcome))
 cric$loser  <- ifelse(cric$win_game == cric$team1_id, cric$team2, cric$team1) 
 cric$winner <- ifelse(cric$win_game == cric$team1_id, cric$team1, cric$team2) 
 
 # Score w.r.t team 1
-cric$score  <- ifelse(cric$win_game == cric$team1, 1, ifelse(cric$drawn == 1, .5, 0))
+cric$score  <- ifelse(cric$win_game == cric$team1_id, 1, ifelse(cric$drawn == 1, .5, 0))
 
 # Subset on Tests
 cric_tests <- subset(cric, cric$type_of_match == "Test")
-cric_tests$ord_date <- order(cric_tests$numdate)
+cric_tests$ord_date <- rank(cric_tests$Date, ties = "min")
+cric_tests_o <- cric_tests[order(cric_tests$Date), ]
 
-ratings <- glicko2(cric_tests[, c("numdate", "team1", "team2", "score")], history = TRUE, tau = .6)
-teams_df   <- ratings[[1]]
-teams      <- teams_df$Player[teams_df$Games > 10]
-plot(ratings, players = teams)
-dev.off()
+cric_tests_o$newdat <- NA
+
+diffs <- c(1, diff(cric_tests_o$ord_date))
+
+j = 0
+
+for (i in 1:nrow(cric_tests_o)){
+
+	if (diffs[i] == 1){
+		j = j + 2 - diffs[i]
+	}
+
+	if (diffs[i] == 2){
+		j = j + 3 - diffs[i]
+	}
+
+	if (diffs[i] == 3){
+		j = j + 4 - diffs[i]
+	}
+
+	cric_tests_o$newdat[i] = j
+}
+
+
+ratings <- glicko2(cric_tests[, c("ord_date", "team1", "team2", "score")], 
+	               history = TRUE, 
+	               tau = .6)
+
+#teams_df   <- ratings[[1]]
+#teams      <- teams_df$Player[teams_df$Games > 10]
+#plot(ratings, players = teams)
+#dev.off()
 
 rating_array <- ratings[[2]]
 str(rating_array)
@@ -41,11 +68,11 @@ for(i in 1:dim(ratings[[2]])[2]) {
 	temp_res <- data.frame(date = i, teams = names(temp_ratings), ratings = temp_ratings)
 	res <- rbind(res, temp_res)
 }
+small_res <- res[!(res$teams %in% c("Afghanistan", "ICC World XI")), ]
 small_res[small_res$date == max(small_res$date), ]
 
-small_res <- res[!(res$teams %in% c("Afghanistan", "ICC World XI")), ]
 small_res_date <- small_res %>% 
-                  left_join(cric_tests[, c("Date", "ord_date")], by = c("date" = "ord_date"))
+                  left_join(cric_tests_o[, c("Date", "newdat")], by = c("date" = "newdat"))
 
 gg = ggplot(small_res_date, aes(x = Date, y = ratings, color = teams)) +
 	 geom_smooth(method = "loess", se = F,  span = .1, size = .5)+ 
@@ -95,4 +122,4 @@ ggplot(small_res_date, aes(x = Date, y = ratings, color = teams)) +
   theme(plot.background = element_rect(fill = "grey98")) +  
   theme(axis.line.x = element_line(color = "grey20")) +  
   theme(axis.ticks.x = element_line(color = "grey20")) +  
-  labs(title = "Price of produce: Extra Fancy")
+  labs(title = "")
