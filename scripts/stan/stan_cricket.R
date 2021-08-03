@@ -1,5 +1,7 @@
 # Adapted From Andrew Gelman's Stan Goes To Worldcup Code
 # https://statmodeling.stat.columbia.edu/2014/07/13/stan-analyzes-world-cup-data/
+# Worldcup stan gives nonsense results
+# 
 
 # Set dir.
 setwd(githubdir)
@@ -38,9 +40,14 @@ stan_run <- function(stanModel, ...) {
 # Ingest data
 cric <- read.csv("../data/cricket_matches.csv")
 
-cric$drawn  <- grepl("drawn", tolower(cric$outcome))
+cric$drawn        <- grepl("drawn", tolower(cric$outcome))
 cric$team1_score  <- ifelse(cric$win_game == cric$team1_id, 1, ifelse(cric$drawn == 1, .5, 0))
 cric$team2_score  <- ifelse(cric$win_game == cric$team2_id, 1, ifelse(cric$drawn == 1, .5, 0))
+
+cric$team1_ump1    <- 
+cric$team1_ump2    <- 
+cric$team2_ump1    <- 
+cric$team2_ump2    <- ifelse(cric$umpire_2_country == cric$team2, 1, 0)
 
 # Subset on Tests
 cric_tests <- subset(cric, cric$type_of_match == "Test")
@@ -54,13 +61,18 @@ ngames   <- nrow(cric_tests)
 
 team1  <- match(cric_tests$team1, teams)
 score1 <- cric_tests$team1_score
-team2  <- match(cric_tests$team1, teams)
+team2  <- match(cric_tests$team2, teams)
 score2 <- cric_tests$team2_score
-df <- 7
+ump1team1 <- ifelse(cric$umpire_1_country == cric$team1, 1, 0)
+ump2team1 <- ifelse(cric$umpire_2_country == cric$team1, 1, 0)
+hometeam1 <- 1*(cric_tests$team1 == cric_tests$umpire_1_country) 
+tossteam1 <- 1*(cric_tests$team1_id == cric_tests$win_toss)
+
+df <- 9
 
 data <- c("nteams", "ngames", "team1", "score1", "team2", "score2", "prior_score", "df")
 
-fit <- stan_run("stan/basic.stan", data=data, chains=4, iter=2000)
+fit <- stan_run("stan/basic.stan", data = data, chains = 4, iter = 10000)
 print(fit)
 
 colVars <- function(a) {
@@ -75,13 +87,45 @@ a_hat  <- colMeans(a_sims)
 a_se   <- sqrt(colVars(a_sims))
 
 res <- data.frame(a_hat = a_hat, a_se = a_se, teams = teams)
-res <- res[order(-res$a_hat), ]
 
-png("../figs/all_time_cric_stan.png", height=500, width=500)
 ggplot(res, aes(a_hat, a_se)) + 
   geom_text(aes(label = teams), size=3) + 
   theme_minimal()
-dev.off()
+ggsave("../figs/all_time_cric_tests_stan.png")
+
+# Add Team1 Toss, Team1 Home + Team1 Umpire
+# Move to normal
+data <- c("nteams", "ngames", "team1", "score1", "team2", "score2", "prior_score",
+          "ump1team1", "ump2team1", "hometeam1", "tossteam1")
+
+fit <- stan_run("stan/basic_plus.stan", data = data, chains = 4, iter = 1000)
+print(fit)
+
+sims   <- rstan::extract(fit)
+a_sims <- sims$a
+a_hat  <- colMeans(a_sims)
+a_se   <- sqrt(colVars(a_sims))
+
+res <- data.frame(a_hat = a_hat, a_se = a_se, teams = teams)
+
+ggplot(res, aes(a_hat, a_se)) + 
+  geom_text(aes(label = teams), size=3) + 
+  theme_minimal()
+ggsave("../figs/all_time_cric_tests_with_covar_stan.png")
+
+# Let's try to regress out umpire, toss, home/away and then estimate ability to verify
+
+summary(lm(I(score1 - score2) ~ ump1team1 + ump2team1 + hometeam1 + tossteam1))
+
+# Let's add random effects by time
+data <- c("nteams", "ngames", "team1", "score1", "team2", "score2", "prior_score", "df", 
+          "ump1team1", "ump2team1", "hometeam1", "tossteam1", "time")
+fit <- stan_run("stan/basic_plus_time.stan", data = data, chains = 4, iter = 100)
+print(fit)
+
+# Let's do a dynamic linear model
+
+# Let's now try to learn from two different ys
 
 fit_noprior <- stan_run("stan/noprior_matt.stan", data=data, chains=4, iter=500)
 print(fit_noprior)

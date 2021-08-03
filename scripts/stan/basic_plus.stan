@@ -6,9 +6,10 @@ data {
   int team2[ngames];
   vector[ngames] score1;
   vector[ngames] score2;
-  real df;
   vector[ngames] ump1team1;
   vector[ngames] ump2team1;
+  vector[ngames] tossteam1;
+  vector[ngames] hometeam1;
 }
 
 transformed data {
@@ -20,6 +21,9 @@ transformed data {
 parameters {
   real b;
   real c;
+  real d;
+  real e;
+  real f;
   real<lower=0> sigma_a;
   real<lower=0> sigma_y;
   vector[nteams] eta_a;
@@ -31,7 +35,12 @@ transformed parameters {
 }
 
 model {
-  eta_a ~ normal(0,1);
+  eta_a ~ normal(0, 1);
   for (i in 1:ngames)
-    dif[i] ~ student_t(df, a[team1[i]]-a[team2[i]] + c*ump1team1, sigma_y);
+    dif[i] ~ normal(a[team1[i]] - a[team2[i]] + 
+                           c*ump1team1[i] + 
+                           d*ump2team1[i] + 
+                           e*hometeam1[i] + 
+                           f*tossteam1[i], 
+                           sigma_y);
 }
