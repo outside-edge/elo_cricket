@@ -17,7 +17,6 @@ transformed data {
 
 parameters {
   real b;
-  real c;
   real<lower=0> sigma_a;
   real<lower=0> sigma_y;
   vector[nteams] eta_a;
