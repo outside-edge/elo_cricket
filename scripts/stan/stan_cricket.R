@@ -63,9 +63,9 @@ team1  <- match(cric_tests$team1, teams)
 score1 <- cric_tests$team1_score
 team2  <- match(cric_tests$team2, teams)
 score2 <- cric_tests$team2_score
-ump1team1 <- ifelse(cric$umpire_1_country == cric$team1, 1, 0)
-ump2team1 <- ifelse(cric$umpire_2_country == cric$team1, 1, 0)
-hometeam1 <- 1*(cric_tests$team1 == cric_tests$umpire_1_country) 
+ump1team1 <- ifelse(cric_tests$umpire_1_country == cric_tests$team1, 1, 0)
+ump2team1 <- ifelse(cric_tests$umpire_2_country == cric_tests$team1, 1, 0)
+hometeam1 <- 1*(cric_tests$team1_id == cric_tests$home_team_id) 
 tossteam1 <- 1*(cric_tests$team1_id == cric_tests$win_toss)
 
 df <- 9
@@ -94,11 +94,10 @@ ggplot(res, aes(a_hat, a_se)) +
 ggsave("../figs/all_time_cric_tests_stan.png")
 
 # Add Team1 Toss, Team1 Home + Team1 Umpire
-# Move to normal
 data <- c("nteams", "ngames", "team1", "score1", "team2", "score2", "prior_score",
           "ump1team1", "ump2team1", "hometeam1", "tossteam1")
 
-fit <- stan_run("stan/basic_plus.stan", data = data, chains = 4, iter = 1000)
+fit <- stan_run("stan/basic_plus.stan", data = data, chains = 4, iter = 10000)
 print(fit)
 
 sims   <- rstan::extract(fit)
