@@ -14,7 +14,6 @@ data {
 
 transformed data {
   vector[ngames] dif;
-  vector[ngames] sqrt_dif;
   dif = score1 - score2;
 }
 
