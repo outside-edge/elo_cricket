@@ -1,8 +1,9 @@
 ## ELO Rankings
 # cribbing from: https://cran.r-project.org/web/packages/EloRating/vignettes/EloRating_tutorial.pdf
 
-#setwd(githubdir)
-setwd("/Users/derekwillis/code/elo_cricket/scripts/")
+setwd(githubdir) # keep it. it will give a warning but ignore as there is no such string
+setwd("elo_cricket/")
+setwd("/Users/derekwillis/code/elo_cricket/")
 
 # load packages
 library(readr)
@@ -13,25 +14,15 @@ library(grid)
 library(directlabels)
 
 # Ingest data
-cric <- read.csv("/Users/derekwillis/code/elo_cricket/data/cricket_matches_for_elo.csv")
+cric <- read.csv("data/cricket_matches_for_elo.csv")
 
 # Recode
 cric$Date   <- as.Date(cric$date, format =  "%Y-%m-%d")
-cric$winner <- as.character(cric$winner)
-cric$loser  <- as.character(cric$loser)
-cric$drawn  <- ifelse(is.na(cric$drawn), FALSE, cric$drawn == 1)
+cric$drawn  <- grepl("drawn", tolower(cric$outcome))
 
-cric$loser  <- ifelse(cric$loser == "",
-					  ifelse(cric$winner == as.character(cric$team1_id),
-					  as.character(cric$team2),
-					  as.character(cric$team1)),
-					  cric$loser) # For EloRating -- no NAs in loserre
-
-cric$winner  <- ifelse(cric$winner == "",
-					  ifelse(cric$winner == as.character(cric$team1_id),
-					  as.character(cric$team1),
-					  as.character(cric$team2)),
-					  cric$winner) # For EloRating -- no NAs in winner
+# For EloRating -- no NAs in loserre or winner
+cric$loser  <- ifelse(cric$win_game == cric$team1_id, cric$team2, cric$team1) 
+cric$winner <- ifelse(cric$win_game == cric$team1_id, cric$team1, cric$team2) 
 
 # Subset on Tests
 cric_tests <- subset(cric, cric$type_of_match =="Test")
@@ -60,8 +51,8 @@ latest_ratings_df %>%
 	geom_point() +
 	theme_minimal() +
 	ylab("") +
-	xlab("Test Ratings (6/18/2021)")
-ggsave("../figs/test_ratings_2021-06-18.png")
+	xlab( paste0("Test Ratings (", date(), ")"))
+ggsave("figs/test_ratings_2021-06-18.png")
 dev.off()
 
 # Plot the entire time series
@@ -87,7 +78,7 @@ for(i in month_ts[1:length(month_ts)-1]) {
 	test_res_df <- rbind(test_res_df, m_ratings_df)
 }
 
-write_csv(test_res_df, file = "../data/test_ratings_1881_2021.csv")
+write_csv(test_res_df, file = "data/test_ratings_1881_2021.csv")
 
 small_test_df <- test_res_df[!(test_res_df$teams %in% c("Afghanistan", "ICC World XI")), ]
 
@@ -109,7 +100,7 @@ p2 = ggplot(small_test_df, aes(x = date, y = m_ratings, color = teams)) +
 gt2 <- ggplotGrob(p2)
 gt2$layout$clip[gt2$layout$name == "panel"] <- "off"
 grid.draw(gt2)
-ggsave("../figs/test_ratings_1881_2021.png", plot = gt2)
+ggsave("figs/test_ratings_1881_2021.png", plot = gt2)
 
 # ODIs
 # Subset on ODIs
@@ -145,7 +136,7 @@ for(i in month_ts[1:length(month_ts)-1]) {
 	odi_res_df <- rbind(odi_res_df, m_ratings_df)
 }
 
-write_csv(odi_res_df, file = "../data/odi_ratings_1972_2021.csv")
+write_csv(odi_res_df, file = "data/odi_ratings_1972_2021.csv")
 
 # Only keeping teams with more than 100 matches
 odi_teams <- table(c(cric_odis$team1, cric_odis$team2)) # Some issues that we want to fix later
@@ -169,7 +160,7 @@ p2 = ggplot(small_odi_df, aes(x = date, y = m_ratings, color = teams)) +
 gt2 <- ggplotGrob(p2)
 gt2$layout$clip[gt2$layout$name == "panel"] <- "off"
 grid.draw(gt2)
-ggsave("../figs/odi_ratings_1972_2021.png", plot = gt2)
+ggsave("figs/odi_ratings_1972_2021.png", plot = gt2)
 
 # T20Is
 # ------------------
@@ -205,7 +196,7 @@ for(i in month_ts[1:length(month_ts)-1]) {
 	t20i_res_df <- rbind(t20i_res_df, m_ratings_df)
 }
 
-write_csv(t20i_res_df, file = "../data/t20i_ratings_2006_2021.csv")
+write_csv(t20i_res_df, file = "data/t20i_ratings_2006_2021.csv")
 
 # Only keeping teams with more than 50 matches
 t20i_teams <- table(c(cric_t20is$team1, cric_t20is$team2)) # Some issues that we want to fix later
@@ -229,4 +220,4 @@ p2 = ggplot(small_t20i_df, aes(x = date, y = m_ratings, color = teams)) +
 gt2 <- ggplotGrob(p2)
 gt2$layout$clip[gt2$layout$name == "panel"] <- "off"
 grid.draw(gt2)
-ggsave("../figs/t20i_ratings_2006_2021.png", plot = gt2)
+ggsave("figs/t20i_ratings_2006_2021.png", plot = gt2)

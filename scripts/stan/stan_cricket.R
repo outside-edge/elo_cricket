@@ -1,4 +1,6 @@
 # Adapted From Andrew Gelman's Stan Goes To Worldcup Code
+# https://statmodeling.stat.columbia.edu/2014/07/13/stan-analyzes-world-cup-data/
+# 
 
 # Set dir.
 setwd(githubdir)
@@ -6,6 +8,11 @@ setwd("elo_cricket/scripts/")
 
 # Load lib.
 library(rstan)
+library(arm)
+library(coefplot)
+library(ggplot2)
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
 
 ## Sebastian's function to run stan with caching of compiled Stan models
 stan_run <- function(stanModel, ...) {
@@ -31,51 +38,97 @@ stan_run <- function(stanModel, ...) {
 
 # Ingest data
 cric <- read.csv("../data/cricket_matches.csv")
-cric$drawn  <- ifelse(is.na(cric$drawn), FALSE, cric$drawn == 1)
 
-cric$team1_score  <- ifelse(cric$winner == cric$team1, 1, 
-                            ifelse(cric$drawn == 1, .5, 0))
-cric$team2_score  <- ifelse(cric$winner == cric$team2, 1, 
-                      ifelse(cric$drawn == 1, .5, 0))
+# Outcome
+cric$drawn        <- grepl("drawn", tolower(cric$outcome))
+cric$team1_score  <- ifelse(cric$win_game == cric$team1_id, 1, ifelse(cric$drawn == 1, .5, 0))
+cric$team2_score  <- ifelse(cric$win_game == cric$team2_id, 1, ifelse(cric$drawn == 1, .5, 0))
 
 # Subset on Tests
 cric_tests <- subset(cric, cric$type_of_match == "Test")
 
+# Get data ready for stan
 teams  <- unique(c(cric_tests$team1, cric_tests$team2))
 nteams <- length(teams)
+ngames <- nrow(cric_tests)
+team1  <- match(cric_tests$team1, teams)
+score1 <- cric_tests$team1_score
+team2  <- match(cric_tests$team2, teams)
+score2 <- cric_tests$team2_score
+ump1team1 <- ifelse(cric_tests$umpire_1_country == cric_tests$team1, 1, 0)
+ump2team1 <- ifelse(cric_tests$umpire_2_country == cric_tests$team1, 1, 0)
+hometeam1 <- 1*(cric_tests$team1_id == cric_tests$home_team_id) 
+tossteam1 <- 1*(cric_tests$team1_id == cric_tests$win_toss)
+
+# Prior
 prior_score <- rev(1:nteams)
 prior_score <- (prior_score - mean(prior_score))/(2*sd(prior_score))
 
-ngames   <- nrow(cric_tests)
+# Model 1: Basic stan
+# No priors, covariates, etc. --- across all time
+# Basic IRT
 
-team1  <- match(cric_tests$team1, teams)
-score1 <- cric_tests$team1_score
-team2  <- match(cric_tests$team1, teams)
-score2 <- cric_tests$team2_score
-df <- 7
+data <- c("nteams", "ngames", "team1", "prior_score", "score1", "score2", "team2")
 
-data <- c("nteams", "ngames", "team1", "score1", "team2", "score2", "prior_score", "df")
-
-fit <- stan_run("stan/basic.stan", data=data, chains=4, iter=2000)
+fit <- stan_run("stan/basic.stan", data = data, chains = 4, iter = 10000)
 print(fit)
 
-fit <- stan_run("basic_matt.stan", data = data, chains=4, iter=100)
-print(fit)
+colVars <- function(a) {
+  n <- dim(a)[[1]]; 
+  c <- dim(a)[[2]]; 
+  return(.colMeans(((a - matrix(.colMeans(a, n, c), nrow = n, ncol = c, byrow = TRUE)) ^ 2), n, c) * n / (n - 1))
+}
 
-colVars <- function(a) {n <- dim(a)[[1]]; c <- dim(a)[[2]]; return(.colMeans(((a - matrix(.colMeans(a, n, c), nrow = n, ncol = c, byrow = TRUE)) ^ 2), n, c) * n / (n - 1))}
-
-sims <- extract(fit)
+sims   <- rstan::extract(fit)
 a_sims <- sims$a
-a_hat <- colMeans(a_sims)
-a_se <- sqrt(colVars(a_sims))
-library ("arm")
-png ("worldcup1.png", height=500, width=500)
-coefplot (rev(a_hat), rev(a_se), CI=1, varnames=rev(teams), main="Team quality (estimate +/- 1 s.e.)\n", cex.var=.9, mar=c(0,4,5.1,2), xlim=c(-.5,.5))
-dev.off()
+a_hat  <- colMeans(a_sims)
+a_se   <- sqrt(colVars(a_sims))
 
-fit_noprior <- stan_run("worldcup_noprior_matt.stan", data=data, chains=4, iter=100)
+res <- data.frame(a_hat = a_hat, a_se = a_se, teams = teams)
+
+ggplot(res, aes(a_hat, a_se)) + 
+  geom_text(aes(label = teams), size=3) + 
+  theme_minimal()
+ggsave("../figs/all_time_cric_tests_stan.png")
+
+# Model 2: Basic stan with covariates:
+#          Team1 Toss, Team1 Home + Team1 Umpire
+
+data <- c("nteams", "ngames", "prior_score", "team1", "score1", "team2", "score2", "ump1team1", "ump2team1", "hometeam1", "tossteam1")
+
+fit <- stan_run("stan/basic_plus.stan", data = data, chains = 4, iter = 10000)
+print(fit)
+
+sims   <- rstan::extract(fit)
+a_sims <- sims$a
+a_hat  <- colMeans(a_sims)
+a_se   <- sqrt(colVars(a_sims))
+
+res <- data.frame(a_hat = a_hat, a_se = a_se, teams = teams)
+
+ggplot(res, aes(a_hat, a_se)) + 
+  geom_text(aes(label = teams), size=3) + 
+  theme_minimal()
+ggsave("../figs/all_time_cric_tests_with_covar_stan.png")
+
+# Let's try to regress out umpire, toss, home/away and then estimate ability to verify
+
+summary(lm(score1 ~ ump1team1 + ump2team1 + hometeam1 + tossteam1))
+
+
+# Let's add random effects by time
+data <- c("nteams", "ngames", "team1", "score1", "team2", "df", 
+          "ump1team1", "ump2team1", "hometeam1", "tossteam1", "time")
+fit <- stan_run("stan/basic_plus_time.stan", data = data, chains = 4, iter = 100)
+print(fit)
+
+# Let's do a dynamic linear model
+
+# Let's now try to learn from two different ys
+
+fit_noprior <- stan_run("stan/noprior_matt.stan", data=data, chains=4, iter=500)
 print(fit_noprior)
-fit_noprior <- stan_run("worldcup_noprior_matt.stan", data=data, chains=4, iter=1000)
+fit_noprior <- stan_run("stan/noprior_matt.stan", data=data, chains=4, iter=1000)
 print(fit_noprior)
 
 worldcup_plot <- function (fit, file.png){
@@ -83,7 +136,6 @@ worldcup_plot <- function (fit, file.png){
   a_sims <- sims$a
   a_hat <- colMeans(a_sims)
   a_se <- sqrt(colVars(a_sims))
-  library ("arm")
   png (file.png, height=500, width=500)
   coefplot (rev(a_hat), rev(a_se), CI=1, varnames=rev(teams), main="Team quality (estimate +/- 1 s.e.)\n", cex.var=.9, mar=c(0,4,5.1,2), xlim=c(-.5,.5))
   dev.off()
