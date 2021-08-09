@@ -1,7 +1,7 @@
 '''
 Parse Downloaded Cricket Data
 
-    '''
+'''
 
 import time
 import csv
@@ -19,11 +19,17 @@ unique_matches_with_ints.sort()
 
 bad_matches = []
 
+with open("../data/cricket_matches.csv", "r") as existing_file:
+    existing_reader = csv.DictReader(existing_file)
+    already_loaded = [int(x['match_id']) for x in existing_reader]
+
+
 ##################################START PROCESSING DATA#########################################
-with open("../data/cricket_matches.csv", "w") as csvfile:
+with open("../data/cricket_matches.csv", "a") as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow(headers)
     for match in unique_matches_with_ints:
+        if match in already_loaded:
+            continue
         print(match)
         time.sleep(0.25)
         try:
