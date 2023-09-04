@@ -3,3 +3,4 @@
 
 # R
 scripts/stan/stan_ignore/
+.DS_Store
