@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+authors:
+- family-names: "Sood"
+  given-names: "Gaurav"
+- family-names: "Willis"
+  given-names: "Derek"
+title: "Elo Ratings of International Cricket Teams By Format"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2023-10-23
+url: "https://github.com/outside-edge/elo_cricket"
