@@ -1,6 +1,6 @@
 ## Elo Ratings of International Cricket Teams By Format
 
-The ICC only lists the [current ranking of cricket teams](https://www.icc-cricket.com/rankings/mens/team-rankings/odi). To address the paucity of historical ranking data, we generate monthly ELO ratings of all international cricket teams by format. We use
+The ICC only lists only the [current ranking of cricket teams](https://www.icc-cricket.com/rankings/mens/team-rankings/odi). To address the paucity of historical ranking data, we generate monthly ELO ratings of all international cricket teams by format. 
 
 ### Cricket Match Outcome Data
 
