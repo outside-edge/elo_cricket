@@ -1,0 +1,19 @@
+Type: Project
+Title: Cricket Ratings Pipelines
+Depends:
+    R (>= 4.6.0)
+Imports:
+    digest,
+    EloRating,
+    ggplot2,
+    httr2,
+    jsonlite,
+    readr,
+    rlang,
+    rvest,
+    xml2,
+    lintr,
+    renv,
+    styler,
+    testthat,
+    withr

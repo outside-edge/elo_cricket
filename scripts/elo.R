@@ -1,9 +1,7 @@
 ## ELO Rankings
 # cribbing from: https://cran.r-project.org/web/packages/EloRating/vignettes/EloRating_tutorial.pdf
 
-setwd(githubdir) # keep it. it will give a warning but ignore as there is no such string
-setwd("elo_cricket/")
-setwd("/Users/derekwillis/code/elo_cricket/")
+source("scripts/prepare_matches.R")
 
 # load packages
 library(readr)
@@ -14,15 +12,8 @@ library(grid)
 library(directlabels)
 
 # Ingest data
-cric <- read.csv("data/cricket_matches_for_elo.csv")
-
-# Recode
-cric$Date   <- as.Date(cric$date, format =  "%Y-%m-%d")
-cric$drawn  <- grepl("drawn", tolower(cric$outcome))
-
-# For EloRating -- no NAs in loserre or winner
-cric$loser  <- ifelse(cric$win_game == cric$team1_id, cric$team2, cric$team1) 
-cric$winner <- ifelse(cric$win_game == cric$team1_id, cric$team1, cric$team2) 
+cric <- prepare_matches()
+dir.create("out/analysis/elo", recursive = TRUE, showWarnings = FALSE)
 
 # Subset on Tests
 cric_tests <- subset(cric, cric$type_of_match =="Test")
@@ -78,7 +69,7 @@ for(i in month_ts[1:length(month_ts)-1]) {
 	test_res_df <- rbind(test_res_df, m_ratings_df)
 }
 
-write_csv(test_res_df, file = "data/test_ratings_1881_2021.csv")
+write_csv(test_res_df, file = "out/analysis/elo/test_ratings_1881_2021.csv")
 
 small_test_df <- test_res_df[!(test_res_df$teams %in% c("Afghanistan", "ICC World XI")), ]
 
@@ -136,7 +127,7 @@ for(i in month_ts[1:length(month_ts)-1]) {
 	odi_res_df <- rbind(odi_res_df, m_ratings_df)
 }
 
-write_csv(odi_res_df, file = "data/odi_ratings_1972_2021.csv")
+write_csv(odi_res_df, file = "out/analysis/elo/odi_ratings_1972_2021.csv")
 
 # Only keeping teams with more than 100 matches
 odi_teams <- table(c(cric_odis$team1, cric_odis$team2)) # Some issues that we want to fix later
@@ -196,7 +187,7 @@ for(i in month_ts[1:length(month_ts)-1]) {
 	t20i_res_df <- rbind(t20i_res_df, m_ratings_df)
 }
 
-write_csv(t20i_res_df, file = "data/t20i_ratings_2006_2021.csv")
+write_csv(t20i_res_df, file = "out/analysis/elo/t20i_ratings_2006_2021.csv")
 
 # Only keeping teams with more than 50 matches
 t20i_teams <- table(c(cric_t20is$team1, cric_t20is$team2)) # Some issues that we want to fix later
