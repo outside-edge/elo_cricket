@@ -1396,8 +1396,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2025;type=year",
         "format": "Test",
         "year": 2025,
-        "fetched_at": "2026-10-26T05:09:54Z",
-        "sha256": "518cd247aeae43f4098ce4eb4c8911f37d2535b997766afcf4e9046866c1beee",
+        "fetched_at": "2026-10-26T06:55:20Z",
+        "sha256": "32886af7fec1bf96916e33bfd3155ad307b689623167eab31d2eb614857e735a",
         "rows": 42
       },
       {
@@ -1405,8 +1405,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2026;type=year",
         "format": "Test",
         "year": 2026,
-        "fetched_at": "2026-10-26T05:09:59Z",
-        "sha256": "02de009d1b428311b2316b032d974e94bc8534fe70009aa1124d13976fba9a9d",
+        "fetched_at": "2026-10-26T06:55:26Z",
+        "sha256": "162383518c04fd55139b4a835681cdaee9f60a60899e65003f39d070a95fa4aa",
         "rows": 23
       },
       {
@@ -1900,8 +1900,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2025;type=year",
         "format": "ODI",
         "year": 2025,
-        "fetched_at": "2026-10-26T05:10:11Z",
-        "sha256": "09697637a836de4e8cf75d923e685fe77e71d2663bac77607687fd9116cd986f",
+        "fetched_at": "2026-10-26T06:55:40Z",
+        "sha256": "e348d077900c221502d98b4da9119b996e58dc1d7472084b005a3f0973b1d22d",
         "rows": 115
       },
       {
@@ -1909,8 +1909,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2026;type=year",
         "format": "ODI",
         "year": 2026,
-        "fetched_at": "2026-10-26T05:10:25Z",
-        "sha256": "726ff60a9678e7c83419f8885ca306698d989a017c5820dc71d127d12eb2fcf3",
+        "fetched_at": "2026-10-26T06:55:50Z",
+        "sha256": "3e4cbc73bfff58144968b9860b8c1384591359bbe5a5d6ebb2f638f9998e0b3e",
         "rows": 111
       },
       {
@@ -2098,8 +2098,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2025;type=year",
         "format": "T20I",
         "year": 2025,
-        "fetched_at": "2026-10-26T05:11:13Z",
-        "sha256": "50fb40f7533a18a5618dc478ee2d0bb310b28bded16c76895b84573674826f60",
+        "fetched_at": "2026-10-26T06:56:32Z",
+        "sha256": "ff3d14b90e31a6f0b7437320a849d3ab6031293bcbdff1439db85da22233aa48",
         "rows": 579
       },
       {
@@ -2107,8 +2107,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2026;type=year",
         "format": "T20I",
         "year": 2026,
-        "fetched_at": "2026-10-26T05:12:02Z",
-        "sha256": "2d2ead703775fce7b241e47b2489161850656b8c98a6f8fbb44c4284f2297bf3",
+        "fetched_at": "2026-10-26T06:57:15Z",
+        "sha256": "3d6a25ef3c404feef1fcd57750fbb36c2a07ebc303c18b5e9c057ab7a1a7402a",
         "rows": 561
       }
     ],

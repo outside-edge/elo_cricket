@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2025;type=year",
   "format": "Test",
   "year": 2025,
-  "fetched_at": "2026-10-26T05:09:54Z",
-  "sha256": "518cd247aeae43f4098ce4eb4c8911f37d2535b997766afcf4e9046866c1beee",
+  "fetched_at": "2026-10-26T06:55:20Z",
+  "sha256": "32886af7fec1bf96916e33bfd3155ad307b689623167eab31d2eb614857e735a",
   "rows": 42
 }

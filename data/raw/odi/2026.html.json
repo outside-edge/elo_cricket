@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2026;type=year",
   "format": "ODI",
   "year": 2026,
-  "fetched_at": "2026-10-26T05:10:25Z",
-  "sha256": "726ff60a9678e7c83419f8885ca306698d989a017c5820dc71d127d12eb2fcf3",
+  "fetched_at": "2026-10-26T06:55:50Z",
+  "sha256": "3e4cbc73bfff58144968b9860b8c1384591359bbe5a5d6ebb2f638f9998e0b3e",
   "rows": 111
 }
