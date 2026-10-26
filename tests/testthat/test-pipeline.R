@@ -13,6 +13,10 @@ testthat::test_that("offline stages produce a coherent publication and reject ch
   visualize_data(analysis, figures)
   publish_data(prepared, analysis, figures, publication, require_fresh = FALSE)
   manifest <- jsonlite::read_json(file.path(publication, "manifest.json"))
+  published <- read_publication(publication)
+  testthat::expect_identical(published$manifest, manifest)
+  testthat::expect_equal(nrow(site_ratings(published, "Test")), 12)
+  testthat::expect_error(site_ratings(published, "ODI"), "Missing publication format")
   for (name in names(manifest$files)) {
     testthat::expect_identical(sha256(file.path(publication, name)), manifest$files[[name]])
   }
@@ -51,6 +55,8 @@ testthat::test_that("offline stages produce a coherent publication and reject ch
   testthat::expect_identical(sha256(file.path(publication, "latest.csv")), before)
   writeLines("changed", file.path(prepared, "matches.csv"))
   testthat::expect_error(analyze_data(prepared, analysis), "checksum")
+  writeLines("changed", file.path(publication, "latest.csv"))
+  testthat::expect_error(read_publication(publication), "checksum")
 })
 
 testthat::test_that("failed stages cannot replace their previous outputs", {

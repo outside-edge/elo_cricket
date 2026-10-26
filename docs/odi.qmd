@@ -1,0 +1,7 @@
+---
+title: ODI ratings
+params:
+  format: ODI
+---
+
+{{< include _ratings.qmd >}}

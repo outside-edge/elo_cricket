@@ -1,0 +1,64 @@
+project:
+  type: website
+  output-dir: out/site
+  execute-dir: project
+  render:
+    - index.qmd
+    - docs/test.qmd
+    - docs/odi.qmd
+    - docs/t20i.qmd
+    - docs/methods.qmd
+    - docs/data.qmd
+    - docs/research.qmd
+    - docs/correctness.qmd
+  resources:
+    - out/release/elo/**
+
+website:
+  title: Outside Edge
+  description: Independent international cricket ratings, histories, and methods.
+  site-url: https://outside-edge.github.io/elo_cricket/
+  repo-url: https://github.com/outside-edge/elo_cricket
+  navbar:
+    left:
+      - href: index.qmd
+        text: Overview
+      - text: Ratings
+        menu:
+          - href: docs/test.qmd
+            text: Test
+          - href: docs/odi.qmd
+            text: ODI
+          - href: docs/t20i.qmd
+            text: T20I
+      - href: docs/methods.qmd
+        text: Methods
+      - href: docs/data.qmd
+        text: Data
+      - href: docs/research.qmd
+        text: Research
+    right:
+      - icon: github
+        href: https://github.com/outside-edge/elo_cricket
+        aria-label: Source code on GitHub
+  page-footer:
+    left: Outside Edge · Independent of ICC rankings
+    right:
+      - href: docs/correctness.qmd
+        text: Correctness audit
+      - href: https://github.com/outside-edge/elo_cricket/issues
+        text: Report an issue
+
+format:
+  html:
+    theme: cosmo
+    css: docs/styles.css
+    toc: true
+    lang: en
+
+execute:
+  echo: false
+  warning: true
+  error: false
+  cache: false
+  freeze: false

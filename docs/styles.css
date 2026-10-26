@@ -1,0 +1,22 @@
+:root {
+  --edge-ink: #173744;
+  --edge-accent: #176c70;
+}
+
+body { color: #243239; }
+.navbar { background: var(--edge-ink); }
+.navbar-brand { font-weight: 700; letter-spacing: .02em; }
+h1, h2, h3 { color: var(--edge-ink); }
+a { color: var(--edge-accent); }
+.publication-date { border-left: 4px solid var(--edge-accent); padding: .7rem 1rem; background: #f0f6f5; margin: 1.5rem 0; }
+.publication-date p { margin: 0; }
+.format-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin: 2rem 0; }
+.format-card { border: 1px solid #d4dfe0; border-radius: 6px; padding: 1.2rem; }
+.format-card h2 { border: 0; margin-top: 0; padding-top: 0; }
+.format-card table { width: 100%; font-size: .9rem; }
+.format-card td, .format-card th { padding: .4rem .2rem; }
+.format-card p { margin-bottom: 0; font-size: .9rem; }
+figure img { width: 100%; height: auto; }
+.btn-primary { background: var(--edge-accent); border-color: var(--edge-accent); }
+.btn-outline-primary { color: var(--edge-accent); border-color: var(--edge-accent); }
+@media (max-width: 900px) { .format-grid { grid-template-columns: 1fr; } }

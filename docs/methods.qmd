@@ -1,0 +1,71 @@
+---
+title: How the ratings work
+---
+
+```{r}
+#| include: false
+source("R/site.R")
+publication <- read_publication("out/release/elo")
+spec <- publication$manifest$analysis$specification
+```
+
+## The published model
+
+Elo updates a team's rating after a completed match, using the result and the
+opponent's rating. Test, ODI, and T20I matches form separate rating pools.
+
+```{r}
+#| results: asis
+settings <- data.frame(
+  Setting = c("Initial rating", "K", "Expected score", "Ties", "No-result matches", "Update order"),
+  Value = c(spec$initial_rating, spec$k, spec$expectation, spec$ties, spec$no_result, spec$order)
+)
+knitr::kable(settings, format = "html", escape = TRUE)
+```
+
+Draws and ties count as half-results. A regulation tie resolved by a tiebreaker
+is treated as a tie when the source records it that way. Abandoned, cancelled,
+and no-result matches do not update either team's rating.
+
+The implementation is `r spec$implementation`, version `r spec$version`, from
+the R package [EloRating](https://cran.r-project.org/package=EloRating).
+The complete specification is included in the [publication metadata](../out/release/elo/manifest.json).
+
+## Dates and history
+
+Matches enter on their completion date. Same-day results use the deterministic
+ordering shown above. Monthly downloads contain calendar-month-end snapshots;
+the charts show end-of-day match updates, including the latest partial month.
+Ratings carry forward between results. The charts do not smooth the estimates.
+
+Histories are reconstructed from the current saved source version. They do not
+prove what could have been known from the source at an earlier date. Git history
+records successive actual publications.
+
+## Which teams are ranked?
+
+Teams are active if they have played a rated match within `r spec$active_days`
+days. Teams with fewer than `r spec$provisional_matches` rated matches are
+provisional. Equal ratings share a competition rank. Inactive teams remain in the
+CSV without a current rank. These are our display rules, independent of ICC rules.
+
+## What the ratings leave out
+
+This baseline has no venue or margin adjustment, inactivity decay, player-lineup
+effects, or uncertainty intervals. A fixed K controls responsiveness to results;
+the trajectory is an estimate under those choices, not directly observed ability.
+Sparse schedules and weak connections between opponent groups can limit comparisons.
+
+We plan to compare richer models using chronological forecast evaluation. The
+[research agenda](research.qmd) describes these choices, including the distinction
+between live predictions and retrospective historical estimates.
+
+## Correctness and reproducibility
+
+Source responses are saved and checked before modeling. Published files are
+verified against their recorded hashes before the website renders. The site
+reads saved results and does not refit the model.
+
+The [correctness audit](correctness.qmd) documents the old outcome and timing
+errors, the corrections, and the numerical validation. Code and tests are
+available in the [repository](https://github.com/outside-edge/elo_cricket).

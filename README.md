@@ -9,6 +9,7 @@ The maintained adapter currently calculates **Elo** for men's Tests, ODIs, and
 T20Is. The existing Glickman and Stan analyses remain research code. They are not
 silently replaced with Elo, and they are not yet scheduled for publication.
 
+[Ratings website](https://outside-edge.github.io/elo_cricket/) ·
 [Latest Elo tables](out/release/elo/index.md) ·
 [Latest ratings](out/release/elo/latest.csv) ·
 [Monthly history](out/release/elo/monthly.csv) ·
@@ -53,6 +54,7 @@ also revisits older source years to incorporate historical corrections.
 | Analyze | `out/analysis/<model>/` | Fit each model independently; save ratings, diagnostics, and specification |
 | Visualize | `figs/<model>/` | Render saved model outputs without fetching or refitting |
 | Publish | `out/release/<model>/` | Assemble verified tables, charts, and provenance |
+| Site | `out/site/` | Render the verified publication as a website |
 
 The implemented adapter writes under `elo/`. Future Glickman and Stan adapters
 should use their own directories and model identifiers. They can have different
@@ -141,7 +143,22 @@ The workflow is scheduled for Monday at 06:17 UTC, with monthly snapshots includ
 in each update. Scheduling starts when the workflow is on the default branch.
 It runs `make check`, updates all stages, and commits the data/output directories
 only after successful validation. GitHub schedules can be delayed or disabled;
-the publication manifest records the actual cutoff.
+the publication manifest records the actual cutoff. After committing an update,
+the workflow passes that commit to the Pages workflow, which renders and deploys
+the corresponding website. Merges to `main` also rebuild the site.
+
+The website uses [Quarto 1.10.19](https://quarto.org/docs/get-started/).
+Its source is `index.qmd`, `docs/`, and `_quarto.yml`; compiled HTML stays in the
+ignored `out/site/` directory. To build and check it locally:
+
+```sh
+make site
+```
+
+Rendering verifies and reads `out/release/elo/` without fetching or fitting.
+The site check validates local page and asset links and verifies the copied
+downloads against the original publication manifest. CI renders all eight pages.
+GitHub Pages uses the Actions publishing source and the `github-pages` environment.
 
 Every stage writes to a temporary directory before replacing its previous output.
 Input/output hashes prevent mixing different data, model, or figure versions.

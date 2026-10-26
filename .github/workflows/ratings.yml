@@ -19,10 +19,13 @@ concurrency:
 
 jobs:
   update:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     permissions:
       contents: write
+    outputs:
+      commit: ${{ steps.publication.outputs.commit }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -43,6 +46,7 @@ jobs:
           fi
           Rscript scripts/pipeline.R "${args[@]}"
       - name: Publish validated results
+        id: publication
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -51,3 +55,14 @@ jobs:
             git commit -m 'Update cricket ratings'
             git push origin HEAD:main
           fi
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  site:
+    needs: update
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.update.outputs.commit }}

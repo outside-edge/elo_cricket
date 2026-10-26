@@ -1,0 +1,47 @@
+```{r}
+#| include: false
+source("R/site.R")
+publication <- read_publication("out/release/elo")
+format_name <- params$format
+stem <- tolower(format_name)
+```
+
+**Elo ratings through `r publication$manifest$analysis$as_of`.**
+Most recent recorded result: `r publication$manifest$analysis$last_result[[format_name]]`.
+
+## Recent history
+
+The current top ten active teams. Labels give the current rating. Steps show
+end-of-day ratings after completed matches; flat sections carry ratings forward.
+
+```{r}
+#| results: asis
+cat(sprintf('![Recent %s Elo histories](../out/release/elo/%s.svg)\n\n', format_name, stem))
+cat(sprintf('[Download SVG](../out/release/elo/%s.svg) · [Download PNG](../out/release/elo/%s.png)\n', stem, stem))
+```
+
+## Full history by team
+
+Each panel uses the same axes within this format. Teams are selected and ordered
+by their current rating, so these panels do not include every historical leader.
+
+```{r}
+#| results: asis
+cat(sprintf('![Full %s Elo histories by team](../out/release/elo/%s_history.svg)\n\n', format_name, stem))
+cat(sprintf('[Download SVG](../out/release/elo/%s_history.svg) · [Download PNG](../out/release/elo/%s_history.png)\n', stem, stem))
+```
+
+## Current ratings
+
+Active teams have a rated match in the preceding
+`r publication$manifest$analysis$specification$active_days` days. Provisional teams have
+fewer than `r publication$manifest$analysis$specification$provisional_matches` rated matches.
+Inactive teams remain in the downloadable data.
+
+```{r}
+#| results: asis
+knitr::kable(site_ratings(publication, format_name), format = "html", escape = TRUE)
+```
+
+These deterministic Elo ratings have no uncertainty intervals. See the
+[methods](methods.qmd) for assumptions and limitations, or [download the complete data](data.qmd).

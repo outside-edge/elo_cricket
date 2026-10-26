@@ -1,0 +1,11 @@
+---
+title: Research agenda
+---
+
+The models discussed here are proposals. Elo is currently the only verified
+publication adapter.
+
+```{r}
+#| results: asis
+cat(readLines("docs/rating_models.md")[-1], sep = "\n")
+```

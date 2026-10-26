@@ -1,0 +1,7 @@
+---
+title: Test ratings
+params:
+  format: Test
+---
+
+{{< include _ratings.qmd >}}

@@ -1,0 +1,8 @@
+---
+title: Correctness audit
+---
+
+```{r}
+#| results: asis
+cat(readLines("docs/correctness.md")[-1], sep = "\n")
+```
