@@ -146,12 +146,12 @@ validate_source_freshness <- function(receipt, as_of, now = Sys.time()) {
   invisible(NULL)
 }
 
-read_page <- function(path) {
+read_page <- function(path, validate_receipt = TRUE) {
   con <- gzfile(path, "rb")
   on.exit(close(con))
   content <- readBin(con, "raw", n = 100000000L)
   receipt <- jsonlite::read_json(sub("\\.gz$", ".json", path), simplifyVector = TRUE)
-  receipt_time(receipt)
+  if (validate_receipt) receipt_time(receipt)
   if (!identical(digest::digest(content, algo = "sha256", serialize = FALSE), receipt$sha256)) {
     stop("Source checksum mismatch: ", path)
   }
@@ -187,8 +187,14 @@ fetch_sources <- function(raw_dir, as_of, refresh = FALSE, coverage = formats, r
     format <- coverage$format[i]
     for (year in seq.int(coverage$first_year[i], last_year)) {
       path <- file.path(raw_dir, tolower(format), paste0(year, ".html.gz"))
-      previous <- tryCatch(read_page(path), error = function(e) NULL, warning = function(w) NULL)
-      if (!is.null(previous) && !refresh && year < last_year - 1L) next
+      previous <- tryCatch(
+        read_page(path, validate_receipt = FALSE), error = function(e) NULL, warning = function(w) NULL
+      )
+      valid_receipt <- !is.null(previous) && tryCatch({
+        receipt_time(previous$receipt)
+        TRUE
+      }, error = function(e) FALSE)
+      if (valid_receipt && !refresh && year < last_year - 1L) next
       url <- source_url(format, year)
       request_url <- sub("stats.espncricinfo.com", "stats.cricinfo.com", url, fixed = TRUE)
       content <- request(request_url)

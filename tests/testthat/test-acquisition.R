@@ -81,6 +81,22 @@ testthat::test_that("fetch failures and removed rows preserve the existing cache
     "disappeared"
   )
   testthat::expect_identical(sha256(path), before)
+  receipt_path <- sub("\\.gz$", ".json", path)
+  receipt <- read_page(path)$receipt
+  receipt$request_url <- NULL
+  receipt$fetched_at <- "2026-01-01T00:00:00.000000+00:00"
+  write_json(receipt, receipt_path)
+  testthat::expect_error(
+    fetch_sources(directory, as.Date("2025-12-31"), coverage = coverage,
+                  request = function(url) charToRaw(as.character(page))),
+    "disappeared"
+  )
+  testthat::expect_identical(sha256(path), before)
+  content <- readBin(fixture("test_2025.html"), "raw", n = 1000000L)
+  testthat::expect_message(
+    fetch_sources(directory, as.Date("2025-12-31"), coverage = coverage, request = function(url) content), "Fetched"
+  )
+  testthat::expect_identical(read_page(path)$content, content)
 })
 
 testthat::test_that("receipts require retrieval metadata and valid UTC timestamps", {
@@ -114,6 +130,16 @@ testthat::test_that("recent sources must cover the entire cutoff day", {
   )
   receipt$fetched_at <- "2026-01-02T00:00:00Z"
   testthat::expect_error(validate_source_freshness(receipt, cutoff, now), "Stale source")
+  cutoff <- as.Date("2026-01-05")
+  now <- as.POSIXct("2026-01-06 12:00:00", tz = "UTC")
+  testthat::expect_error(validate_source_freshness(receipt, cutoff, now), "predates")
+  receipt$year <- 2024L
+  testthat::expect_no_error(validate_source_freshness(receipt, cutoff, now))
+  receipt$year <- 2025L
+  receipt$fetched_at <- "2026-01-06T00:00:00Z"
+  now <- as.POSIXct("2026-01-14 00:00:00", tz = "UTC")
+  testthat::expect_no_error(validate_source_freshness(receipt, cutoff, now))
+  testthat::expect_error(validate_source_freshness(receipt, cutoff, now + 1), "Stale source")
 })
 
 testthat::test_that("legacy BOM and 415 incorrect outcomes are repaired", {
