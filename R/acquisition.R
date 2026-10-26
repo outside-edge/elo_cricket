@@ -120,11 +120,38 @@ parse_page <- function(html, format, year) {
   records
 }
 
+receipt_time <- function(receipt) {
+  required <- c("url", "request_url", "format", "year", "fetched_at", "sha256", "rows")
+  if (!all(required %in% names(receipt)) || any(vapply(receipt[required], function(x) {
+    length(x) != 1L || anyNA(x)
+  }, logical(1)))) stop("Incomplete source receipt")
+  stamp <- receipt$fetched_at
+  if (!is.character(stamp) || !grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$", stamp)) {
+    stop("Invalid source retrieval timestamp")
+  }
+  fetched <- as.POSIXct(stamp, format = "%Y-%m-%dT%H:%M:%SZ", tz = "UTC")
+  if (is.na(fetched) || format(fetched, "%Y-%m-%dT%H:%M:%SZ", tz = "UTC") != stamp) {
+    stop("Invalid source retrieval timestamp")
+  }
+  fetched
+}
+
+validate_source_freshness <- function(receipt, as_of, now = Sys.time()) {
+  fetched <- receipt_time(receipt)
+  if (receipt$year < as.integer(format(as_of, "%Y")) - 1L) return(invisible(NULL))
+  cutoff_end <- as.POSIXct(as.character(as_of + 1L), tz = "UTC")
+  if (fetched < cutoff_end) stop("Source retrieval predates the completed cutoff day")
+  age <- as.numeric(difftime(now, fetched, units = "days"))
+  if (age < 0 || age > 8) stop("Stale source")
+  invisible(NULL)
+}
+
 read_page <- function(path) {
   con <- gzfile(path, "rb")
   on.exit(close(con))
   content <- readBin(con, "raw", n = 100000000L)
   receipt <- jsonlite::read_json(sub("\\.gz$", ".json", path), simplifyVector = TRUE)
+  receipt_time(receipt)
   if (!identical(digest::digest(content, algo = "sha256", serialize = FALSE), receipt$sha256)) {
     stop("Source checksum mismatch: ", path)
   }
@@ -199,11 +226,7 @@ load_matches <- function(raw_dir, as_of, require_fresh = FALSE, coverage = forma
       ) {
         stop("Wrong source metadata: ", path)
       }
-      if (require_fresh && year >= last_year - 1L) {
-        fetched <- as.POSIXct(substr(receipt$fetched_at, 1, 19), format = "%Y-%m-%dT%H:%M:%S", tz = "UTC")
-        age <- as.numeric(difftime(Sys.time(), fetched, units = "days"))
-        if (is.na(age) || age < 0 || age > 8) stop("Stale source: ", path)
-      }
+      if (require_fresh) validate_source_freshness(receipt, as_of)
       parsed <- parse_page(cached$content, format, year)
       if (nrow(parsed) != receipt$rows) stop("Source row count changed: ", path)
       records[[length(records) + 1L]] <- parsed[parsed$end_date <= as_of, ]

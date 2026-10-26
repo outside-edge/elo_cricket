@@ -83,6 +83,39 @@ testthat::test_that("fetch failures and removed rows preserve the existing cache
   testthat::expect_identical(sha256(path), before)
 })
 
+testthat::test_that("receipts require retrieval metadata and valid UTC timestamps", {
+  directory <- withr::local_tempdir()
+  path <- cache_fixture(directory)
+  receipt_path <- sub("\\.gz$", ".json", path)
+  receipt <- read_page(path)$receipt
+  missing <- receipt
+  missing$request_url <- NULL
+  write_json(missing, receipt_path)
+  testthat::expect_error(read_page(path), "Incomplete source receipt")
+  for (stamp in c("2026-01-01T00:00:00+00:00", "2026-02-30T00:00:00Z", "unknown")) {
+    receipt$fetched_at <- stamp
+    write_json(receipt, receipt_path)
+    testthat::expect_error(read_page(path), "Invalid source retrieval timestamp")
+  }
+})
+
+testthat::test_that("recent sources must cover the entire cutoff day", {
+  directory <- withr::local_tempdir()
+  path <- cache_fixture(directory)
+  receipt <- read_page(path)$receipt
+  cutoff <- as.Date("2025-12-31")
+  now <- as.POSIXct("2026-01-01 12:00:00", tz = "UTC")
+  testthat::expect_no_error(validate_source_freshness(receipt, cutoff, now))
+  receipt$fetched_at <- "2025-12-31T23:59:59Z"
+  testthat::expect_error(validate_source_freshness(receipt, cutoff, now), "predates")
+  write_json(receipt, sub("\\.gz$", ".json", path))
+  testthat::expect_error(
+    prepare_data(directory, file.path(directory, "build"), cutoff, TRUE, fixture_coverage[1, ]), "predates"
+  )
+  receipt$fetched_at <- "2026-01-02T00:00:00Z"
+  testthat::expect_error(validate_source_freshness(receipt, cutoff, now), "Stale source")
+})
+
 testthat::test_that("legacy BOM and 415 incorrect outcomes are repaired", {
   matches <- prepare_matches(file.path(root, "data/cricket_matches_for_elo.csv"))
   testthat::expect_equal(nrow(matches), 7735)

@@ -161,7 +161,7 @@ write_report <- function(data, path) {
   writeLines(head(lines, -1L), path, useBytes = TRUE)
 }
 
-publish_data <- function(prepared, analysis, figures, output, require_fresh = TRUE) {
+publish_data <- function(prepared, analysis, figures, output, require_fresh = TRUE, now = Sys.time()) {
   source <- read_prepared(prepared)
   data <- read_analysis(analysis)
   if (
@@ -171,6 +171,10 @@ publish_data <- function(prepared, analysis, figures, output, require_fresh = TR
     stop("Analysis uses different prepared data")
   }
   visual <- jsonlite::read_json(file.path(figures, "manifest.json"), simplifyVector = FALSE)
+  code <- code_fingerprint()
+  for (manifest in list(source$manifest, data$manifest, visual)) {
+    if (!identical(manifest$code_sha256, code)) stop("Stage code differs; rebuild all stages before publication")
+  }
   if (!identical(visual$analysis_sha256, sha256(file.path(analysis, "manifest.json")))) {
     stop("Figures use different analysis")
   }
@@ -178,13 +182,10 @@ publish_data <- function(prepared, analysis, figures, output, require_fresh = TR
     if (!identical(sha256(file.path(figures, name)), visual$files[[name]])) stop("Figure checksum mismatch")
   }
   if (require_fresh) {
-    age <- as.integer(as.Date(Sys.time(), tz = "UTC") - as.Date(data$manifest$as_of))
+    age <- as.integer(as.Date(now, tz = "UTC") - as.Date(data$manifest$as_of))
     if (is.na(age) || age < 1L || age > 8L) stop("Publication cutoff is stale or incomplete")
     for (receipt in source$manifest$sources) {
-      if (receipt$year < as.integer(substr(data$manifest$as_of, 1, 4)) - 1L) next
-      fetched <- as.POSIXct(substr(receipt$fetched_at, 1, 19), format = "%Y-%m-%dT%H:%M:%S", tz = "UTC")
-      age <- as.numeric(difftime(Sys.time(), fetched, units = "days"))
-      if (is.na(age) || age < 0 || age > 8) stop("Stale source in publication")
+      validate_source_freshness(receipt, as.Date(data$manifest$as_of), now)
     }
   }
   replace_directory(output, function(directory) {

@@ -18,8 +18,10 @@ cache_fixture <- function(directory, format = "Test", year = 2025L) {
   records <- parse_page(content, format, year)
   path <- file.path(directory, tolower(format), paste0(year, ".html.gz"))
   receipt <- list(
-    url = source_url(format, year), format = format, year = year,
-    fetched_at = "2025-12-31T00:00:00Z", rows = nrow(records),
+    url = source_url(format, year),
+    request_url = sub("stats.espncricinfo.com", "stats.cricinfo.com", source_url(format, year), fixed = TRUE),
+    format = format, year = year,
+    fetched_at = "2026-01-01T00:00:00Z", rows = nrow(records),
     sha256 = digest::digest(content, algo = "sha256", serialize = FALSE)
   )
   write_page(path, content, receipt)

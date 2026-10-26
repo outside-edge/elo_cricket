@@ -40,7 +40,9 @@ make publish
 
 The date belongs to acquisition/preparation. Analysis, figures, and publication
 inherit the cutoff from their input manifests. `make publish` requires a recent
-cutoff and source receipts; use the R functions with `require_fresh = FALSE` only
+cutoff and source receipts. Current and previous-year sources must have been
+retrieved after the cutoff day ended in UTC; rerun fetch if preparation advances
+the cutoff beyond the cached retrievals. Use the R functions with `require_fresh = FALSE` only
 for an explicitly historical local publication. `make update FLAGS=--refresh`
 also revisits older source years to incorporate historical corrections.
 
@@ -136,6 +138,8 @@ the publication manifest records the actual cutoff.
 
 Every stage writes to a temporary directory before replacing its previous output.
 Input/output hashes prevent mixing different data, model, or figure versions.
+Publication also requires every stage's code hashes to match the current R code
+and dependency lockfile. Rebuild preparation, analysis, and figures after changing code.
 A failed stage leaves the previous publication intact. If interrupted between
 directory renames, recover `<output>.previous` before rerunning; the pipeline
 refuses to discard that recovery directory automatically.
