@@ -1,8 +1,9 @@
 {
   "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1925;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1925;type=year",
   "format": "Test",
   "year": 1925,
-  "fetched_at": "2026-10-25T22:50:28.081689+00:00",
-  "sha256": "72b09b757dc47d339c2385951788fe7734d826a1bb5d765952e897daabb55514",
+  "fetched_at": "2026-10-26T01:11:15Z",
+  "sha256": "57bf712ce460ac81f3c15e89486220f80e07222dcd8b2de04249f8b68a5938b1",
   "rows": 4
 }

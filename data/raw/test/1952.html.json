@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1952;type=year",
   "format": "Test",
   "year": 1952,
-  "fetched_at": "2026-10-25T22:56:53.889808+00:00",
-  "sha256": "3ee423b1b04f1d9f6cbc18b13942980e9eff629773befbedac6e485f075ffcfb",
+  "fetched_at": "2026-10-26T01:19:06Z",
+  "sha256": "0258fc45f4977166e143933191536991144bee550821ec046f440fdab8ef3e49",
   "rows": 18
 }

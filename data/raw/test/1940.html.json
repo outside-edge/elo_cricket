@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1940;type=year",
   "format": "Test",
   "year": 1940,
-  "fetched_at": "2026-10-25T22:53:45.385545+00:00",
-  "sha256": "bbfab7884dd0644a8604964959c6580267ad43bd72568fc544978757a7249a91",
+  "fetched_at": "2026-10-26T01:15:53Z",
+  "sha256": "fde77cd764c1c5296055011a27eab70e4ca688196ad626f3756e3ef7a6f67954",
   "rows": 0
 }

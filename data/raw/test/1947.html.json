@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1947;type=year",
   "format": "Test",
   "year": 1947,
-  "fetched_at": "2026-10-25T22:55:38.765986+00:00",
-  "sha256": "2ebb5d0a71bae32cdaeae9f626560c55afc3138aea1f96a1f3e4b264acb3328d",
+  "fetched_at": "2026-10-26T01:17:47Z",
+  "sha256": "a20aaef069fc1d762397c3efb1b31ee3bb0abc8a21c4f04875396dd1556c0e6b",
   "rows": 11
 }

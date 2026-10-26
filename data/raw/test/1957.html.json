@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1957;type=year",
   "format": "Test",
   "year": 1957,
-  "fetched_at": "2026-10-25T22:58:29.241269+00:00",
-  "sha256": "7c11579525264eaf4be39af1e5d2883f19d314d45c9d679bf75f660c1869ec6f",
+  "fetched_at": "2026-10-26T01:20:17Z",
+  "sha256": "054c0aa6accb4ee131f3f0060953c2afb54ee6a0db169baa18d6ec20e5e08c3a",
   "rows": 10
 }

@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1938;type=year",
   "format": "Test",
   "year": 1938,
-  "fetched_at": "2026-10-25T22:53:20.674747+00:00",
-  "sha256": "a2e2edf2747613a2f19c943ffc6a1374cf91d5d8a06303923b5212a051487cb1",
+  "fetched_at": "2026-10-26T01:15:21Z",
+  "sha256": "9db879d794a2bc606d7755b55b95a3eee6f866ef52b42608cbf55c71c5481a4a",
   "rows": 6
 }

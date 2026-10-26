@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1958;type=year",
   "format": "Test",
   "year": 1958,
-  "fetched_at": "2026-10-25T22:58:41.426109+00:00",
-  "sha256": "052b4b7b85f33d90b4ed334cb7c8d44a2a7ac682bfc5fb39bbc25c7279747ecc",
+  "fetched_at": "2026-10-26T01:20:34Z",
+  "sha256": "9f79500476b1f002ef6b6c10266efdffbae466528e44ed0ef0e3cbc61e360abc",
   "rows": 19
 }
