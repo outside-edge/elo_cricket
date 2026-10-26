@@ -141,8 +141,8 @@ between live ratings and retrospective smoothing.
 
 The workflow is scheduled for Monday at 06:17 UTC, with monthly snapshots included
 in each update. Scheduling starts when the workflow is on the default branch.
-It runs `make check`, updates all stages, and commits the data/output directories
-only after successful validation. GitHub schedules can be delayed or disabled;
+It runs `make check`, updates all stages, and renders and checks the website before
+committing the data/output directories. GitHub schedules can be delayed or disabled;
 the publication manifest records the actual cutoff. After committing an update,
 the workflow passes that commit to the Pages workflow, which renders and deploys
 the corresponding website. Merges to `main` also rebuild the site.
@@ -162,8 +162,9 @@ GitHub Pages uses the Actions publishing source and the `github-pages` environme
 
 Every stage writes to a temporary directory before replacing its previous output.
 Input/output hashes prevent mixing different data, model, or figure versions.
-Publication also requires every stage's code hashes to match the current R code
-and dependency lockfile. Rebuild preparation, analysis, and figures after changing code.
+Publication also requires every stage's code hashes to match the current pipeline R code
+and dependency lockfile. Rebuild preparation, analysis, and figures after changing that code.
+The website reader in `R/site.R` is excluded from model-stage fingerprints.
 A failed stage leaves the previous publication intact. If interrupted between
 directory renames, recover `<output>.previous` before rerunning; the pipeline
 refuses to discard that recovery directory automatically.
@@ -177,7 +178,8 @@ make ci-docker
 real source fixtures, the legacy BOM and outcome regressions, exact numerical
 reference checks, absence of future-data effects, and publication failure cases.
 `make ci-docker` uses the standard `rocker/r-ver:4.6.0` image and requires a running
-Docker daemon. The GitHub checks run the same R tests on Ubuntu.
+Docker daemon. It checks the R pipeline; run `make site` separately with Quarto
+to check the website. The GitHub checks run both on Ubuntu.
 
 ## Research and historical outputs
 

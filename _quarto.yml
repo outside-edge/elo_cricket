@@ -20,6 +20,8 @@ website:
   site-url: https://outside-edge.github.io/elo_cricket/
   repo-url: https://github.com/outside-edge/elo_cricket
   navbar:
+    background: '#173744'
+    foreground: '#ffffff'
     left:
       - href: index.qmd
         text: Overview

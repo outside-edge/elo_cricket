@@ -13,10 +13,19 @@ Most recent recorded result: `r publication$manifest$analysis$last_result[[forma
 
 The current top ten active teams. Labels give the current rating. Steps show
 end-of-day ratings after completed matches; flat sections carry ratings forward.
+On narrow screens, scroll the charts sideways to see the complete view.
+
+::: {.chart-scroll role="region" aria-label="Recent ratings chart" tabindex="0"}
 
 ```{r}
 #| results: asis
 cat(sprintf('![Recent %s Elo histories](../out/release/elo/%s.svg)\n\n', format_name, stem))
+```
+
+:::
+
+```{r}
+#| results: asis
 cat(sprintf('[Download SVG](../out/release/elo/%s.svg) · [Download PNG](../out/release/elo/%s.png)\n', stem, stem))
 ```
 
@@ -25,9 +34,17 @@ cat(sprintf('[Download SVG](../out/release/elo/%s.svg) · [Download PNG](../out/
 Each panel uses the same axes within this format. Teams are selected and ordered
 by their current rating, so these panels do not include every historical leader.
 
+::: {.chart-scroll role="region" aria-label="Full rating histories" tabindex="0"}
+
 ```{r}
 #| results: asis
 cat(sprintf('![Full %s Elo histories by team](../out/release/elo/%s_history.svg)\n\n', format_name, stem))
+```
+
+:::
+
+```{r}
+#| results: asis
 cat(sprintf('[Download SVG](../out/release/elo/%s_history.svg) · [Download PNG](../out/release/elo/%s_history.png)\n', stem, stem))
 ```
 

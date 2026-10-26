@@ -5,7 +5,8 @@ write_json <- function(value, path) {
 }
 
 code_fingerprint <- function() {
-  paths <- sort(c(list.files("R", pattern = "\\.R$", full.names = TRUE), "scripts/pipeline.R", "renv.lock"))
+  modules <- setdiff(list.files("R", pattern = "\\.R$", full.names = TRUE), "R/site.R")
+  paths <- sort(c(modules, "scripts/pipeline.R", "renv.lock"))
   if (length(paths) < 3L || !all(file.exists(paths))) stop("Run from the repository root to record code provenance")
   as.list(setNames(vapply(paths, sha256, character(1)), paths))
 }
