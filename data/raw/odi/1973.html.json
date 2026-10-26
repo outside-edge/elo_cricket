@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1973;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1973;type=year",
+  "format": "ODI",
+  "year": 1973,
+  "fetched_at": "2026-10-25T23:17:04Z",
+  "sha256": "56d0351c82820cada1b860702bd6bfad2110be802cce8582b52bd868fde08bf0",
+  "rows": 5
+}

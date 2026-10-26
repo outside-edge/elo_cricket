@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1995;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1995;type=year",
+  "format": "Test",
+  "year": 1995,
+  "fetched_at": "2026-10-25T23:08:01Z",
+  "sha256": "f3d61109acf237cf42cff6db922b10809f8a327d7cf8ca9bdc9c0b58f3f7e2df",
+  "rows": 40
+}

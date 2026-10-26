@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2015;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2015;type=year",
+  "format": "ODI",
+  "year": 2015,
+  "fetched_at": "2026-10-25T23:27:30Z",
+  "sha256": "5001396fa779ad0301c2a1255fdb867d6e3a27086e59e37e631be5555edd8fcd",
+  "rows": 146
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1998;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1998;type=year",
+  "format": "Test",
+  "year": 1998,
+  "fetched_at": "2026-10-25T23:08:50Z",
+  "sha256": "273e3d1261f4943ad8e3ec9fe799f68caacda7d2770f6def411606a84338eb4f",
+  "rows": 45
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2007;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2007;type=year",
+  "format": "ODI",
+  "year": 2007,
+  "fetched_at": "2026-10-25T23:25:48Z",
+  "sha256": "42b7ef5810635c97a1b46f72045d52066541c21bc93e52f3f81023ddba98c036",
+  "rows": 191
+}

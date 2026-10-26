@@ -152,13 +152,13 @@ write_report <- function(data, path) {
     lines <- c(
       lines, paste0("## ", format), "",
       paste("Most recent recorded result:", data$manifest$last_result[[format]]), "",
-      "| Rank | Team | Rating | Matches | Last match |",
+      "| Rank | Team | Rating | Rated matches | Last rated match |",
       "| ---: | --- | ---: | ---: | --- |",
-      sprintf("| %s | %s | %s | %s | %s |", rows$rank, label, rows$rating, rows$matches, rows$last_match),
+      sprintf("| %s | %s | %s | %s | %s |", rows$rank, label, rows$rating, rows$rated_matches, rows$last_rated_match),
       "", paste0("![", format, " rating history](", tolower(format), ".png)"), ""
     )
   }
-  writeLines(lines, path, useBytes = TRUE)
+  writeLines(head(lines, -1L), path, useBytes = TRUE)
 }
 
 publish_data <- function(prepared, analysis, figures, output, require_fresh = TRUE) {
@@ -196,6 +196,7 @@ publish_data <- function(prepared, analysis, figures, output, require_fresh = TR
     write_report(data, file.path(directory, "index.md"))
     manifest <- list(
       analysis = data$manifest, source = source$manifest, visualization = visual,
+      code_sha256 = code_fingerprint(),
       files = as.list(setNames(
         vapply(list.files(directory, full.names = TRUE), sha256, character(1)),
         list.files(directory)

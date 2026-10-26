@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1977;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1977;type=year",
+  "format": "ODI",
+  "year": 1977,
+  "fetched_at": "2026-10-25T23:18:09Z",
+  "sha256": "dad48ad5f3edafa475e81f9aa963dd1cc3d8ed5d509d88ae275d8da32b41a9d8",
+  "rows": 6
+}

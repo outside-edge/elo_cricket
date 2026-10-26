@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1941;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1941;type=year",
+  "format": "Test",
+  "year": 1941,
+  "fetched_at": "2026-10-25T22:54:02.208719+00:00",
+  "sha256": "3604543f4fc9d8e4534632839e9158b582fb23d51269628f181f4582f294a560",
+  "rows": 0
+}

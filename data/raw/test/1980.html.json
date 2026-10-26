@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1980;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1980;type=year",
+  "format": "Test",
+  "year": 1980,
+  "fetched_at": "2026-10-25T23:04:25Z",
+  "sha256": "68dd12dfe79965c0fde23d6d2cf28c3957be6119661d984597801aa7bd063f9b",
+  "rows": 26
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1979;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1979;type=year",
+  "format": "Test",
+  "year": 1979,
+  "fetched_at": "2026-10-25T23:04:10Z",
+  "sha256": "ab05a210f7fdf0334a65c3fcb6851cd352ee25b54988ed433b5ac63ea816e83f",
+  "rows": 30
+}

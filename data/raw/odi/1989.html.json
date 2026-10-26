@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1989;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1989;type=year",
+  "format": "ODI",
+  "year": 1989,
+  "fetched_at": "2026-10-25T23:21:20Z",
+  "sha256": "c0ae8d1e56b4a67d4ca7b8f098046e21b55a81d166e28604546db3fa119240ea",
+  "rows": 55
+}

@@ -55,7 +55,7 @@ testthat::test_that("monthly snapshots are actual completed calendar month ends"
   result <- calculate_elo(matches, as.Date("2025-10-24"))
   testthat::expect_true(all(format(result$monthly$date + 1L, "%d") == "01"))
   testthat::expect_true(max(result$monthly$date) < as.Date("2025-10-01"))
-  testthat::expect_true(all(result$latest$last_match <= as.Date("2025-10-24")))
+  testthat::expect_true(all(result$latest$last_rated_match <= as.Date("2025-10-24")))
 })
 
 testthat::test_that("same-day snapshots retain fitting order and partial months stay empty", {

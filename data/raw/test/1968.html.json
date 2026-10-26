@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1968;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1968;type=year",
+  "format": "Test",
+  "year": 1968,
+  "fetched_at": "2026-10-25T23:01:27Z",
+  "sha256": "a23c8a28a67da8cd9f819ec7f987125a14188e54c7e1d19e602d577537843399",
+  "rows": 19
+}

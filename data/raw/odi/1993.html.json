@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1993;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1993;type=year",
+  "format": "ODI",
+  "year": 1993,
+  "fetched_at": "2026-10-25T23:22:30Z",
+  "sha256": "1c9cf06ac419d48baea2609d351f0a2e0f6a214257e2cb1014d937f1c48ea0df",
+  "rows": 82
+}

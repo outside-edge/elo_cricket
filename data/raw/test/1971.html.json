@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1971;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1971;type=year",
+  "format": "Test",
+  "year": 1971,
+  "fetched_at": "2026-10-25T23:02:10Z",
+  "sha256": "c11ae9dfd051314da37bcb9b3209dde9e89d2244fee19e602374f729ada3382d",
+  "rows": 17
+}

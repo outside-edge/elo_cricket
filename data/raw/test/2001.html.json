@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2001;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2001;type=year",
+  "format": "Test",
+  "year": 2001,
+  "fetched_at": "2026-10-25T23:09:31Z",
+  "sha256": "e57736d31d466ab732bf526d344ddae852f94fa6e654eb0e05b1a30c475123bf",
+  "rows": 55
+}

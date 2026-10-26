@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2022;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2022;type=year",
+  "format": "T20I",
+  "year": 2022,
+  "fetched_at": "2026-10-26T00:24:03Z",
+  "sha256": "4c6222d8ae92ffea3bca15d525e8da1b6369cec01d65c3c03d21a14ebd4c3f70",
+  "rows": 531
+}

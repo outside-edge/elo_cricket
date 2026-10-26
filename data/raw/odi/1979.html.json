@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1979;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1979;type=year",
+  "format": "ODI",
+  "year": 1979,
+  "fetched_at": "2026-10-25T23:18:42Z",
+  "sha256": "dc542f2b909d63008706b435fcafc9b36ceb32324a3e7f11d39dc059fd5106db",
+  "rows": 26
+}

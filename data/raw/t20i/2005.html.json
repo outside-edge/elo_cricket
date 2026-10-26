@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2005;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2005;type=year",
+  "format": "T20I",
+  "year": 2005,
+  "fetched_at": "2026-10-26T00:20:04Z",
+  "sha256": "0fedd7e87a58e357aa726c54cc81caf534129665018c5511fb038693e8f80aa7",
+  "rows": 3
+}

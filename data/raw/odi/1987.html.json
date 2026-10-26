@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1987;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1987;type=year",
+  "format": "ODI",
+  "year": 1987,
+  "fetched_at": "2026-10-25T23:20:50Z",
+  "sha256": "d38856161783018ee8108f67065c35382a2745659a7b81045a3bb418789f98ab",
+  "rows": 74
+}

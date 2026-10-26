@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1963;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1963;type=year",
+  "format": "Test",
+  "year": 1963,
+  "fetched_at": "2026-10-25T23:00:05Z",
+  "sha256": "3063690a5b73b48d028cdb9f439ca25f8d10a2fb94829b48103a492c561694fd",
+  "rows": 13
+}

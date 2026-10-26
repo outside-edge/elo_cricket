@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2022;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2022;type=year",
+  "format": "Test",
+  "year": 2022,
+  "fetched_at": "2026-10-25T23:15:11Z",
+  "sha256": "843d21c3325d6a3c533708301489ed0eff105b4bf56a9d06e91cb4cd5210980a",
+  "rows": 43
+}

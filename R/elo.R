@@ -61,11 +61,11 @@ elo_snapshot <- function(model, date) {
   result <- data.frame(
     model = "elo", format = matches$format[1], date = date, team_id = last$team_id,
     team = last$team, rating = last$rating,
-    matches = as.integer(counts[as.character(last$team_id)]), last_match = last$date
+    rated_matches = as.integer(counts[as.character(last$team_id)]), last_rated_match = last$date
   )
   if (anyNA(result$rating)) stop("Missing rating for a team with completed matches")
-  result$is_active <- as.integer(date - result$last_match) <= 730L
-  result$is_provisional <- result$matches < 10L
+  result$is_active <- as.integer(date - result$last_rated_match) <= 730L
+  result$is_provisional <- result$rated_matches < 10L
   result$rank <- NA_integer_
   result$rank[result$is_active] <- rank(-result$rating[result$is_active], ties.method = "min")
   result <- result[order(!result$is_active, -result$rating, result$team_id), ]

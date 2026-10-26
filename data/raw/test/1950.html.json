@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1950;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1950;type=year",
+  "format": "Test",
+  "year": 1950,
+  "fetched_at": "2026-10-25T22:56:24.647233+00:00",
+  "sha256": "668d9f3c4411e663831c460ce181bdbb7be7da609986f4a39ff20feebece45f2",
+  "rows": 10
+}

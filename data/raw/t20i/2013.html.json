@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2013;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2013;type=year",
+  "format": "T20I",
+  "year": 2013,
+  "fetched_at": "2026-10-26T00:21:24Z",
+  "sha256": "f75d5a189757f9ccd884abc22feec6736d4350cf71cd12203dedd9aa42d054b3",
+  "rows": 53
+}
