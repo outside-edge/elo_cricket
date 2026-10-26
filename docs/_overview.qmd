@@ -42,6 +42,6 @@ or venue adjustments.
 
 ## Beyond Elo
 
-Elo is the first published model. Work on dynamic strength, uncertainty,
-lineups, and venue context is described in the [research agenda](docs/research.qmd).
-Each future model will have its own methods and results.
+GAM, Stan, and Glicko-2 have been fitted and evaluated in a Test-match experiment.
+See [Research](docs/research.qmd) for their ratings, charts, and forecast scores.
+These experimental results are separate from the weekly Elo publication.

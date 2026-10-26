@@ -1,9 +1,35 @@
 ---
-title: Research agenda
+title: Research and experimental ratings
 ---
 
-Experimental GAM, Glicko-2, and Stan implementations now share a Test-match
-forecast comparison. Elo remains the scheduled publication adapter.
+GAM, Stan, and Glicko-2 have been fitted to 1,039 Tests completed before
+January 2024 and evaluated on 53 Tests starting in 2024. These are experimental
+results, not current ratings. Elo remains the model updated weekly.
+
+## See the experimental ratings
+
+| Model | Ratings | Charts |
+| --- | --- | --- |
+| Stan | [Strengths and 90% intervals](https://github.com/outside-edge/elo_cricket/blob/main/out/analysis/models/test/2024-01-01/strengths.csv) (rows labeled `stan_dynamic_probit`) | [Team trajectories](https://github.com/outside-edge/elo_cricket/blob/main/figs/models/test/2024-01-01/stan_dynamic_probit.png) |
+| GAM | [Strengths and 90% intervals](https://github.com/outside-edge/elo_cricket/blob/main/out/analysis/models/test/2024-01-01/strengths.csv) (rows labeled `gam`) | [Team trajectories](https://github.com/outside-edge/elo_cricket/blob/main/figs/models/test/2024-01-01/gam.png) |
+| Glicko-2 | [Ratings, rating deviations, and volatility](https://github.com/outside-edge/elo_cricket/blob/main/out/analysis/models/test/2024-01-01/glicko_ratings.csv) | No trajectory chart yet |
+
+The files open on GitHub. GAM and Stan strengths retain each model's scale;
+their numerical values should not be compared across models. The strength file
+labels retrospective estimates and forecasts separately. Glicko-2's `Player`
+column contains team IDs, which can be matched to names in the strength file.
+
+[Forecast scores](https://github.com/outside-edge/elo_cricket/blob/main/out/analysis/models/test/2024-01-01/metrics.csv)
+and [match probabilities](https://github.com/outside-edge/elo_cricket/blob/main/out/analysis/models/test/2024-01-01/predictions.csv)
+compare the models on the same held-out matches. This single-year pilot, with
+only three drawn Tests, does not establish a preferred model. The
+[experiment specification](https://github.com/outside-edge/elo_cricket/blob/main/docs/model_experiment.md)
+documents the models and reproduction commands;
+[Stan diagnostics](https://github.com/outside-edge/elo_cricket/blob/main/out/analysis/models/test/2024-01-01/stan_diagnostics.json)
+and the [review record](https://github.com/outside-edge/elo_cricket/blob/main/docs/model_review.md)
+document the checks.
+
+## Research agenda
 
 ```{r}
 #| results: asis
