@@ -1,0 +1,7 @@
+---
+title: T20I ratings
+params:
+  format: T20I
+---
+
+{{< include _ratings.qmd >}}

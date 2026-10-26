@@ -1,0 +1,47 @@
+```{r}
+#| include: false
+source("R/site.R")
+publication <- read_publication("out/release/elo")
+```
+
+Independent ratings of men's international teams, with the match results,
+methods, and history available to inspect.
+
+::: {.publication-date}
+**Elo ratings through `r publication$manifest$analysis$as_of`.**
+Updated weekly, with monthly history available to download.
+:::
+
+```{r}
+#| results: asis
+cat('<div class="format-grid">\n')
+for (format in c("Test", "ODI", "T20I")) {
+  table <- head(site_ratings(publication, format), 5)
+  cat('<section class="format-card">\n')
+  cat(sprintf('<h2><a href="docs/%s.html">%s</a></h2>\n', tolower(format), format))
+  cat(knitr::kable(table[c("Rank", "Team", "Elo")], format = "html", escape = TRUE))
+  cat(sprintf('<p><a href="docs/%s.html">All ratings and histories →</a></p>\n', tolower(format)))
+  cat('</section>\n')
+}
+cat('</div>\n')
+```
+
+## Read the ratings
+
+A higher Elo rating means a stronger team under this model. Results update each
+format separately; rating points should not be compared across formats.
+
+The format pages show recent trajectories, full histories by team, and all
+currently active teams. Teams with fewer than
+`r publication$manifest$analysis$specification$provisional_matches` rated matches are marked
+provisional. These are baseline Elo estimates, without uncertainty intervals
+or venue adjustments.
+
+[How the ratings work](docs/methods.qmd){.btn .btn-primary}
+[Download the data](docs/data.qmd){.btn .btn-outline-primary}
+
+## Beyond Elo
+
+Elo is the first published model. Work on dynamic strength, uncertainty,
+lineups, and venue context is described in the [research agenda](docs/research.qmd).
+Each future model will have its own methods and results.

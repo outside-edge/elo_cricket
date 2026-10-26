@@ -10,6 +10,21 @@ Independent ratings of men's international teams. Results enter on their complet
 
 Most recent recorded result: 2026-10-24
 
+![ODI recent rating history](odi.png)
+
+[Download recent-history SVG](odi.svg)
+
+<details>
+<summary>Full history by team</summary>
+
+![ODI full rating histories](odi_history.png)
+
+[Download full-history SVG](odi_history.svg)
+
+</details>
+
+### Current ratings
+
 | Rank | Team | Rating | Rated matches | Last rated match |
 | ---: | --- | ---: | ---: | --- |
 | 1 | Pakistan | 1428 | 983 | 2026-10-20 |
@@ -33,11 +48,24 @@ Most recent recorded result: 2026-10-24
 | 19 | Canada | 719 | 114 | 2026-10-17 |
 | 20 | Oman | 611 | 76 | 2026-10-19 |
 
-![ODI rating history](odi.png)
-
 ## T20I
 
 Most recent recorded result: 2026-10-24
+
+![T20I recent rating history](t20i.png)
+
+[Download recent-history SVG](t20i.svg)
+
+<details>
+<summary>Full history by team</summary>
+
+![T20I full rating histories](t20i_history.png)
+
+[Download full-history SVG](t20i_history.svg)
+
+</details>
+
+### Current ratings
 
 | Rank | Team | Rating | Rated matches | Last rated match |
 | ---: | --- | ---: | ---: | --- |
@@ -149,11 +177,24 @@ Most recent recorded result: 2026-10-24
 | 106 | Serbia | 542 | 52 | 2026-07-14 |
 | 107 | Mongolia | 478 | 19 | 2026-10-14 |
 
-![T20I rating history](t20i.png)
-
 ## Test
 
 Most recent recorded result: 2026-10-22
+
+![Test recent rating history](test.png)
+
+[Download recent-history SVG](test.svg)
+
+<details>
+<summary>Full history by team</summary>
+
+![Test full rating histories](test_history.png)
+
+[Download full-history SVG](test_history.svg)
+
+</details>
+
+### Current ratings
 
 | Rank | Team | Rating | Rated matches | Last rated match |
 | ---: | --- | ---: | ---: | --- |
@@ -169,5 +210,3 @@ Most recent recorded result: 2026-10-22
 | 10 | Zimbabwe | 787 | 130 | 2026-06-30 |
 | 11 | Ireland | 761 | 13 | 2026-05-29 |
 | 12 | Afghanistan | 732 | 14 | 2026-10-13 |
-
-![Test rating history](test.png)

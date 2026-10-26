@@ -1,0 +1,50 @@
+---
+title: Data and downloads
+---
+
+```{r}
+#| include: false
+source("R/site.R")
+publication <- read_publication("out/release/elo")
+counts <- publication$manifest$source$match_counts
+```
+
+**Publication cutoff: `r publication$manifest$analysis$as_of`.**
+All downloads below belong to this publication.
+
+| Download | Contents |
+| --- | --- |
+| [Current ratings](../out/release/elo/latest.csv) | Every rated team, with active/provisional flags, current rank, and last rated match |
+| [Monthly history](../out/release/elo/monthly.csv) | Calendar-month-end ratings for each format and team |
+| [Match updates](../out/release/elo/updates.csv) | Both teams' ratings before and after every rated match |
+| [Publication metadata](../out/release/elo/manifest.json) | Model specification, source receipts, and file checksums |
+
+## Coverage
+
+```{r}
+#| results: asis
+coverage <- data.frame(
+  Format = names(counts), Matches = as.integer(unlist(counts)),
+  `Latest result` = unlist(publication$manifest$analysis$last_result[names(counts)]), check.names = FALSE
+)
+knitr::kable(coverage, format = "html", escape = TRUE, row.names = FALSE)
+```
+
+The match counts include no-results, which do not contribute rating updates.
+The source is ESPNcricinfo's annual
+[match-results tables](https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2025;type=year).
+Collection starts in 1877 for Tests, 1971 for ODIs, and 2005 for T20Is. Coverage
+is the set of matches listed there; it has not been independently certified as a census.
+
+## Using the files
+
+Join by stable team and match IDs, and keep formats separate. A missing current
+rank indicates an inactive team. Month-end history excludes incomplete months;
+use the current-ratings file for the latest cutoff.
+
+The files are regenerated together after successful checks. Earlier publications
+remain available through the repository's
+[publication history](https://github.com/outside-edge/elo_cricket/commits/main/out/release/elo).
+
+Charts can be downloaded as SVG or PNG from the [Test](test.qmd), [ODI](odi.qmd),
+and [T20I](t20i.qmd) pages. See [methods](methods.qmd) for the rating definitions.

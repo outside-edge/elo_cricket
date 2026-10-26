@@ -18,3 +18,7 @@ out/**/stage-*/
 out/**/*.previous/
 figs/stage-*/
 figs/*.previous/
+out/site/
+
+/.quarto/
+**/*.quarto_ipynb

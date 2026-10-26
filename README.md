@@ -9,6 +9,7 @@ The maintained adapter currently calculates **Elo** for men's Tests, ODIs, and
 T20Is. The existing Glickman and Stan analyses remain research code. They are not
 silently replaced with Elo, and they are not yet scheduled for publication.
 
+[Ratings website](https://outside-edge.github.io/elo_cricket/) ·
 [Latest Elo tables](out/release/elo/index.md) ·
 [Latest ratings](out/release/elo/latest.csv) ·
 [Monthly history](out/release/elo/monthly.csv) ·
@@ -53,6 +54,7 @@ also revisits older source years to incorporate historical corrections.
 | Analyze | `out/analysis/<model>/` | Fit each model independently; save ratings, diagnostics, and specification |
 | Visualize | `figs/<model>/` | Render saved model outputs without fetching or refitting |
 | Publish | `out/release/<model>/` | Assemble verified tables, charts, and provenance |
+| Site | `out/site/` | Render the verified publication as a website |
 
 The implemented adapter writes under `elo/`. Future Glickman and Stan adapters
 should use their own directories and model identifiers. They can have different
@@ -117,8 +119,12 @@ predictive performance.
   display rules, not ICC eligibility rules.
 
 The update ledger records both teams' ratings before and after every rated match.
-Charts show month-end histories of the current top ten active teams, without
-smoothing. Histories are reconstructed from the saved source version; they are
+Charts show end-of-day match updates for the current top ten active teams, without
+smoothing. Recent-history comparisons cover the current and preceding nine calendar
+years, with team names and current ratings at the line ends. Full histories appear
+in separate team panels with common axes. PNG and SVG versions are published.
+The same team uses the same color and line type across formats within a publication.
+Histories are reconstructed from the saved source version; they are
 not evidence of what could have been published using records available at the time.
 Git history preserves successive actual publications.
 
@@ -127,19 +133,38 @@ errors. Glickman uncertainty and Stan posterior summaries belong to their own
 models and should not be presented as interchangeable Elo standard errors.
 Before comparing methods, use common chronological forecast cutoffs and document
 each model's treatment of draws, ties, inactivity, and missing covariates.
+The [modeling proposal](docs/rating_models.md) sets out institutional versus lineup
+strength, TrueSkill-style and GAM extensions, venue context, and the distinction
+between live ratings and retrospective smoothing.
 
 ## Publication and checks
 
 The workflow is scheduled for Monday at 06:17 UTC, with monthly snapshots included
 in each update. Scheduling starts when the workflow is on the default branch.
-It runs `make check`, updates all stages, and commits the data/output directories
-only after successful validation. GitHub schedules can be delayed or disabled;
-the publication manifest records the actual cutoff.
+It runs `make check`, updates all stages, and renders and checks the website before
+committing the data/output directories. GitHub schedules can be delayed or disabled;
+the publication manifest records the actual cutoff. After committing an update,
+the workflow passes that commit to the Pages workflow, which renders and deploys
+the corresponding website. Merges to `main` also rebuild the site.
+
+The website uses [Quarto 1.10.19](https://quarto.org/docs/get-started/).
+Its source is `index.qmd`, `docs/`, and `_quarto.yml`; compiled HTML stays in the
+ignored `out/site/` directory. To build and check it locally:
+
+```sh
+make site
+```
+
+Rendering verifies and reads `out/release/elo/` without fetching or fitting.
+The site check validates local page and asset links and verifies the copied
+downloads against the original publication manifest. CI renders all eight pages.
+GitHub Pages uses the Actions publishing source and the `github-pages` environment.
 
 Every stage writes to a temporary directory before replacing its previous output.
 Input/output hashes prevent mixing different data, model, or figure versions.
-Publication also requires every stage's code hashes to match the current R code
-and dependency lockfile. Rebuild preparation, analysis, and figures after changing code.
+Publication also requires every stage's code hashes to match the current pipeline R code
+and dependency lockfile. Rebuild preparation, analysis, and figures after changing that code.
+The website reader in `R/site.R` is excluded from model-stage fingerprints.
 A failed stage leaves the previous publication intact. If interrupted between
 directory renames, recover `<output>.previous` before rerunning; the pipeline
 refuses to discard that recovery directory automatically.
@@ -153,7 +178,8 @@ make ci-docker
 real source fixtures, the legacy BOM and outcome regressions, exact numerical
 reference checks, absence of future-data effects, and publication failure cases.
 `make ci-docker` uses the standard `rocker/r-ver:4.6.0` image and requires a running
-Docker daemon. The GitHub checks run the same R tests on Ubuntu.
+Docker daemon. It checks the R pipeline; run `make site` separately with Quarto
+to check the website. The GitHub checks run both on Ubuntu.
 
 ## Research and historical outputs
 
