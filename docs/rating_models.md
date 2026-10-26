@@ -1,10 +1,10 @@
 # What should a cricket rating estimate?
 
-The production Elo series is a reproducible baseline. The next models should
+The production Elo series is a reproducible baseline. Alternative models should
 make different assumptions explicit and earn their place through prediction and
 model checks. A smoother-looking curve alone is not evidence of a better model.
 
-The [implemented experiment](model_experiment.md) now fits the GAM, Glicko-2,
+The [implemented experiment](https://github.com/outside-edge/elo_cricket/blob/main/docs/model_experiment.md) now fits the GAM, Glicko-2,
 and dynamic ordinal-probit Stan models, with shared Test-match forecasts,
 simulation checks, and saved diagnostics. The conceptual distinctions below
 remain relevant when extending them to lineups or regular publication.
