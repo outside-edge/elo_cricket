@@ -117,8 +117,12 @@ predictive performance.
   display rules, not ICC eligibility rules.
 
 The update ledger records both teams' ratings before and after every rated match.
-Charts show month-end histories of the current top ten active teams, without
-smoothing. Histories are reconstructed from the saved source version; they are
+Charts show end-of-day match updates for the current top ten active teams, without
+smoothing. Recent-history comparisons cover the current and preceding nine calendar
+years, with team names and current ratings at the line ends. Full histories appear
+in separate team panels with common axes. PNG and SVG versions are published.
+The same team uses the same color and line type across formats within a publication.
+Histories are reconstructed from the saved source version; they are
 not evidence of what could have been published using records available at the time.
 Git history preserves successive actual publications.
 
@@ -127,6 +131,9 @@ errors. Glickman uncertainty and Stan posterior summaries belong to their own
 models and should not be presented as interchangeable Elo standard errors.
 Before comparing methods, use common chronological forecast cutoffs and document
 each model's treatment of draws, ties, inactivity, and missing covariates.
+The [modeling proposal](docs/rating_models.md) sets out institutional versus lineup
+strength, TrueSkill-style and GAM extensions, venue context, and the distinction
+between live ratings and retrospective smoothing.
 
 ## Publication and checks
 

@@ -101,30 +101,22 @@ read_analysis <- function(directory) {
   list(manifest = manifest, latest = read("latest"), monthly = read("monthly"), updates = read("updates"))
 }
 
-chart_data <- function(latest, monthly, format_name) {
-  leaders <- head(latest[latest$format == format_name & latest$is_active, ], 10)
-  history <- monthly[monthly$format == format_name & monthly$team_id %in% leaders$team_id, ]
-  history$team <- leaders$team[match(history$team_id, leaders$team_id)]
-  history
-}
-
 visualize_data <- function(input, output) {
   data <- read_analysis(input)
-  .data <- rlang::.data
+  styles <- chart_styles(data$latest)
   replace_directory(output, function(directory) {
     for (format in unique(data$latest$format)) {
-      history <- chart_data(data$latest, data$monthly, format)
-      chart <- ggplot2::ggplot(history, ggplot2::aes(x = .data$date, y = .data$rating, colour = .data$team)) +
-        ggplot2::geom_line(linewidth = 0.45) +
-        ggplot2::theme_minimal(base_size = 11) +
-        ggplot2::labs(
-          title = paste(format, toupper(data$manifest$model), "ratings"),
-          subtitle = paste("Month-end history of the current top ten active teams · through", data$manifest$as_of),
-          x = NULL, y = "Rating", colour = NULL,
-          caption = "Completed matches only; no smoothing or interpolation. Independent of ICC rankings."
-        ) +
-        ggplot2::theme(panel.grid.minor = ggplot2::element_blank())
-      ggplot2::ggsave(file.path(directory, paste0(tolower(format), ".png")), chart, width = 11, height = 6, dpi = 150)
+      charts <- ratings_charts(data, format, styles)
+      for (view in names(charts)) {
+        stem <- paste0(tolower(format), if (view == "history") "_history" else "")
+        height <- if (view == "history") 12 else 7
+        ggplot2::ggsave(file.path(directory, paste0(stem, ".png")), charts[[view]],
+          width = 12, height = height, dpi = 180, bg = "white"
+        )
+        ggplot2::ggsave(file.path(directory, paste0(stem, ".svg")), charts[[view]],
+          device = grDevices::svg, width = 12, height = height, bg = "white"
+        )
+      }
     }
     manifest <- list(
       analysis_sha256 = sha256(file.path(input, "manifest.json")),
@@ -152,10 +144,16 @@ write_report <- function(data, path) {
     lines <- c(
       lines, paste0("## ", format), "",
       paste("Most recent recorded result:", data$manifest$last_result[[format]]), "",
+      paste0("![", format, " recent rating history](", tolower(format), ".png)"), "",
+      paste0("[Download recent-history SVG](", tolower(format), ".svg)"), "",
+      "<details>", "<summary>Full history by team</summary>", "",
+      paste0("![", format, " full rating histories](", tolower(format), "_history.png)"), "",
+      paste0("[Download full-history SVG](", tolower(format), "_history.svg)"), "",
+      "</details>", "", "### Current ratings", "",
       "| Rank | Team | Rating | Rated matches | Last rated match |",
       "| ---: | --- | ---: | ---: | --- |",
       sprintf("| %s | %s | %s | %s | %s |", rows$rank, label, rows$rating, rows$rated_matches, rows$last_rated_match),
-      "", paste0("![", format, " rating history](", tolower(format), ".png)"), ""
+      ""
     )
   }
   writeLines(head(lines, -1L), path, useBytes = TRUE)

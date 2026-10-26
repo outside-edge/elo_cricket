@@ -18,7 +18,7 @@ testthat::test_that("offline stages produce a coherent publication and reject ch
   }
   testthat::expect_equal(nrow(read_analysis(analysis)$latest), 100)
   data <- read_analysis(analysis)
-  test_history <- chart_data(data$latest, data$monthly, "Test")
+  test_history <- chart_data(data$latest, data$updates, "Test")
   testthat::expect_identical(unique(test_history$format), "Test")
   testthat::expect_false("Austria" %in% test_history$team)
   report <- readLines(file.path(publication, "index.md"))

@@ -1,6 +1,7 @@
 source("R/paths.R")
 source("R/acquisition.R")
 source("R/elo.R")
+source("R/visualization.R")
 source("R/pipeline.R")
 files <- c(
   list.files("R", pattern = "\\.R$", full.names = TRUE),

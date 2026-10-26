@@ -6,6 +6,7 @@ Imports:
     digest,
     EloRating,
     ggplot2,
+    ggrepel,
     httr2,
     jsonlite,
     readr,

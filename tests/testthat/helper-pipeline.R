@@ -1,6 +1,7 @@
 root <- normalizePath("../..")
 source(file.path(root, "R/acquisition.R"))
 source(file.path(root, "R/elo.R"))
+source(file.path(root, "R/visualization.R"))
 source(file.path(root, "R/pipeline.R"))
 source(file.path(root, "scripts/prepare_matches.R"))
 fixture <- function(name) file.path(root, "tests/fixtures", name)

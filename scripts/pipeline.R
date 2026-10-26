@@ -16,6 +16,7 @@ if (is.na(as_of) || as_of >= today) stop("Cutoff must be a completed UTC calenda
 source("R/paths.R")
 source("R/acquisition.R")
 source("R/elo.R")
+source("R/visualization.R")
 source("R/pipeline.R")
 if (command %in% c("fetch", "update")) fetch_sources(pipeline_paths$raw, as_of, refresh)
 if (command %in% c("prepare", "update")) {
