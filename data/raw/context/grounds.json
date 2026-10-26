@@ -1,0 +1,6 @@
+{
+  "source": "https://github.com/outside-edge/fairly_random/blob/0ed74ecb4f193b4225e9801a9a8cdbe753b82861/data/grounds.csv",
+  "sha256": "bb47bcefe7a968c42005a280522aaae189f43b7a273ebf2bca4458b3605d0783",
+  "note": "Legacy ground IDs are not current ESPN profile IDs; join via audited match IDs and full ground names.",
+  "source_commit": "0ed74ecb4f193b4225e9801a9a8cdbe753b82861"
+}

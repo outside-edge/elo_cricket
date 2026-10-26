@@ -1,4 +1,4 @@
-.PHONY: sync fetch prepare analyze visualize publish update site lint test check ci-docker
+.PHONY: sync fetch prepare analyze visualize publish update site lint test check ci-docker model-data models check-models
 
 QUARTO ?= quarto
 
@@ -15,6 +15,15 @@ test:
 	Rscript -e 'testthat::test_dir("tests/testthat", stop_on_failure = TRUE)'
 
 check: lint test
+
+model-data:
+	Rscript scripts/models.R prepare
+
+models:
+	Rscript scripts/models.R compare $(MODEL_ARGS)
+
+check-models:
+	Rscript scripts/check_models.R
 
 site:
 	$(QUARTO) render

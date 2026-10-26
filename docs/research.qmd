@@ -2,8 +2,8 @@
 title: Research agenda
 ---
 
-The models discussed here are proposals. Elo is currently the only verified
-publication adapter.
+Experimental GAM, Glicko-2, and Stan implementations now share a Test-match
+forecast comparison. Elo remains the scheduled publication adapter.
 
 ```{r}
 #| results: asis

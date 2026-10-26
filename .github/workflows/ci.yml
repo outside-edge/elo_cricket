@@ -21,6 +21,10 @@ jobs:
           use-public-rspm: true
       - uses: r-lib/actions/setup-renv@f9a764fea8d5c63df6ef9a5c7795bf7deb5d7e05 # v2
       - run: make check
+      - name: Install CmdStan and test the dynamic model
+        run: |
+          Rscript -e 'dir.create("renv/local/cmdstan", recursive=TRUE, showWarnings=FALSE); cmdstanr::install_cmdstan(dir="renv/local/cmdstan", version="2.40.0", cores=2)'
+          make check-models
       - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           version: '1.10.19'

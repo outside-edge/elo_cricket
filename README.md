@@ -5,9 +5,11 @@ and Stan-based ratings of international cricket teams. Acquisition, match
 preparation, model fitting, visualization, and publication run independently.
 R orchestrates the pipeline; Stan remains the language for its model definitions.
 
-The maintained adapter currently calculates **Elo** for men's Tests, ODIs, and
-T20Is. The existing Glickman and Stan analyses remain research code. They are not
-silently replaced with Elo, and they are not yet scheduled for publication.
+The production adapter calculates **Elo** for men's Tests, ODIs, and T20Is.
+An experimental R pipeline also fits **mgcv team splines**, a **dynamic
+TrueSkill-style ordinal-probit model in Stan**, and **Glicko-2**, with shared
+forecast evaluation. These models have been fitted and tested on Tests; their
+results are separate from the scheduled Elo publication.
 
 [Ratings website](https://outside-edge.github.io/elo_cricket/) ·
 [Latest Elo tables](out/release/elo/index.md) ·
@@ -56,13 +58,15 @@ also revisits older source years to incorporate historical corrections.
 | Publish | `out/release/<model>/` | Assemble verified tables, charts, and provenance |
 | Site | `out/site/` | Render the verified publication as a website |
 
-The implemented adapter writes under `elo/`. Future Glickman and Stan adapters
-should use their own directories and model identifiers. They can have different
+The production adapter writes under `elo/`; experimental comparisons write under
+`models/<format>/<origin>/`, with separate model identifiers. They have different
 rating scales, fitting periods, covariates, and uncertainty summaries. The shared
 match table preserves `drawn`, `tied`, and no-result outcomes separately; its
 `score` is a convenient 1/0.5/0 encoding, not a prescribed likelihood for every
-model. Additional covariates need their own documented acquisition and joins by
-match/team ID. The annual results source does not supply toss or umpire covariates.
+model. Additional covariates have their own documented acquisition and joins by
+match/team ID. Venue profiles and the audited `fairly_random` mapping supply
+ground and country context. The annual results source does not supply toss or
+umpire covariates.
 
 ## Data
 
@@ -136,6 +140,35 @@ each model's treatment of draws, ties, inactivity, and missing covariates.
 The [modeling proposal](docs/rating_models.md) sets out institutional versus lineup
 strength, TrueSkill-style and GAM extensions, venue context, and the distinction
 between live ratings and retrospective smoothing.
+
+## Experimental models
+
+The [experiment specification](docs/model_experiment.md) documents the likelihoods,
+priors, venue joins, missingness, and validation protocol, with installation and
+run commands. `make model-data` prepares audited context; `make models` fits the
+default 2024 Test experiment. Visualization runs separately from saved outputs.
+
+The GAM uses paired team trajectories and country/ground deviations in home
+advantage. Stan adds quarterly strength evolution, uncertainty, and country,
+ground, and time effects on draw propensity. Glicko-2 uses `PlayerRatings` with
+calendar-month updates and explicit inactivity handling. These are team models;
+they do not yet estimate player contributions or use toss, lineup, or umpire data.
+
+Every model predicts the same future matches using a common cutoff. Comparators
+include Elo and Glicko with and without home calibration and recent outcome
+frequencies. Outputs include [match probabilities](out/analysis/models/test/2024-01-01/predictions.csv),
+[scores](out/analysis/models/test/2024-01-01/metrics.csv),
+[strengths and intervals](out/analysis/models/test/2024-01-01/strengths.csv), and
+[Stan diagnostics](out/analysis/models/test/2024-01-01/stan_diagnostics.json).
+The [GAM](figs/models/test/2024-01-01/gam.png) and
+[Stan](figs/models/test/2024-01-01/stan_dynamic_probit.png) charts use separate team
+panels and distinguish retrospective histories from forecasts. Their strength
+scales differ and should not be averaged.
+
+This is a retrospective implementation experiment, not evidence for a production
+winner. Only three of the 53 evaluation Tests were drawn. Wider rolling-origin
+evaluation, prior sensitivity, and better recent venue coverage—especially for
+T20Is—remain necessary before publishing these as regular ratings.
 
 ## Publication and checks
 
