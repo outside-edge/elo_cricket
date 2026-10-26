@@ -18,8 +18,8 @@ a { color: var(--edge-accent); }
 figure img { width: 100%; height: auto; }
 .chart-scroll { overflow-x: auto; }
 .chart-scroll figure { min-width: 800px; }
-.cell-output-display { overflow-x: auto; }
-.cell-output-display td:last-child { white-space: nowrap; }
+.ratings-table { overflow-x: auto; }
+.ratings-table td:last-child { white-space: nowrap; }
 .btn-primary { background: var(--edge-accent); border-color: var(--edge-accent); }
 .btn-outline-primary { color: var(--edge-accent); border-color: var(--edge-accent); }
 @media (max-width: 900px) { .format-grid { grid-template-columns: 1fr; } }
