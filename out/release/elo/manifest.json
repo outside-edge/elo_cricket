@@ -1,8 +1,8 @@
 {
   "analysis": {
     "model": "elo",
-    "as_of": "2026-10-24",
-    "input_sha256": "439cc41070cc71fd798f8d0fecfbf61c24629c5605182a1a18eaf34e35dd6c57",
+    "as_of": "2026-10-25",
+    "input_sha256": "93493cb0b02e7fa2d725780fcaff15b3948b0d2f20c70a0a91e059547e7ba733",
     "specification": {
       "model": "elo",
       "implementation": "EloRating::e.single",
@@ -19,8 +19,8 @@
       "provisional_matches": 10
     },
     "last_result": {
-      "ODI": "2026-10-24",
-      "T20I": "2026-10-24",
+      "ODI": "2026-10-25",
+      "T20I": "2026-10-25",
       "Test": "2026-10-22"
     },
     "r_version": "4.6.0",
@@ -34,29 +34,29 @@
       "scripts/pipeline.R": "8875853301c18073af95add7841762f5491c0c6e80640f4b65527c51d02ba824"
     },
     "files": {
-      "latest.csv": "2c6ffdab5046a202dd66dbfc204e477360abeb7cee292eb74775b868ad059716",
+      "latest.csv": "e6a99ad213d879ff03b869cba66a70cd1b8ee19994a106eead28911355a3e7d8",
       "monthly.csv": "5ce366d66a5d35e8efa49a60fd9ef099d8f600bb7794ad5f60a761790b60f964",
-      "updates.csv": "52e1bcd923f0f44a4f06bc02dde03c33237a91b4aa2a43f7407534c392175d2e"
+      "updates.csv": "c91a43e39b6b4bd3fbd5b0c313aedd5a42ead3d8d9fecab796f127654b51c996"
     }
   },
   "source": {
     "schema_version": 1,
-    "as_of": "2026-10-24",
+    "as_of": "2026-10-25",
     "match_counts": {
-      "ODI": 5045,
-      "T20I": 4217,
+      "ODI": 5047,
+      "T20I": 4220,
       "Test": 2638
     },
     "last_result": {
-      "ODI": "2026-10-24",
-      "T20I": "2026-10-24",
+      "ODI": "2026-10-25",
+      "T20I": "2026-10-25",
       "Test": "2026-10-22"
     },
     "outcome_counts": {
       "drawn": 797,
       "no result": 280,
       "tied": 97,
-      "win": 10726
+      "win": 10731
     },
     "sources": [
       {
@@ -1396,8 +1396,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2025;type=year",
         "format": "Test",
         "year": 2025,
-        "fetched_at": "2026-10-26T00:19:40Z",
-        "sha256": "19cb5010e228f256a627885b930c76460645396a7e0068d6930ca61d9d9875dd",
+        "fetched_at": "2026-10-26T05:09:54Z",
+        "sha256": "518cd247aeae43f4098ce4eb4c8911f37d2535b997766afcf4e9046866c1beee",
         "rows": 42
       },
       {
@@ -1405,8 +1405,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2026;type=year",
         "format": "Test",
         "year": 2026,
-        "fetched_at": "2026-10-26T00:19:50Z",
-        "sha256": "eb201004f6445df24a0c4a15e0feaaef4e494aa47e9a21bf065982a78b696b86",
+        "fetched_at": "2026-10-26T05:09:59Z",
+        "sha256": "02de009d1b428311b2316b032d974e94bc8534fe70009aa1124d13976fba9a9d",
         "rows": 23
       },
       {
@@ -1900,8 +1900,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2025;type=year",
         "format": "ODI",
         "year": 2025,
-        "fetched_at": "2026-10-26T00:19:54Z",
-        "sha256": "7c0e35d688370e98333dd37d2fa53df4eac9e5e4931d96d04a17d1de0eddb043",
+        "fetched_at": "2026-10-26T05:10:11Z",
+        "sha256": "09697637a836de4e8cf75d923e685fe77e71d2663bac77607687fd9116cd986f",
         "rows": 115
       },
       {
@@ -1909,8 +1909,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2026;type=year",
         "format": "ODI",
         "year": 2026,
-        "fetched_at": "2026-10-26T00:19:59Z",
-        "sha256": "ddf03c550362de1c3217514dafb1fc2172d37066204c7a0ed05a0c0113739899",
+        "fetched_at": "2026-10-26T05:10:25Z",
+        "sha256": "726ff60a9678e7c83419f8885ca306698d989a017c5820dc71d127d12eb2fcf3",
         "rows": 111
       },
       {
@@ -2098,8 +2098,8 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2025;type=year",
         "format": "T20I",
         "year": 2025,
-        "fetched_at": "2026-10-26T00:24:51Z",
-        "sha256": "a43c9ba16f63ba634f1691cae5a4e2fbbc3c75fec3d51e087e5bb9a539dd13f3",
+        "fetched_at": "2026-10-26T05:11:13Z",
+        "sha256": "50fb40f7533a18a5618dc478ee2d0bb310b28bded16c76895b84573674826f60",
         "rows": 579
       },
       {
@@ -2107,12 +2107,12 @@
         "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2026;type=year",
         "format": "T20I",
         "year": 2026,
-        "fetched_at": "2026-10-26T00:25:07Z",
-        "sha256": "9fcd15563bf63e740dde04a1b2edb95767c55036b2865c4b23492c62186fa5fe",
+        "fetched_at": "2026-10-26T05:12:02Z",
+        "sha256": "2d2ead703775fce7b241e47b2489161850656b8c98a6f8fbb44c4284f2297bf3",
         "rows": 561
       }
     ],
-    "matches_sha256": "439cc41070cc71fd798f8d0fecfbf61c24629c5605182a1a18eaf34e35dd6c57",
+    "matches_sha256": "93493cb0b02e7fa2d725780fcaff15b3948b0d2f20c70a0a91e059547e7ba733",
     "code_sha256": {
       "R/acquisition.R": "70a51080e845100a95fe9b96cdc70a5803a1f1ecc4b19872eafedd37a8abdf0e",
       "R/elo.R": "3bca27c1c77aa1f83d4b61ab5ac6b9e4b82ece4b31547806a4fdb2abaacf325e",
@@ -2124,7 +2124,7 @@
     }
   },
   "visualization": {
-    "analysis_sha256": "561af97fc8caf9c131b62de7fbe914864a4ae6cc2ae79f92895fce1403c45195",
+    "analysis_sha256": "0cb0523fdcb5afe2b4a1d04efc488efdd452dc22e4e0a4439dd6df94c97a2c12",
     "code_sha256": {
       "R/acquisition.R": "70a51080e845100a95fe9b96cdc70a5803a1f1ecc4b19872eafedd37a8abdf0e",
       "R/elo.R": "3bca27c1c77aa1f83d4b61ab5ac6b9e4b82ece4b31547806a4fdb2abaacf325e",
@@ -2135,18 +2135,18 @@
       "scripts/pipeline.R": "8875853301c18073af95add7841762f5491c0c6e80640f4b65527c51d02ba824"
     },
     "files": {
-      "odi_history.png": "798a0eaa8a9e2a38efccfda958b6c51dd3d74f43dad5f536a84071e402f205f1",
-      "odi_history.svg": "92e23db6f1fd3617df43ab2782134aa56158c6dc881629c7e5a29451bba21b1c",
-      "odi.png": "699d04054efec0cca520b8be6ee727231448ff06e67a39b0c53c56a50c7ccd79",
-      "odi.svg": "41fbb664a1f4cc528cea0bc9f359922c2ad278a97183c262525831a6fa11dc0a",
-      "t20i_history.png": "2e2f14546f11f80184d669753768ff50e3133c914c7a6d0a1975fb769763ee6d",
-      "t20i_history.svg": "546b59d2d884e005263609a2a3b5a0a48793512cec4a24b804a7fe8049e8751a",
-      "t20i.png": "8752cf1914ed8939d263e4718e469f5eaa6407e09a2fae735e42af17b18255ed",
-      "t20i.svg": "0fc469f6b02a8911c28dd886a9b35e22407ebf35e0bffe363527afbbacf9af94",
-      "test_history.png": "b9b7a26ef8456b59a97183f5fe6d08b372b7cce3bd34b9526d781c3b0ec47e6a",
-      "test_history.svg": "fb1cff6f70badacf1cb02f9152ffef1c28edbf77a2d803a2ec5964dbbea8950c",
-      "test.png": "404e61eb3325ada6c8b114c9d5ba4ca3a344c3fc3301d19af1c27f8c9f8fecc9",
-      "test.svg": "702d2f68a3e9c76a497de4a3fbd020749e3a81cae7c852d7eca6c961700f232d"
+      "odi_history.png": "06f702fa48f49c31125529e4ba686cdee5358132f4b854625810ba28c9e086b4",
+      "odi_history.svg": "e8ec633570b75ded8b894d0e457e0366fa19d08ecd4a4d0b268d12eb19a50e5a",
+      "odi.png": "5ddb4c4b311c48e68dda5337bbf942df5c5840ba79e3017903933c82309a2697",
+      "odi.svg": "9b7b2a4df08750cd3d84e66c2864fc4c169a4c0164a6ced374e2f8339dd70134",
+      "t20i_history.png": "793c53389e4744278a8295f13ec4f2943d9d6bb583c53092d92b6cb513644d1a",
+      "t20i_history.svg": "db998ab4c6e4240c10aca75058b9915ffd1f5b185f597aa039a2ff54baddfa01",
+      "t20i.png": "2306db508d6de98e4e626c83c43218c0da246701790e9c5dee770f9bf36902d9",
+      "t20i.svg": "eeb723c16c64abd4b1d21c518c20632e02e07b22ec67ffa1f0d91268000f9537",
+      "test_history.png": "389f61aa4d1bf928538542e3a2659dc1c1c3e2fe2fbb3592578c0e7e9de010c9",
+      "test_history.svg": "8bf23886a85ea936a0c108b894f0dcbc0d836eb9864b72e0cfc0eae136efb85d",
+      "test.png": "e8d6c93e7852eb225471b607c1d2e2cf27126b6457b6aefa0c60aa915732dd62",
+      "test.svg": "d6edba38c34de550c0ced5a993b1911ac7e7fb92b6ebabc73b7875438d1d6dab"
     }
   },
   "code_sha256": {
@@ -2159,21 +2159,21 @@
     "scripts/pipeline.R": "8875853301c18073af95add7841762f5491c0c6e80640f4b65527c51d02ba824"
   },
   "files": {
-    "index.md": "91e7c08c8e644428819863c1a793c0fa4d929ee7481cdc2a5c5b7eca638bd762",
-    "latest.csv": "2c6ffdab5046a202dd66dbfc204e477360abeb7cee292eb74775b868ad059716",
+    "index.md": "1627307d82a864df2bf9d16f6a50241525675a39cdd640a7b8e9b4e56a16afe9",
+    "latest.csv": "e6a99ad213d879ff03b869cba66a70cd1b8ee19994a106eead28911355a3e7d8",
     "monthly.csv": "5ce366d66a5d35e8efa49a60fd9ef099d8f600bb7794ad5f60a761790b60f964",
-    "odi_history.png": "798a0eaa8a9e2a38efccfda958b6c51dd3d74f43dad5f536a84071e402f205f1",
-    "odi_history.svg": "92e23db6f1fd3617df43ab2782134aa56158c6dc881629c7e5a29451bba21b1c",
-    "odi.png": "699d04054efec0cca520b8be6ee727231448ff06e67a39b0c53c56a50c7ccd79",
-    "odi.svg": "41fbb664a1f4cc528cea0bc9f359922c2ad278a97183c262525831a6fa11dc0a",
-    "t20i_history.png": "2e2f14546f11f80184d669753768ff50e3133c914c7a6d0a1975fb769763ee6d",
-    "t20i_history.svg": "546b59d2d884e005263609a2a3b5a0a48793512cec4a24b804a7fe8049e8751a",
-    "t20i.png": "8752cf1914ed8939d263e4718e469f5eaa6407e09a2fae735e42af17b18255ed",
-    "t20i.svg": "0fc469f6b02a8911c28dd886a9b35e22407ebf35e0bffe363527afbbacf9af94",
-    "test_history.png": "b9b7a26ef8456b59a97183f5fe6d08b372b7cce3bd34b9526d781c3b0ec47e6a",
-    "test_history.svg": "fb1cff6f70badacf1cb02f9152ffef1c28edbf77a2d803a2ec5964dbbea8950c",
-    "test.png": "404e61eb3325ada6c8b114c9d5ba4ca3a344c3fc3301d19af1c27f8c9f8fecc9",
-    "test.svg": "702d2f68a3e9c76a497de4a3fbd020749e3a81cae7c852d7eca6c961700f232d",
-    "updates.csv": "52e1bcd923f0f44a4f06bc02dde03c33237a91b4aa2a43f7407534c392175d2e"
+    "odi_history.png": "06f702fa48f49c31125529e4ba686cdee5358132f4b854625810ba28c9e086b4",
+    "odi_history.svg": "e8ec633570b75ded8b894d0e457e0366fa19d08ecd4a4d0b268d12eb19a50e5a",
+    "odi.png": "5ddb4c4b311c48e68dda5337bbf942df5c5840ba79e3017903933c82309a2697",
+    "odi.svg": "9b7b2a4df08750cd3d84e66c2864fc4c169a4c0164a6ced374e2f8339dd70134",
+    "t20i_history.png": "793c53389e4744278a8295f13ec4f2943d9d6bb583c53092d92b6cb513644d1a",
+    "t20i_history.svg": "db998ab4c6e4240c10aca75058b9915ffd1f5b185f597aa039a2ff54baddfa01",
+    "t20i.png": "2306db508d6de98e4e626c83c43218c0da246701790e9c5dee770f9bf36902d9",
+    "t20i.svg": "eeb723c16c64abd4b1d21c518c20632e02e07b22ec67ffa1f0d91268000f9537",
+    "test_history.png": "389f61aa4d1bf928538542e3a2659dc1c1c3e2fe2fbb3592578c0e7e9de010c9",
+    "test_history.svg": "8bf23886a85ea936a0c108b894f0dcbc0d836eb9864b72e0cfc0eae136efb85d",
+    "test.png": "e8d6c93e7852eb225471b607c1d2e2cf27126b6457b6aefa0c60aa915732dd62",
+    "test.svg": "d6edba38c34de550c0ced5a993b1911ac7e7fb92b6ebabc73b7875438d1d6dab",
+    "updates.csv": "c91a43e39b6b4bd3fbd5b0c313aedd5a42ead3d8d9fecab796f127654b51c996"
   }
 }

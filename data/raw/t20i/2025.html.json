@@ -3,7 +3,7 @@
   "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2025;type=year",
   "format": "T20I",
   "year": 2025,
-  "fetched_at": "2026-10-26T00:24:51Z",
-  "sha256": "a43c9ba16f63ba634f1691cae5a4e2fbbc3c75fec3d51e087e5bb9a539dd13f3",
+  "fetched_at": "2026-10-26T05:11:13Z",
+  "sha256": "50fb40f7533a18a5618dc478ee2d0bb310b28bded16c76895b84573674826f60",
   "rows": 579
 }

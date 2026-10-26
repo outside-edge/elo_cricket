@@ -1,7 +1,7 @@
 {
   "model": "elo",
-  "as_of": "2026-10-24",
-  "input_sha256": "439cc41070cc71fd798f8d0fecfbf61c24629c5605182a1a18eaf34e35dd6c57",
+  "as_of": "2026-10-25",
+  "input_sha256": "93493cb0b02e7fa2d725780fcaff15b3948b0d2f20c70a0a91e059547e7ba733",
   "specification": {
     "model": "elo",
     "implementation": "EloRating::e.single",
@@ -18,8 +18,8 @@
     "provisional_matches": 10
   },
   "last_result": {
-    "ODI": "2026-10-24",
-    "T20I": "2026-10-24",
+    "ODI": "2026-10-25",
+    "T20I": "2026-10-25",
     "Test": "2026-10-22"
   },
   "r_version": "4.6.0",
@@ -33,8 +33,8 @@
     "scripts/pipeline.R": "8875853301c18073af95add7841762f5491c0c6e80640f4b65527c51d02ba824"
   },
   "files": {
-    "latest.csv": "2c6ffdab5046a202dd66dbfc204e477360abeb7cee292eb74775b868ad059716",
+    "latest.csv": "e6a99ad213d879ff03b869cba66a70cd1b8ee19994a106eead28911355a3e7d8",
     "monthly.csv": "5ce366d66a5d35e8efa49a60fd9ef099d8f600bb7794ad5f60a761790b60f964",
-    "updates.csv": "52e1bcd923f0f44a4f06bc02dde03c33237a91b4aa2a43f7407534c392175d2e"
+    "updates.csv": "c91a43e39b6b4bd3fbd5b0c313aedd5a42ead3d8d9fecab796f127654b51c996"
   }
 }
