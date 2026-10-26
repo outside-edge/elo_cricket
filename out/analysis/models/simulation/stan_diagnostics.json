@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "sampler": {
+    "num_divergent": [0, 0, 0, 0],
+    "num_max_treedepth": [0, 0, 0, 0],
+    "ebfmi": [0.9549, 0.9352, 0.9079, 1.0205]
+  },
+  "max_rhat": 1.0029,
+  "min_bulk_ess": 2077.9407,
+  "min_tail_ess": 1859.5917
+}

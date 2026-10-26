@@ -4,6 +4,11 @@ The production Elo series is a reproducible baseline. The next models should
 make different assumptions explicit and earn their place through prediction and
 model checks. A smoother-looking curve alone is not evidence of a better model.
 
+The [implemented experiment](model_experiment.md) now fits the GAM, Glicko-2,
+and dynamic ordinal-probit Stan models, with shared Test-match forecasts,
+simulation checks, and saved diagnostics. The conceptual distinctions below
+remain relevant when extending them to lineups or regular publication.
+
 ## Three useful targets
 
 1. **An institution's current strength:** how a national side is expected to

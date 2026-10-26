@@ -3,6 +3,7 @@ Title: Cricket Ratings Pipelines
 Depends:
     R (>= 4.6.0)
 Imports:
+    cmdstanr,
     digest,
     EloRating,
     ggplot2,
@@ -16,6 +17,8 @@ Imports:
     rvest,
     xml2,
     lintr,
+    mgcv,
+    PlayerRatings,
     renv,
     styler,
     testthat,
