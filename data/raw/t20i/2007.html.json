@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2007;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2007;type=year",
+  "format": "T20I",
+  "year": 2007,
+  "fetched_at": "2026-10-26T00:20:16Z",
+  "sha256": "d2b5719b4ab881ec4783bb7d3cc98b4a5a05571a4aa03efa30151c9d07705449",
+  "rows": 38
+}

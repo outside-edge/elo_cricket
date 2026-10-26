@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2008;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2008;type=year",
+  "format": "T20I",
+  "year": 2008,
+  "fetched_at": "2026-10-26T00:20:22Z",
+  "sha256": "94d3fb98143b2f27c37b3f5b0602afa106e074837fc0f797d89b7d3eec07fbd3",
+  "rows": 29
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1880;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1880;type=year",
+  "format": "Test",
+  "year": 1880,
+  "fetched_at": "2026-10-26T01:00:10Z",
+  "sha256": "119adc1f4a2a0ac50f884c1bb919b3ef159690c479e7acfab40051c33ba60feb",
+  "rows": 1
+}

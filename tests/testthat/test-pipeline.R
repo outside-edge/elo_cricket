@@ -1,0 +1,73 @@
+testthat::test_that("offline stages produce a coherent publication and reject changed inputs", {
+  withr::local_dir(root)
+  directory <- withr::local_tempdir()
+  raw <- file.path(directory, "raw")
+  prepared <- file.path(directory, "build")
+  analysis <- file.path(directory, "out/analysis/elo")
+  figures <- file.path(directory, "figs/elo")
+  publication <- file.path(directory, "out/release/elo")
+  cache_fixture(raw)
+  cache_fixture(raw, "T20I")
+  prepare_data(raw, prepared, as.Date("2025-12-31"), coverage = fixture_coverage)
+  analyze_data(prepared, analysis)
+  visualize_data(analysis, figures)
+  publish_data(prepared, analysis, figures, publication, require_fresh = FALSE)
+  manifest <- jsonlite::read_json(file.path(publication, "manifest.json"))
+  for (name in names(manifest$files)) {
+    testthat::expect_identical(sha256(file.path(publication, name)), manifest$files[[name]])
+  }
+  testthat::expect_equal(nrow(read_analysis(analysis)$latest), 100)
+  data <- read_analysis(analysis)
+  test_history <- chart_data(data$latest, data$monthly, "Test")
+  testthat::expect_identical(unique(test_history$format), "Test")
+  testthat::expect_false("Austria" %in% test_history$team)
+  report <- readLines(file.path(publication, "index.md"))
+  testthat::expect_equal(sum(grepl("^\\| [0-9]", report)), sum(data$latest$is_active))
+  before <- sha256(file.path(publication, "latest.csv"))
+  now <- as.POSIXct("2026-01-01 12:00:00", tz = "UTC")
+  testthat::expect_no_error(publish_data(prepared, analysis, figures, publication, now = now))
+  path <- file.path(prepared, "manifest.json")
+  original <- jsonlite::read_json(path)
+  changed <- original
+  changed$sources[[1]]$fetched_at <- "2025-12-31T23:59:59Z"
+  write_json(changed, path)
+  testthat::expect_error(publish_data(prepared, analysis, figures, publication, now = now), "predates")
+  write_json(original, path)
+  for (stage in c(prepared, analysis, figures)) {
+    path <- file.path(stage, "manifest.json")
+    original <- jsonlite::read_json(path)
+    changed <- original
+    changed$code_sha256[[1]] <- "old code"
+    write_json(changed, path)
+    testthat::expect_error(publish_data(prepared, analysis, figures, publication, FALSE), "Stage code differs")
+    write_json(original, path)
+  }
+  testthat::expect_identical(sha256(file.path(publication, "latest.csv")), before)
+  analyze_data(prepared, analysis)
+  testthat::expect_identical(sha256(file.path(analysis, "latest.csv")), before)
+  testthat::expect_error(publish_data(prepared, analysis, figures, publication), "stale")
+  writeLines("changed", file.path(analysis, "latest.csv"))
+  testthat::expect_error(publish_data(prepared, analysis, figures, publication, FALSE), "checksum")
+  testthat::expect_identical(sha256(file.path(publication, "latest.csv")), before)
+  writeLines("changed", file.path(prepared, "matches.csv"))
+  testthat::expect_error(analyze_data(prepared, analysis), "checksum")
+})
+
+testthat::test_that("failed stages cannot replace their previous outputs", {
+  directory <- withr::local_tempdir()
+  output <- file.path(directory, "published")
+  dir.create(output)
+  writeLines("good", file.path(output, "result"))
+  testthat::expect_error(replace_directory(output, function(staging) {
+    writeLines("bad", file.path(staging, "result"))
+    stop("failed check")
+  }), "failed check")
+  testthat::expect_identical(readLines(file.path(output, "result")), "good")
+  dir.create(paste0(output, ".previous"))
+  testthat::expect_error(replace_directory(output, function(staging) NULL), "recovery")
+})
+
+testthat::test_that("unverified model adapters cannot silently publish Elo", {
+  testthat::expect_error(analyze_data("missing", "missing", "glicko2"), "No verified pipeline adapter")
+  testthat::expect_error(analyze_data("missing", "missing", "stan"), "No verified pipeline adapter")
+})

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2012;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2012;type=year",
+  "format": "Test",
+  "year": 2012,
+  "fetched_at": "2026-10-25T23:12:37Z",
+  "sha256": "33f14e058b23f9b42e970ab020f671f40364fe99045cdca050992c8464fcab16",
+  "rows": 42
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2008;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2008;type=year",
+  "format": "ODI",
+  "year": 2008,
+  "fetched_at": "2026-10-25T23:26:00Z",
+  "sha256": "6b49eb0f5b79607fa54613463244f502f1c0346a10d628a255db094b36aab86a",
+  "rows": 126
+}

@@ -1,0 +1,15 @@
+ls:
+  R:
+    .R: snake_case
+  docs:
+    .md: snake_case
+    .csv: snake_case
+    .json: snake_case
+  scripts:
+    .R: snake_case
+  tests/testthat:
+    .R: regex:(test|helper|setup)-[a-z0-9_]+
+  tests/fixtures:
+    .html: snake_case
+    .csv: snake_case
+    .md: regex:[A-Z][A-Z0-9_]*

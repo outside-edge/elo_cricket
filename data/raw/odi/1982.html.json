@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1982;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1982;type=year",
+  "format": "ODI",
+  "year": 1982,
+  "fetched_at": "2026-10-25T23:19:29Z",
+  "sha256": "2d88e4525104f8e141b59ddec20a619bf80c61cf312e5227abbd7a16e842223b",
+  "rows": 33
+}

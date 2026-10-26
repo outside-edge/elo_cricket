@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1922;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1922;type=year",
+  "format": "Test",
+  "year": 1922,
+  "fetched_at": "2026-10-26T01:10:26Z",
+  "sha256": "6948b4653b1c6499791628584d8ac76b2142d6733fe15de1a2eaf3ea165ae1e2",
+  "rows": 1
+}

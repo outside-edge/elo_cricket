@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1990;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1990;type=year",
+  "format": "Test",
+  "year": 1990,
+  "fetched_at": "2026-10-25T23:06:42Z",
+  "sha256": "ad502b28aa534e87215c2d18bffc418aeb6027add5c01a4c2c5dd52a7db11762",
+  "rows": 26
+}

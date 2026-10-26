@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1993;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1993;type=year",
+  "format": "Test",
+  "year": 1993,
+  "fetched_at": "2026-10-25T23:07:28Z",
+  "sha256": "e98057c35a494c0aa993a439a8c09f54f54ad50ad8d14e6f418e63fe1a802ab2",
+  "rows": 36
+}

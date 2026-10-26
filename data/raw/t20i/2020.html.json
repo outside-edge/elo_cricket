@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2020;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2020;type=year",
+  "format": "T20I",
+  "year": 2020,
+  "fetched_at": "2026-10-26T00:23:28Z",
+  "sha256": "9bb03b2b9ae7813b9fdcc7fe5fb456f430a83717578faca588e507c435c996c6",
+  "rows": 95
+}

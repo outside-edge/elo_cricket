@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1895;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1895;type=year",
+  "format": "Test",
+  "year": 1895,
+  "fetched_at": "2026-10-26T01:03:11Z",
+  "sha256": "61d407a7387c8e674cc88e69e451a84d43f77d500531da73caab3d23f6b21200",
+  "rows": 4
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2021;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2021;type=year",
+  "format": "ODI",
+  "year": 2021,
+  "fetched_at": "2026-10-25T23:28:52Z",
+  "sha256": "c55dbe004cf6ce58553d1a4a3491d477cffe7eafeca5687fe023bd138308ef29",
+  "rows": 71
+}

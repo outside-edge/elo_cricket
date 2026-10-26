@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1994;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1994;type=year",
+  "format": "Test",
+  "year": 1994,
+  "fetched_at": "2026-10-25T23:07:44Z",
+  "sha256": "2881d05371424bc214775916a9367a3576b103aaecaef5da62b51af0e461947c",
+  "rows": 38
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1887;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1887;type=year",
+  "format": "Test",
+  "year": 1887,
+  "fetched_at": "2026-10-26T01:01:03Z",
+  "sha256": "5e4c83d901d5e74864bcecfa975c15ff546650e66dc3305f1e47911c6e453991",
+  "rows": 2
+}

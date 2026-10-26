@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2018;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2018;type=year",
+  "format": "ODI",
+  "year": 2018,
+  "fetched_at": "2026-10-25T23:28:11Z",
+  "sha256": "d089a89f1cafe0819c5b42ac4395900f27405f7b8f67362ace213a3d7273908a",
+  "rows": 128
+}

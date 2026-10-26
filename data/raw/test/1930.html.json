@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1930;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1930;type=year",
+  "format": "Test",
+  "year": 1930,
+  "fetched_at": "2026-10-26T01:13:03Z",
+  "sha256": "653383b3ee04efb89c003665baa68fd65f70af9194a02ebe919a4f0cdeaeafde",
+  "rows": 15
+}

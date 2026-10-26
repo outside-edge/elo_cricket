@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2004;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2004;type=year",
+  "format": "Test",
+  "year": 2004,
+  "fetched_at": "2026-10-25T23:10:25Z",
+  "sha256": "8a99ede4570412283d00b2d8a1ea3b8e6017530d4a24a29f0686b3acbf98d0c0",
+  "rows": 51
+}

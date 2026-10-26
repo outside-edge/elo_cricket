@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1991;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1991;type=year",
+  "format": "Test",
+  "year": 1991,
+  "fetched_at": "2026-10-25T23:07:00Z",
+  "sha256": "078dea6b2bbc251531dc4e7e1a67bf0cb81d6e7a5de3749c60ca9794d2418bfb",
+  "rows": 21
+}

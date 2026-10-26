@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1987;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1987;type=year",
+  "format": "Test",
+  "year": 1987,
+  "fetched_at": "2026-10-25T23:06:02Z",
+  "sha256": "b9338663ef22748ebba1147324d40a56c456cd943c1284ee6d29263b50c8a3ae",
+  "rows": 25
+}

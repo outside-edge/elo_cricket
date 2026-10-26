@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1981;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1981;type=year",
+  "format": "Test",
+  "year": 1981,
+  "fetched_at": "2026-10-25T23:04:37Z",
+  "sha256": "bd6ce695f1ffa3de1dca95a3cf32c3f55217ac441c5845022d0a40e31d04e330",
+  "rows": 24
+}

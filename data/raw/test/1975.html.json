@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1975;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1975;type=year",
+  "format": "Test",
+  "year": 1975,
+  "fetched_at": "2026-10-25T23:03:09Z",
+  "sha256": "e91dd3dce4d020e4576af2f85bb975c24f4af869ab3f923c472252b3afcaacc6",
+  "rows": 17
+}

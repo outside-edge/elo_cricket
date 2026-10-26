@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1978;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1978;type=year",
+  "format": "ODI",
+  "year": 1978,
+  "fetched_at": "2026-10-25T23:18:26Z",
+  "sha256": "a29a5e50b10b39040792882e9849debe1a2118f54c7e920592c6c78c15cbc59a",
+  "rows": 10
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2015;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2015;type=year",
+  "format": "Test",
+  "year": 2015,
+  "fetched_at": "2026-10-25T23:13:22Z",
+  "sha256": "c4f7d048b92bb13da5ff58b0b325d40c9ddcd2bcf5a6ff2db84a1de2ca2a594d",
+  "rows": 43
+}

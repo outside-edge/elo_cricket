@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1934;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1934;type=year",
+  "format": "Test",
+  "year": 1934,
+  "fetched_at": "2026-10-26T01:13:59Z",
+  "sha256": "546ec38dd56bf3440d778c6c857e1158ed796b7003717ef7a59a99b66882b752",
+  "rows": 7
+}

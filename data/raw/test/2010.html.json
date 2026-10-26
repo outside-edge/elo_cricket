@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2010;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2010;type=year",
+  "format": "Test",
+  "year": 2010,
+  "fetched_at": "2026-10-25T23:11:53Z",
+  "sha256": "064f1054c182935a8db54ba76b05f7f939ee36983ded9dd2e0a93b15b35d16b6",
+  "rows": 43
+}

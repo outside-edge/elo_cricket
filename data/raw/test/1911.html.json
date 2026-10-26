@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1911;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1911;type=year",
+  "format": "Test",
+  "year": 1911,
+  "fetched_at": "2026-10-26T01:07:33Z",
+  "sha256": "8ed1ba421ce81abf1c6002e45e13a0dca6b4ab02660bbb820d82f6ef886f938b",
+  "rows": 6
+}

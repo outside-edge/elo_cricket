@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1974;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1974;type=year",
+  "format": "Test",
+  "year": 1974,
+  "fetched_at": "2026-10-25T23:02:52Z",
+  "sha256": "933fb57b39c553f365767219624d1ac12a3b9d448c77bcc761081f554e9dac73",
+  "rows": 23
+}

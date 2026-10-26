@@ -1,0 +1,53 @@
+name: Update ratings
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      refresh_history:
+        description: Refetch all historical source years
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ratings-publication
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: r-lib/actions/setup-r@f9a764fea8d5c63df6ef9a5c7795bf7deb5d7e05 # v2
+        with:
+          r-version: '4.6.0'
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-renv@f9a764fea8d5c63df6ef9a5c7795bf7deb5d7e05 # v2
+      - run: make check
+      - name: Fetch, prepare, fit, and render
+        env:
+          REFRESH_HISTORY: ${{ inputs.refresh_history }}
+        run: |
+          args=(update)
+          if [[ "$REFRESH_HISTORY" == "true" ]]; then
+            args+=(--refresh)
+          fi
+          Rscript scripts/pipeline.R "${args[@]}"
+      - name: Publish validated results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/raw data/build out/analysis figs out/release
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update cricket ratings'
+            git push origin HEAD:main
+          fi

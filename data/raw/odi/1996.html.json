@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1996;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1996;type=year",
+  "format": "ODI",
+  "year": 1996,
+  "fetched_at": "2026-10-25T23:23:21Z",
+  "sha256": "8aac5e50d3876bb68ff5aed6eeb67471160751c10cd5c7355f907b9cef4a0952",
+  "rows": 127
+}

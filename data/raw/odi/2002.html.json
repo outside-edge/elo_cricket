@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2002;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2002;type=year",
+  "format": "ODI",
+  "year": 2002,
+  "fetched_at": "2026-10-25T23:24:45Z",
+  "sha256": "85cf3ee17c8f7b1dce679a61b75bd24281936c7ee14675ca9508a65ebdc4a80e",
+  "rows": 145
+}

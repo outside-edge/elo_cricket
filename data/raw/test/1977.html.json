@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1977;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1977;type=year",
+  "format": "Test",
+  "year": 1977,
+  "fetched_at": "2026-10-25T23:03:40Z",
+  "sha256": "3fb0e8fe63e56a24f4beb01f5292ed742df7fa12b1b1da7f17f61e9b68df83c4",
+  "rows": 23
+}

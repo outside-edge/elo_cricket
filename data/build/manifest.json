@@ -1,0 +1,2083 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-24",
+  "match_counts": {
+    "ODI": 5045,
+    "T20I": 4217,
+    "Test": 2638
+  },
+  "last_result": {
+    "ODI": "2026-10-24",
+    "T20I": "2026-10-24",
+    "Test": "2026-10-22"
+  },
+  "outcome_counts": {
+    "drawn": 797,
+    "no result": 280,
+    "tied": 97,
+    "win": 10726
+  },
+  "sources": [
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1877;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1877;type=year",
+      "format": "Test",
+      "year": 1877,
+      "fetched_at": "2026-10-26T00:59:52Z",
+      "sha256": "b1f7e452db264a50a67c8f10a9543c6b44485e774fa2f3fc8844301f5f234dc1",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1878;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1878;type=year",
+      "format": "Test",
+      "year": 1878,
+      "fetched_at": "2026-10-26T00:59:59Z",
+      "sha256": "635e936b2eecd93858f809c681e0ae3c916541ccdf42613c6ed79fb3c6409fc6",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1879;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1879;type=year",
+      "format": "Test",
+      "year": 1879,
+      "fetched_at": "2026-10-26T01:00:05Z",
+      "sha256": "549a4d6fedc9833d6c55d99a766902519225e7ae291142a8a8884cbf1d6e9afc",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1880;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1880;type=year",
+      "format": "Test",
+      "year": 1880,
+      "fetched_at": "2026-10-26T01:00:10Z",
+      "sha256": "119adc1f4a2a0ac50f884c1bb919b3ef159690c479e7acfab40051c33ba60feb",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1881;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1881;type=year",
+      "format": "Test",
+      "year": 1881,
+      "fetched_at": "2026-10-26T01:00:18Z",
+      "sha256": "6a9d50d29125164a393d6549e127149b21e2d3c3679308604583e4da5eeb340c",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1882;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1882;type=year",
+      "format": "Test",
+      "year": 1882,
+      "fetched_at": "2026-10-26T01:00:25Z",
+      "sha256": "2ed13fb1bbec46f35d8349198d90b0ed4765ba1e2aee4705fa59535cc7d38a61",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1883;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1883;type=year",
+      "format": "Test",
+      "year": 1883,
+      "fetched_at": "2026-10-26T01:00:31Z",
+      "sha256": "cf72c55b14b15bfe45c092c00fc1970bae804b4eee3693dd3374237c52e4d6da",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1884;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1884;type=year",
+      "format": "Test",
+      "year": 1884,
+      "fetched_at": "2026-10-26T01:00:34Z",
+      "sha256": "4fc06c3a9a8b048915f07414d306c7073d2ca03a886cc447928bf3b319eb7b32",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1885;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1885;type=year",
+      "format": "Test",
+      "year": 1885,
+      "fetched_at": "2026-10-26T01:00:41Z",
+      "sha256": "0344f6d1214da145a6dca6465faf871e62bdc5bd6cc2258b744c26cdf6cea094",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1886;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1886;type=year",
+      "format": "Test",
+      "year": 1886,
+      "fetched_at": "2026-10-26T01:00:47Z",
+      "sha256": "a0dd2a0d3b99167a8f79e2ad8626f579d683d2e0f2bc82f13c282ddd4840f7b6",
+      "rows": 3
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1887;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1887;type=year",
+      "format": "Test",
+      "year": 1887,
+      "fetched_at": "2026-10-26T01:01:03Z",
+      "sha256": "5e4c83d901d5e74864bcecfa975c15ff546650e66dc3305f1e47911c6e453991",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1888;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1888;type=year",
+      "format": "Test",
+      "year": 1888,
+      "fetched_at": "2026-10-26T01:01:21Z",
+      "sha256": "428d5e6fd77f0c14b5e50b88b384f0ad631eb3b0b6856adac8392055542abf10",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1889;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1889;type=year",
+      "format": "Test",
+      "year": 1889,
+      "fetched_at": "2026-10-26T01:01:32Z",
+      "sha256": "923820f9c41f346623a2e2375fe7c9f40b752e4d7ca0b77eaab02f01051be178",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1890;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1890;type=year",
+      "format": "Test",
+      "year": 1890,
+      "fetched_at": "2026-10-26T01:01:49Z",
+      "sha256": "c981b6c72aa8b559468575657291aa7b8159fceba819bdc68a0e08cf0a6e88dd",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1891;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1891;type=year",
+      "format": "Test",
+      "year": 1891,
+      "fetched_at": "2026-10-26T01:02:05Z",
+      "sha256": "3b7be27a703e349a739e26936cc9f9f2cc056112e4b82e9e601298af3a8ebb1b",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1892;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1892;type=year",
+      "format": "Test",
+      "year": 1892,
+      "fetched_at": "2026-10-26T01:02:21Z",
+      "sha256": "b34f9c7fcd8cdcca949346b37c22257cf69cd143e827702c2aa22e7bec24b41c",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1893;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1893;type=year",
+      "format": "Test",
+      "year": 1893,
+      "fetched_at": "2026-10-26T01:02:38Z",
+      "sha256": "ce0a765439b3cbcdd4aca3a46c546b3b4be6ffd82f9ca88e8dc417d99af46a58",
+      "rows": 3
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1894;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1894;type=year",
+      "format": "Test",
+      "year": 1894,
+      "fetched_at": "2026-10-26T01:02:54Z",
+      "sha256": "4aee4696c607c5f8f19a454e1a849d64b97f680bdc723a16149efc192f0ed43f",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1895;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1895;type=year",
+      "format": "Test",
+      "year": 1895,
+      "fetched_at": "2026-10-26T01:03:11Z",
+      "sha256": "61d407a7387c8e674cc88e69e451a84d43f77d500531da73caab3d23f6b21200",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1896;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1896;type=year",
+      "format": "Test",
+      "year": 1896,
+      "fetched_at": "2026-10-26T01:03:28Z",
+      "sha256": "46827812d5fad9cbad3e68d572d61b54fff90affe8eb67fe8cb1727b024110d3",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1897;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1897;type=year",
+      "format": "Test",
+      "year": 1897,
+      "fetched_at": "2026-10-26T01:03:44Z",
+      "sha256": "70a8c3f0152f21d1a71d73bf6494c6b0fd81066d5e974431ae08d7e37237f3fe",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1898;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1898;type=year",
+      "format": "Test",
+      "year": 1898,
+      "fetched_at": "2026-10-26T01:04:01Z",
+      "sha256": "80178b838ea40e180b4daa31b2ee6ed0983392eab9cfb3a266cd0fe264baf203",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1899;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1899;type=year",
+      "format": "Test",
+      "year": 1899,
+      "fetched_at": "2026-10-26T01:04:17Z",
+      "sha256": "06c340dae2ada12e3965fdc67313b4d5fbe1b2730d543bf3b6c288f3e957216a",
+      "rows": 7
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1900;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1900;type=year",
+      "format": "Test",
+      "year": 1900,
+      "fetched_at": "2026-10-26T01:04:33Z",
+      "sha256": "9f5005ed23ba2d0a7d2666cef3e7d737c28040ec98ec4aee27c16ed4644dafbb",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1901;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1901;type=year",
+      "format": "Test",
+      "year": 1901,
+      "fetched_at": "2026-10-26T01:04:49Z",
+      "sha256": "29d169780d7c1111dd43a544e2f8466975c2b1b6ba9fc1bc0ae67c7c43cd8935",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1902;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1902;type=year",
+      "format": "Test",
+      "year": 1902,
+      "fetched_at": "2026-10-26T01:05:06Z",
+      "sha256": "14139575a88fd9cf544ad9e15dab05d3fc19bf27aba230356a34f5c9858d71a8",
+      "rows": 12
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1903;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1903;type=year",
+      "format": "Test",
+      "year": 1903,
+      "fetched_at": "2026-10-26T01:05:22Z",
+      "sha256": "cdfaf7a03df598885145f17f5df04b9b3b3476f95ec7d9dcc542db3fe977fc9e",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1904;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1904;type=year",
+      "format": "Test",
+      "year": 1904,
+      "fetched_at": "2026-10-26T01:05:38Z",
+      "sha256": "9947d5e7681e3c3de50ab637d79d6945c3aba7bc11fe58aaf52e49ff6149830e",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1905;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1905;type=year",
+      "format": "Test",
+      "year": 1905,
+      "fetched_at": "2026-10-26T01:05:55Z",
+      "sha256": "dddba95c3c81640e655f9524bf950b91e21b67d6b5837741fdc213726c4c1577",
+      "rows": 5
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1906;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1906;type=year",
+      "format": "Test",
+      "year": 1906,
+      "fetched_at": "2026-10-26T01:06:11Z",
+      "sha256": "1c3cf1cb9b38ba951425fc5bfab76457b822eeed6a1cf23135ff9a65b97985dc",
+      "rows": 5
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1907;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1907;type=year",
+      "format": "Test",
+      "year": 1907,
+      "fetched_at": "2026-10-26T01:06:27Z",
+      "sha256": "995a2089b973d33eb8fb123d1c24e7e87fc3ff783782632b353d6361dea9ff03",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1908;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1908;type=year",
+      "format": "Test",
+      "year": 1908,
+      "fetched_at": "2026-10-26T01:06:43Z",
+      "sha256": "86083c556072d7015786d83140cef84982cf99345a67683859c9dfeeea95f0b2",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1909;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1909;type=year",
+      "format": "Test",
+      "year": 1909,
+      "fetched_at": "2026-10-26T01:06:59Z",
+      "sha256": "0a66a5ee315792d3c26d28f6058927f5cf229fdb70faa2785d9f988d737d655b",
+      "rows": 5
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1910;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1910;type=year",
+      "format": "Test",
+      "year": 1910,
+      "fetched_at": "2026-10-26T01:07:15Z",
+      "sha256": "30f9e8f0f794f45c3f077b84165da9ef3ce47703fcc0e1a631f4b0e706bcd0b9",
+      "rows": 7
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1911;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1911;type=year",
+      "format": "Test",
+      "year": 1911,
+      "fetched_at": "2026-10-26T01:07:33Z",
+      "sha256": "8ed1ba421ce81abf1c6002e45e13a0dca6b4ab02660bbb820d82f6ef886f938b",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1912;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1912;type=year",
+      "format": "Test",
+      "year": 1912,
+      "fetched_at": "2026-10-26T01:07:44Z",
+      "sha256": "38e47c7212b5830c19c0f64c52ae40be13ba299adf64c1488b6a2f525af15cda",
+      "rows": 13
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1913;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1913;type=year",
+      "format": "Test",
+      "year": 1913,
+      "fetched_at": "2026-10-26T01:08:00Z",
+      "sha256": "0e6fc69080ef82e264fc2cd7d437959fa3694e7d8efe3f03ff9e19ca5abef6f9",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1914;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1914;type=year",
+      "format": "Test",
+      "year": 1914,
+      "fetched_at": "2026-10-26T01:08:16Z",
+      "sha256": "436304ab7ca4d6c6abbff97bfc487a96a4ebc282953e54c8e2e907ed0eb66659",
+      "rows": 3
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1915;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1915;type=year",
+      "format": "Test",
+      "year": 1915,
+      "fetched_at": "2026-10-26T01:08:32Z",
+      "sha256": "190cd08778d037c61d8d5fa3c5e4bc7543bc93d3f5c5d86e197a7c2e69f37d66",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1916;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1916;type=year",
+      "format": "Test",
+      "year": 1916,
+      "fetched_at": "2026-10-26T01:08:48Z",
+      "sha256": "26b294357a319e5d5975d2ee81c572fbc299e9e91fcdec4bed5faecf1d734bfa",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1917;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1917;type=year",
+      "format": "Test",
+      "year": 1917,
+      "fetched_at": "2026-10-26T01:09:05Z",
+      "sha256": "ce143139a3d2f1d661c24b44df931cb2c1c8e86f274e083509f1d05b59a0958a",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1918;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1918;type=year",
+      "format": "Test",
+      "year": 1918,
+      "fetched_at": "2026-10-26T01:09:21Z",
+      "sha256": "fd29ed166b654de29b94b9badd60dd828f79b80cc576a18543d76287cc2af2b2",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1919;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1919;type=year",
+      "format": "Test",
+      "year": 1919,
+      "fetched_at": "2026-10-26T01:09:37Z",
+      "sha256": "3b26d1369bf93356422d2d28c989998e6ae7646ff53ba64ec1561d58bbacffd0",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1920;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1920;type=year",
+      "format": "Test",
+      "year": 1920,
+      "fetched_at": "2026-10-26T01:09:53Z",
+      "sha256": "fd97ca873b92b5f7d4755f0fe496e03146aebc9aafcc0d7e4643e54cadb1dd1e",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1921;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1921;type=year",
+      "format": "Test",
+      "year": 1921,
+      "fetched_at": "2026-10-26T01:10:09Z",
+      "sha256": "efd5dba8a00382bd81e745a629781f0b97af2b41904be455d3d00d8e41388c02",
+      "rows": 12
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1922;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1922;type=year",
+      "format": "Test",
+      "year": 1922,
+      "fetched_at": "2026-10-26T01:10:26Z",
+      "sha256": "6948b4653b1c6499791628584d8ac76b2142d6733fe15de1a2eaf3ea165ae1e2",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1923;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1923;type=year",
+      "format": "Test",
+      "year": 1923,
+      "fetched_at": "2026-10-26T01:10:42Z",
+      "sha256": "74480290d2c8240fb4d062b6d65aae9ad9879fa8950a281d1bcfa1ad7ad9a927",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1924;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1924;type=year",
+      "format": "Test",
+      "year": 1924,
+      "fetched_at": "2026-10-26T01:10:58Z",
+      "sha256": "cd3162961f3773cacd5b1a8bd0781dda2fb69eb56371efe1f9abd76599b32c6f",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1925;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1925;type=year",
+      "format": "Test",
+      "year": 1925,
+      "fetched_at": "2026-10-26T01:11:15Z",
+      "sha256": "57bf712ce460ac81f3c15e89486220f80e07222dcd8b2de04249f8b68a5938b1",
+      "rows": 4
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1926;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1926;type=year",
+      "format": "Test",
+      "year": 1926,
+      "fetched_at": "2026-10-26T01:11:32Z",
+      "sha256": "d3c4c903768ff1bdd03f8de7c82b50490fb18176e9a0883fbc5867c99f95ccee",
+      "rows": 5
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1927;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1927;type=year",
+      "format": "Test",
+      "year": 1927,
+      "fetched_at": "2026-10-26T01:12:01Z",
+      "sha256": "c03279b474010f2d6cfd206d66f1dfa5b3a7e5abc8123bb434fdc154b02d7d24",
+      "rows": 2
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1928;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1928;type=year",
+      "format": "Test",
+      "year": 1928,
+      "fetched_at": "2026-10-26T01:12:19Z",
+      "sha256": "b85e6fd35fb42ab59398036f775c36897980e8f2ca94a4a0c9c11c263d12fb4a",
+      "rows": 10
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1929;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1929;type=year",
+      "format": "Test",
+      "year": 1929,
+      "fetched_at": "2026-10-26T01:12:35Z",
+      "sha256": "f9c6e2c54bc4c0c7099a4b91632c69a23d56b43565e0ccd5b4ae45887a13bc16",
+      "rows": 8
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1930;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1930;type=year",
+      "format": "Test",
+      "year": 1930,
+      "fetched_at": "2026-10-26T01:13:03Z",
+      "sha256": "653383b3ee04efb89c003665baa68fd65f70af9194a02ebe919a4f0cdeaeafde",
+      "rows": 15
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1931;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1931;type=year",
+      "format": "Test",
+      "year": 1931,
+      "fetched_at": "2026-10-26T01:13:15Z",
+      "sha256": "0e5b80a9da0b5294e46b45d843568e0f3fe373ee0b17639a60fc103c3872da09",
+      "rows": 14
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1932;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1932;type=year",
+      "format": "Test",
+      "year": 1932,
+      "fetched_at": "2026-10-26T01:13:27Z",
+      "sha256": "7994b4acf36d83b7f3bc3c456e7065c119303834bfa810c9b59515da187d0b48",
+      "rows": 8
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1933;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1933;type=year",
+      "format": "Test",
+      "year": 1933,
+      "fetched_at": "2026-10-26T01:13:43Z",
+      "sha256": "fb9586bfad19225118f391c15620c901000948c918e4221ba9d280f9589e3a20",
+      "rows": 10
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1934;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1934;type=year",
+      "format": "Test",
+      "year": 1934,
+      "fetched_at": "2026-10-26T01:13:59Z",
+      "sha256": "546ec38dd56bf3440d778c6c857e1158ed796b7003717ef7a59a99b66882b752",
+      "rows": 7
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1935;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1935;type=year",
+      "format": "Test",
+      "year": 1935,
+      "fetched_at": "2026-10-26T01:14:35Z",
+      "sha256": "6f902b00295fd85e41f0c6376ee75e4416b7444c58e32f4acb89bc7b215f88d5",
+      "rows": 11
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1936;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1936;type=year",
+      "format": "Test",
+      "year": 1936,
+      "fetched_at": "2026-10-26T01:14:47Z",
+      "sha256": "12af60459e9d88a6d5e6e98e525086c1880b3ad4b14a9c6952d4101b81f5e59e",
+      "rows": 8
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1937;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1937;type=year",
+      "format": "Test",
+      "year": 1937,
+      "fetched_at": "2026-10-26T01:15:04Z",
+      "sha256": "1c3be9f523586d3b0ea3357e19dcc5f930b0ffffa8d0073cd0af00dafecd4e4c",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1938;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1938;type=year",
+      "format": "Test",
+      "year": 1938,
+      "fetched_at": "2026-10-26T01:15:21Z",
+      "sha256": "9db879d794a2bc606d7755b55b95a3eee6f866ef52b42608cbf55c71c5481a4a",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1939;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1939;type=year",
+      "format": "Test",
+      "year": 1939,
+      "fetched_at": "2026-10-26T01:15:37Z",
+      "sha256": "b1a56b7275bb84b5aa0aa315a6afc9c9064479faad86aecea6747b009d059413",
+      "rows": 7
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1940;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1940;type=year",
+      "format": "Test",
+      "year": 1940,
+      "fetched_at": "2026-10-26T01:15:53Z",
+      "sha256": "fde77cd764c1c5296055011a27eab70e4ca688196ad626f3756e3ef7a6f67954",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1941;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1941;type=year",
+      "format": "Test",
+      "year": 1941,
+      "fetched_at": "2026-10-26T01:16:10Z",
+      "sha256": "bfdf3689ff94dbf0f30881bcdae170cfffd3ad449d1a3b1b7eb0667b7323aa7b",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1942;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1942;type=year",
+      "format": "Test",
+      "year": 1942,
+      "fetched_at": "2026-10-26T01:16:26Z",
+      "sha256": "06504766e5d0952c055cec2ca573fa4302737893fc896531dc3464056c709caa",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1943;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1943;type=year",
+      "format": "Test",
+      "year": 1943,
+      "fetched_at": "2026-10-26T01:16:42Z",
+      "sha256": "b6174f919b9882e786fc7fbefafa58438c419a69818f91b575250825b641c007",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1944;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1944;type=year",
+      "format": "Test",
+      "year": 1944,
+      "fetched_at": "2026-10-26T01:16:59Z",
+      "sha256": "c42ed7188adb03978ad409427cb5867b5bf2fb8fd1ad121e6339428a91726c88",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1945;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1945;type=year",
+      "format": "Test",
+      "year": 1945,
+      "fetched_at": "2026-10-26T01:17:15Z",
+      "sha256": "ba984b812ad8e31647d79982ef432b84a05b788171e3f3e10259a3d34afe046f",
+      "rows": 0
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1946;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1946;type=year",
+      "format": "Test",
+      "year": 1946,
+      "fetched_at": "2026-10-26T01:17:31Z",
+      "sha256": "d2747820166aaa7a02d4a58b38115fdcec357ece95bd7a5a3252feaa11302441",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1947;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1947;type=year",
+      "format": "Test",
+      "year": 1947,
+      "fetched_at": "2026-10-26T01:17:47Z",
+      "sha256": "a20aaef069fc1d762397c3efb1b31ee3bb0abc8a21c4f04875396dd1556c0e6b",
+      "rows": 11
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1948;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1948;type=year",
+      "format": "Test",
+      "year": 1948,
+      "fetched_at": "2026-10-26T01:18:04Z",
+      "sha256": "ce7cde78b3bb1f6558cee9f1fd45f97d1250e698419b025abbee4bd870c6de40",
+      "rows": 17
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1949;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1949;type=year",
+      "format": "Test",
+      "year": 1949,
+      "fetched_at": "2026-10-26T01:18:23Z",
+      "sha256": "a12a46d44f3036bed123add66e59286422c68ebc834101782bc18eddcdbe42a2",
+      "rows": 12
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1950;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1950;type=year",
+      "format": "Test",
+      "year": 1950,
+      "fetched_at": "2026-10-26T01:18:35Z",
+      "sha256": "7582b299f07a3bda85e98025a57c58f764ef5b3c62291395c720a95ba01a05cb",
+      "rows": 10
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1951;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1951;type=year",
+      "format": "Test",
+      "year": 1951,
+      "fetched_at": "2026-10-26T01:18:47Z",
+      "sha256": "c7e7ac61140ad65468fd5ab7b0918c9861650a88e522328b231c5b3530e6c66c",
+      "rows": 17
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1952;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1952;type=year",
+      "format": "Test",
+      "year": 1952,
+      "fetched_at": "2026-10-26T01:19:06Z",
+      "sha256": "0258fc45f4977166e143933191536991144bee550821ec046f440fdab8ef3e49",
+      "rows": 18
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1953;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1953;type=year",
+      "format": "Test",
+      "year": 1953,
+      "fetched_at": "2026-10-26T01:19:17Z",
+      "sha256": "72710a2dd691ca90d7d696d36b07a11167070d6abed19d8116b47ab8ad75e949",
+      "rows": 17
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1954;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1954;type=year",
+      "format": "Test",
+      "year": 1954,
+      "fetched_at": "2026-10-26T01:19:33Z",
+      "sha256": "90b82f8d07efe0dc643f1eca5fbf60ab0b3846bb4d60a4874c131b141fa75635",
+      "rows": 15
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1955;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1955;type=year",
+      "format": "Test",
+      "year": 1955,
+      "fetched_at": "2026-10-26T01:19:52Z",
+      "sha256": "87f0b0ca8f1f5c8cbcad0dde5bf0e60b506be3ee2f8f7a391b293d5457085580",
+      "rows": 27
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1956;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1956;type=year",
+      "format": "Test",
+      "year": 1956,
+      "fetched_at": "2026-10-26T01:20:05Z",
+      "sha256": "e1a1ea8700694d6163f1ba62f209d8de55da81331b5677348f0384527788c127",
+      "rows": 16
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1957;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1957;type=year",
+      "format": "Test",
+      "year": 1957,
+      "fetched_at": "2026-10-26T01:20:17Z",
+      "sha256": "054c0aa6accb4ee131f3f0060953c2afb54ee6a0db169baa18d6ec20e5e08c3a",
+      "rows": 10
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1958;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1958;type=year",
+      "format": "Test",
+      "year": 1958,
+      "fetched_at": "2026-10-26T01:20:34Z",
+      "sha256": "9f79500476b1f002ef6b6c10266efdffbae466528e44ed0ef0e3cbc61e360abc",
+      "rows": 19
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1959;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1959;type=year",
+      "format": "Test",
+      "year": 1959,
+      "fetched_at": "2026-10-25T22:59:07Z",
+      "sha256": "a730b0df1af24fd1865a0be19512dbacf9c15fa85a950c4d5eec57f79289fa8c",
+      "rows": 22
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1960;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1960;type=year",
+      "format": "Test",
+      "year": 1960,
+      "fetched_at": "2026-10-25T22:59:25Z",
+      "sha256": "9d94f62b852e39d062bd14c32a970609334b026bce6c4549b7e7a1775a412e70",
+      "rows": 18
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1961;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1961;type=year",
+      "format": "Test",
+      "year": 1961,
+      "fetched_at": "2026-10-25T22:59:38Z",
+      "sha256": "c49b3f4e01a006bde3fade6fdeda608be84e62241ab2dbe6b3a96cdabed865e5",
+      "rows": 19
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1962;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1962;type=year",
+      "format": "Test",
+      "year": 1962,
+      "fetched_at": "2026-10-25T22:59:49Z",
+      "sha256": "045eefcef8d3370465f98cc59a9356def6c117553a29b682053fc5ba065557c6",
+      "rows": 19
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1963;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1963;type=year",
+      "format": "Test",
+      "year": 1963,
+      "fetched_at": "2026-10-25T23:00:05Z",
+      "sha256": "3063690a5b73b48d028cdb9f439ca25f8d10a2fb94829b48103a492c561694fd",
+      "rows": 13
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1964;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1964;type=year",
+      "format": "Test",
+      "year": 1964,
+      "fetched_at": "2026-10-25T23:00:22Z",
+      "sha256": "9b68567d4a2e94518511d8e952ed7daff8967456c5f6c93e578241ac03e2637f",
+      "rows": 24
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1965;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1965;type=year",
+      "format": "Test",
+      "year": 1965,
+      "fetched_at": "2026-10-25T23:00:38Z",
+      "sha256": "6f6564b16dd402486b8819aa0a0650eca87accb61754c47b33112306cf631f6d",
+      "rows": 26
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1966;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1966;type=year",
+      "format": "Test",
+      "year": 1966,
+      "fetched_at": "2026-10-25T23:00:55Z",
+      "sha256": "ffb5f2ce2b9aece05e516afa93dff94d87c6dafe4ba1895b9ac22e291ccb3c40",
+      "rows": 16
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1967;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1967;type=year",
+      "format": "Test",
+      "year": 1967,
+      "fetched_at": "2026-10-25T23:01:14Z",
+      "sha256": "e837be5853eac56fee5c3e0ec00c9357180b873711fd2534b5a7e109fc7b0366",
+      "rows": 14
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1968;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1968;type=year",
+      "format": "Test",
+      "year": 1968,
+      "fetched_at": "2026-10-25T23:01:27Z",
+      "sha256": "a23c8a28a67da8cd9f819ec7f987125a14188e54c7e1d19e602d577537843399",
+      "rows": 19
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1969;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1969;type=year",
+      "format": "Test",
+      "year": 1969,
+      "fetched_at": "2026-10-25T23:01:39Z",
+      "sha256": "c745423cf308133056f36f4e8f526307496aa70479fac37344fad768e5a61201",
+      "rows": 26
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1970;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1970;type=year",
+      "format": "Test",
+      "year": 1970,
+      "fetched_at": "2026-10-25T23:01:58Z",
+      "sha256": "bdb8e8b8675a5f81a9e4ff9f88778dcd702c64974380a5b8d945b8669b4d7c8d",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1971;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1971;type=year",
+      "format": "Test",
+      "year": 1971,
+      "fetched_at": "2026-10-25T23:02:10Z",
+      "sha256": "c11ae9dfd051314da37bcb9b3209dde9e89d2244fee19e602374f729ada3382d",
+      "rows": 17
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1972;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1972;type=year",
+      "format": "Test",
+      "year": 1972,
+      "fetched_at": "2026-10-25T23:02:29Z",
+      "sha256": "a31c55dfa2cb10cb14fbc3867863dba57bdab469e6c55b8c9036aa1e54a21910",
+      "rows": 14
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1973;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1973;type=year",
+      "format": "Test",
+      "year": 1973,
+      "fetched_at": "2026-10-25T23:02:41Z",
+      "sha256": "7dabd2633d6c047e8982b7fbb80325e267f2c4283d0601743b0c93c68bacc8e4",
+      "rows": 24
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1974;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1974;type=year",
+      "format": "Test",
+      "year": 1974,
+      "fetched_at": "2026-10-25T23:02:52Z",
+      "sha256": "933fb57b39c553f365767219624d1ac12a3b9d448c77bcc761081f554e9dac73",
+      "rows": 23
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1975;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1975;type=year",
+      "format": "Test",
+      "year": 1975,
+      "fetched_at": "2026-10-25T23:03:09Z",
+      "sha256": "e91dd3dce4d020e4576af2f85bb975c24f4af869ab3f923c472252b3afcaacc6",
+      "rows": 17
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1976;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1976;type=year",
+      "format": "Test",
+      "year": 1976,
+      "fetched_at": "2026-10-25T23:03:27Z",
+      "sha256": "8cf5610c9d9896bc4a4315ad531a6f6affb5efeb85f50ec8d0a673d7c0f89f4a",
+      "rows": 23
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1977;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1977;type=year",
+      "format": "Test",
+      "year": 1977,
+      "fetched_at": "2026-10-25T23:03:40Z",
+      "sha256": "3fb0e8fe63e56a24f4beb01f5292ed742df7fa12b1b1da7f17f61e9b68df83c4",
+      "rows": 23
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1978;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1978;type=year",
+      "format": "Test",
+      "year": 1978,
+      "fetched_at": "2026-10-25T23:03:51Z",
+      "sha256": "92478cba318fd4cd40a5d6013c4e1e39fd3220f03fbd7d164cf0eadcda8f26d5",
+      "rows": 28
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1979;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1979;type=year",
+      "format": "Test",
+      "year": 1979,
+      "fetched_at": "2026-10-25T23:04:10Z",
+      "sha256": "ab05a210f7fdf0334a65c3fcb6851cd352ee25b54988ed433b5ac63ea816e83f",
+      "rows": 30
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1980;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1980;type=year",
+      "format": "Test",
+      "year": 1980,
+      "fetched_at": "2026-10-25T23:04:25Z",
+      "sha256": "68dd12dfe79965c0fde23d6d2cf28c3957be6119661d984597801aa7bd063f9b",
+      "rows": 26
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1981;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1981;type=year",
+      "format": "Test",
+      "year": 1981,
+      "fetched_at": "2026-10-25T23:04:37Z",
+      "sha256": "bd6ce695f1ffa3de1dca95a3cf32c3f55217ac441c5845022d0a40e31d04e330",
+      "rows": 24
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1982;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1982;type=year",
+      "format": "Test",
+      "year": 1982,
+      "fetched_at": "2026-10-25T23:04:51Z",
+      "sha256": "d74df3ae49c0d3be9ea98ec345e86398eb28ae2409b33d08d0edff152365a577",
+      "rows": 28
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1983;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1983;type=year",
+      "format": "Test",
+      "year": 1983,
+      "fetched_at": "2026-10-25T23:05:04Z",
+      "sha256": "bd992c3c6d8f88f0b8f92721b955062a8022ab69e8300153f711f6760479d442",
+      "rows": 30
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1984;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1984;type=year",
+      "format": "Test",
+      "year": 1984,
+      "fetched_at": "2026-10-25T23:05:18Z",
+      "sha256": "194e936e3d9cbe2697032ff3f89d156c101b56091756301f1bf4905490618427",
+      "rows": 34
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1985;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1985;type=year",
+      "format": "Test",
+      "year": 1985,
+      "fetched_at": "2026-10-25T23:05:33Z",
+      "sha256": "8677633f886d710d4bfa4b0ccd1e0167a57c3e018d9f3af0cf7e3f2305dd8285",
+      "rows": 28
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1986;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1986;type=year",
+      "format": "Test",
+      "year": 1986,
+      "fetched_at": "2026-10-25T23:05:48Z",
+      "sha256": "4ac1f0ab70d0ecac2fd7503c7fe2f6cce70e7f1917c940de11b050c2aed3096b",
+      "rows": 30
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1987;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1987;type=year",
+      "format": "Test",
+      "year": 1987,
+      "fetched_at": "2026-10-25T23:06:02Z",
+      "sha256": "b9338663ef22748ebba1147324d40a56c456cd943c1284ee6d29263b50c8a3ae",
+      "rows": 25
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1988;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1988;type=year",
+      "format": "Test",
+      "year": 1988,
+      "fetched_at": "2026-10-25T23:06:13Z",
+      "sha256": "40c8b3b78206f5eb0d1c38acbd0e5f944bc2b3786e6c51569f64781edd23af0b",
+      "rows": 24
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1989;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1989;type=year",
+      "format": "Test",
+      "year": 1989,
+      "fetched_at": "2026-10-25T23:06:31Z",
+      "sha256": "d3dc43db22d43001fc766e9612e8d3b96432d68cafe54a36a9883ea7bc2e339c",
+      "rows": 21
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1990;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1990;type=year",
+      "format": "Test",
+      "year": 1990,
+      "fetched_at": "2026-10-25T23:06:42Z",
+      "sha256": "ad502b28aa534e87215c2d18bffc418aeb6027add5c01a4c2c5dd52a7db11762",
+      "rows": 26
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1991;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1991;type=year",
+      "format": "Test",
+      "year": 1991,
+      "fetched_at": "2026-10-25T23:07:00Z",
+      "sha256": "078dea6b2bbc251531dc4e7e1a67bf0cb81d6e7a5de3749c60ca9794d2418bfb",
+      "rows": 21
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1992;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1992;type=year",
+      "format": "Test",
+      "year": 1992,
+      "fetched_at": "2026-10-25T23:07:11Z",
+      "sha256": "ff89d8cbafc5234bbeba20e04d11359678a005bd9dd5dbc8d3ad780fea61870b",
+      "rows": 26
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1993;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1993;type=year",
+      "format": "Test",
+      "year": 1993,
+      "fetched_at": "2026-10-25T23:07:28Z",
+      "sha256": "e98057c35a494c0aa993a439a8c09f54f54ad50ad8d14e6f418e63fe1a802ab2",
+      "rows": 36
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1994;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1994;type=year",
+      "format": "Test",
+      "year": 1994,
+      "fetched_at": "2026-10-25T23:07:44Z",
+      "sha256": "2881d05371424bc214775916a9367a3576b103aaecaef5da62b51af0e461947c",
+      "rows": 38
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1995;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1995;type=year",
+      "format": "Test",
+      "year": 1995,
+      "fetched_at": "2026-10-25T23:08:01Z",
+      "sha256": "f3d61109acf237cf42cff6db922b10809f8a327d7cf8ca9bdc9c0b58f3f7e2df",
+      "rows": 40
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1996;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1996;type=year",
+      "format": "Test",
+      "year": 1996,
+      "fetched_at": "2026-10-25T23:08:17Z",
+      "sha256": "b2dd5f5e46f909bf6ec90a5d0f86af24b33a5dfa9be28957a0ff6bd979f02384",
+      "rows": 28
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1997;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1997;type=year",
+      "format": "Test",
+      "year": 1997,
+      "fetched_at": "2026-10-25T23:08:37Z",
+      "sha256": "46abfbea242708a328c1d5357cb844a863b698c4ff3da57fe717e91872994ae7",
+      "rows": 44
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1998;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1998;type=year",
+      "format": "Test",
+      "year": 1998,
+      "fetched_at": "2026-10-25T23:08:50Z",
+      "sha256": "273e3d1261f4943ad8e3ec9fe799f68caacda7d2770f6def411606a84338eb4f",
+      "rows": 45
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1999;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=1999;type=year",
+      "format": "Test",
+      "year": 1999,
+      "fetched_at": "2026-10-25T23:09:05Z",
+      "sha256": "5b91334dd89b61b65d8acb646565a930c5d63df75ccc134a4cc1f1a4d301b466",
+      "rows": 43
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2000;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2000;type=year",
+      "format": "Test",
+      "year": 2000,
+      "fetched_at": "2026-10-25T23:09:19Z",
+      "sha256": "2105ac5d3ded158f380b55ecb155ca428501b4379bb21379d7c4e6efc64257a6",
+      "rows": 46
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2001;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2001;type=year",
+      "format": "Test",
+      "year": 2001,
+      "fetched_at": "2026-10-25T23:09:31Z",
+      "sha256": "e57736d31d466ab732bf526d344ddae852f94fa6e654eb0e05b1a30c475123bf",
+      "rows": 55
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2002;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2002;type=year",
+      "format": "Test",
+      "year": 2002,
+      "fetched_at": "2026-10-25T23:09:48Z",
+      "sha256": "075908b48c8b6533628afb22d8711df0921f8ef90247ec7406e2f65ac71f55c3",
+      "rows": 54
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2003;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2003;type=year",
+      "format": "Test",
+      "year": 2003,
+      "fetched_at": "2026-10-25T23:10:04Z",
+      "sha256": "b80122e1dfc9ba21790076840785da0dbe5f2a1bc9c15099e24734ee39949291",
+      "rows": 44
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2004;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2004;type=year",
+      "format": "Test",
+      "year": 2004,
+      "fetched_at": "2026-10-25T23:10:25Z",
+      "sha256": "8a99ede4570412283d00b2d8a1ea3b8e6017530d4a24a29f0686b3acbf98d0c0",
+      "rows": 51
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2005;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2005;type=year",
+      "format": "Test",
+      "year": 2005,
+      "fetched_at": "2026-10-25T23:10:41Z",
+      "sha256": "b79021396fcdd29766ef72c21b1a7197a8769adebaab71fe863b9082929f18db",
+      "rows": 49
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2006;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2006;type=year",
+      "format": "Test",
+      "year": 2006,
+      "fetched_at": "2026-10-25T23:10:57Z",
+      "sha256": "d91ebb4dd6f28ac60f5f5f0accac54bd428b7232d3fad6e277c6ce4b2faa6962",
+      "rows": 46
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2007;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2007;type=year",
+      "format": "Test",
+      "year": 2007,
+      "fetched_at": "2026-10-25T23:11:11Z",
+      "sha256": "ec7a0741732f9be6dbc15edf882e33572c962c1240874199a49c93d18362cede",
+      "rows": 31
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2008;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2008;type=year",
+      "format": "Test",
+      "year": 2008,
+      "fetched_at": "2026-10-25T23:11:24Z",
+      "sha256": "0dd28599f8854a53f08bab52f69acbaaa71450e779fa0360a63a1f74b27a32b8",
+      "rows": 47
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2009;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2009;type=year",
+      "format": "Test",
+      "year": 2009,
+      "fetched_at": "2026-10-25T23:11:37Z",
+      "sha256": "7ebf368203adac1a4e9be8dec3f08e5ad894052119b05a597bccd0db9136edef",
+      "rows": 41
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2010;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2010;type=year",
+      "format": "Test",
+      "year": 2010,
+      "fetched_at": "2026-10-25T23:11:53Z",
+      "sha256": "064f1054c182935a8db54ba76b05f7f939ee36983ded9dd2e0a93b15b35d16b6",
+      "rows": 43
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2011;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2011;type=year",
+      "format": "Test",
+      "year": 2011,
+      "fetched_at": "2026-10-25T23:12:08Z",
+      "sha256": "aa1dcb9201a39c3a3db8191d340658c6aa76b6eda27e436c8eaaaf82e1f4f777",
+      "rows": 39
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2012;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2012;type=year",
+      "format": "Test",
+      "year": 2012,
+      "fetched_at": "2026-10-25T23:12:37Z",
+      "sha256": "33f14e058b23f9b42e970ab020f671f40364fe99045cdca050992c8464fcab16",
+      "rows": 42
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2013;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2013;type=year",
+      "format": "Test",
+      "year": 2013,
+      "fetched_at": "2026-10-25T23:12:48Z",
+      "sha256": "adf629746ad983f2913728874c9cc99c7795fb69398ba6042a90e9af4874aa49",
+      "rows": 44
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2014;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2014;type=year",
+      "format": "Test",
+      "year": 2014,
+      "fetched_at": "2026-10-25T23:13:05Z",
+      "sha256": "dbfb958aafe90b009212570e191e6faf067272716a7c30133dd01c014ba3bc86",
+      "rows": 42
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2015;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2015;type=year",
+      "format": "Test",
+      "year": 2015,
+      "fetched_at": "2026-10-25T23:13:22Z",
+      "sha256": "c4f7d048b92bb13da5ff58b0b325d40c9ddcd2bcf5a6ff2db84a1de2ca2a594d",
+      "rows": 43
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2016;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2016;type=year",
+      "format": "Test",
+      "year": 2016,
+      "fetched_at": "2026-10-25T23:13:39Z",
+      "sha256": "db1a3633c221ae54c37767583665f1615fe1d07867f4b76556660a100acc45f3",
+      "rows": 47
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2017;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2017;type=year",
+      "format": "Test",
+      "year": 2017,
+      "fetched_at": "2026-10-25T23:13:56Z",
+      "sha256": "c4546c6f78ccc8bb1608c68b648f8cbd87fbe2d0b859722694676560be6e4d5f",
+      "rows": 47
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2018;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2018;type=year",
+      "format": "Test",
+      "year": 2018,
+      "fetched_at": "2026-10-25T23:14:13Z",
+      "sha256": "79cc9bfd7cfe6de09e504ab3661c537332ef4cd93e0f0db49a334e2dd4268986",
+      "rows": 48
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2019;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2019;type=year",
+      "format": "Test",
+      "year": 2019,
+      "fetched_at": "2026-10-25T23:14:33Z",
+      "sha256": "a6eecaefe940be20cef04c95fd3145fc2bb570d8b8588113fd528fc570c2772c",
+      "rows": 39
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2020;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2020;type=year",
+      "format": "Test",
+      "year": 2020,
+      "fetched_at": "2026-10-25T23:14:47Z",
+      "sha256": "920d9b00faec81f94d4fe629ca7feea96e43d1d09c8abab4d5d2a30e4faea0a9",
+      "rows": 22
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2021;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2021;type=year",
+      "format": "Test",
+      "year": 2021,
+      "fetched_at": "2026-10-25T23:15:00Z",
+      "sha256": "311b1c3f37fbe3d8189bd9c2f212e5a9048461dd4146d0658447f0b3d5418a62",
+      "rows": 44
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2022;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2022;type=year",
+      "format": "Test",
+      "year": 2022,
+      "fetched_at": "2026-10-25T23:15:11Z",
+      "sha256": "843d21c3325d6a3c533708301489ed0eff105b4bf56a9d06e91cb4cd5210980a",
+      "rows": 43
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2023;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2023;type=year",
+      "format": "Test",
+      "year": 2023,
+      "fetched_at": "2026-10-25T23:15:28Z",
+      "sha256": "9bdd6cb3d6770535c57528e34cf1f29cba9ee40f3bb6937338ca1f3cd1f481fb",
+      "rows": 34
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2024;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2024;type=year",
+      "format": "Test",
+      "year": 2024,
+      "fetched_at": "2026-10-25T23:15:45Z",
+      "sha256": "8b76520147b4927912077dc83507d517067ea43952ff8a1fbb81eb9d760ecf98",
+      "rows": 53
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2025;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2025;type=year",
+      "format": "Test",
+      "year": 2025,
+      "fetched_at": "2026-10-26T00:19:40Z",
+      "sha256": "19cb5010e228f256a627885b930c76460645396a7e0068d6930ca61d9d9875dd",
+      "rows": 42
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2026;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=1;id=2026;type=year",
+      "format": "Test",
+      "year": 2026,
+      "fetched_at": "2026-10-26T00:19:50Z",
+      "sha256": "eb201004f6445df24a0c4a15e0feaaef4e494aa47e9a21bf065982a78b696b86",
+      "rows": 23
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1971;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1971;type=year",
+      "format": "ODI",
+      "year": 1971,
+      "fetched_at": "2026-10-25T23:16:32Z",
+      "sha256": "b4c09733b612b7ccf068af5f6e7af349b9ab2363ff87f576acee3126970db557",
+      "rows": 1
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1972;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1972;type=year",
+      "format": "ODI",
+      "year": 1972,
+      "fetched_at": "2026-10-25T23:16:48Z",
+      "sha256": "14d7d4c667c97991695597695efca0b3539b7625570190c55c06c1d2f2f92d78",
+      "rows": 3
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1973;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1973;type=year",
+      "format": "ODI",
+      "year": 1973,
+      "fetched_at": "2026-10-25T23:17:04Z",
+      "sha256": "56d0351c82820cada1b860702bd6bfad2110be802cce8582b52bd868fde08bf0",
+      "rows": 5
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1974;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1974;type=year",
+      "format": "ODI",
+      "year": 1974,
+      "fetched_at": "2026-10-25T23:17:20Z",
+      "sha256": "cb50a7ddd05cde179739ca6c880c3149df72f17969506e9f30afd688a381d419",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1975;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1975;type=year",
+      "format": "ODI",
+      "year": 1975,
+      "fetched_at": "2026-10-25T23:17:36Z",
+      "sha256": "1a7f46da1a53fd8c8782b1c78ba12392f47409f0fb5587fb3839eaf810ca293f",
+      "rows": 19
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1976;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1976;type=year",
+      "format": "ODI",
+      "year": 1976,
+      "fetched_at": "2026-10-25T23:17:53Z",
+      "sha256": "c5b43557bdc4bc4a60e6c6f17c219be69fd10b0c97ecdc4c0d4be5fc3ba7a6b8",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1977;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1977;type=year",
+      "format": "ODI",
+      "year": 1977,
+      "fetched_at": "2026-10-25T23:18:09Z",
+      "sha256": "dad48ad5f3edafa475e81f9aa963dd1cc3d8ed5d509d88ae275d8da32b41a9d8",
+      "rows": 6
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1978;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1978;type=year",
+      "format": "ODI",
+      "year": 1978,
+      "fetched_at": "2026-10-25T23:18:26Z",
+      "sha256": "a29a5e50b10b39040792882e9849debe1a2118f54c7e920592c6c78c15cbc59a",
+      "rows": 10
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1979;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1979;type=year",
+      "format": "ODI",
+      "year": 1979,
+      "fetched_at": "2026-10-25T23:18:42Z",
+      "sha256": "dc542f2b909d63008706b435fcafc9b36ceb32324a3e7f11d39dc059fd5106db",
+      "rows": 26
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1980;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1980;type=year",
+      "format": "ODI",
+      "year": 1980,
+      "fetched_at": "2026-10-25T23:19:01Z",
+      "sha256": "81cd7a0753eea36bb90f006c206693a42bda45e05a5906945cf075a67b37227b",
+      "rows": 21
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1981;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1981;type=year",
+      "format": "ODI",
+      "year": 1981,
+      "fetched_at": "2026-10-25T23:19:12Z",
+      "sha256": "745b4f82c4011bf1c16dec9a75e264da6aed6f98bdbcc22e45ca2fc10ec243af",
+      "rows": 28
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1982;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1982;type=year",
+      "format": "ODI",
+      "year": 1982,
+      "fetched_at": "2026-10-25T23:19:29Z",
+      "sha256": "2d88e4525104f8e141b59ddec20a619bf80c61cf312e5227abbd7a16e842223b",
+      "rows": 33
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1983;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1983;type=year",
+      "format": "ODI",
+      "year": 1983,
+      "fetched_at": "2026-10-25T23:19:47Z",
+      "sha256": "7e96916db412fb27a1b8b0228bc18eeb6e2cb2c054e92a988fa1fea5357b7de7",
+      "rows": 66
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1984;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1984;type=year",
+      "format": "ODI",
+      "year": 1984,
+      "fetched_at": "2026-10-25T23:20:04Z",
+      "sha256": "903998ab91e6724ac435018defa06161b4a9322da7af270ef3b57ed65820df19",
+      "rows": 51
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1985;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1985;type=year",
+      "format": "ODI",
+      "year": 1985,
+      "fetched_at": "2026-10-25T23:20:21Z",
+      "sha256": "5581df3a8183088257d542121c6c6a484ebead3924cbb2d96c623a674de1b71a",
+      "rows": 65
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1986;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1986;type=year",
+      "format": "ODI",
+      "year": 1986,
+      "fetched_at": "2026-10-25T23:20:32Z",
+      "sha256": "8dc4b88dbe7eddfb37216bf8fd3e11ed314d6618771b4703682bd19b1048597a",
+      "rows": 62
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1987;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1987;type=year",
+      "format": "ODI",
+      "year": 1987,
+      "fetched_at": "2026-10-25T23:20:50Z",
+      "sha256": "d38856161783018ee8108f67065c35382a2745659a7b81045a3bb418789f98ab",
+      "rows": 74
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1988;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1988;type=year",
+      "format": "ODI",
+      "year": 1988,
+      "fetched_at": "2026-10-25T23:21:09Z",
+      "sha256": "da4a055caecf5f027e33bcbcf776ca7634496fee135309a7191d5cb66edd9db4",
+      "rows": 61
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1989;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1989;type=year",
+      "format": "ODI",
+      "year": 1989,
+      "fetched_at": "2026-10-25T23:21:20Z",
+      "sha256": "c0ae8d1e56b4a67d4ca7b8f098046e21b55a81d166e28604546db3fa119240ea",
+      "rows": 55
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1990;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1990;type=year",
+      "format": "ODI",
+      "year": 1990,
+      "fetched_at": "2026-10-25T23:21:42Z",
+      "sha256": "ef2c57a7cf0ad40e6a53dff335ec006a882f29298db48abf657462161a2b7956",
+      "rows": 61
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1991;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1991;type=year",
+      "format": "ODI",
+      "year": 1991,
+      "fetched_at": "2026-10-25T23:21:59Z",
+      "sha256": "1a308a8a6217229102b4649b60fb1d8e28b48a4da61bd8ffa19ba6f79bb456e9",
+      "rows": 39
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1992;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1992;type=year",
+      "format": "ODI",
+      "year": 1992,
+      "fetched_at": "2026-10-25T23:22:16Z",
+      "sha256": "ff8c2c248c1dc619ae1aff7310bda32c27c09cebe5ca124a5eac23c4b1996f5c",
+      "rows": 89
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1993;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1993;type=year",
+      "format": "ODI",
+      "year": 1993,
+      "fetched_at": "2026-10-25T23:22:30Z",
+      "sha256": "1c9cf06ac419d48baea2609d351f0a2e0f6a214257e2cb1014d937f1c48ea0df",
+      "rows": 82
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1994;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1994;type=year",
+      "format": "ODI",
+      "year": 1994,
+      "fetched_at": "2026-10-25T23:22:51Z",
+      "sha256": "c73b2cdc5bea1c3786c37070049f0d146684024b05f34a287f1e94b61d1006c5",
+      "rows": 98
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1995;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1995;type=year",
+      "format": "ODI",
+      "year": 1995,
+      "fetched_at": "2026-10-25T23:23:03Z",
+      "sha256": "834e9829014acba9f556b70103df0bb8a6efcc3dd67541a2881095c1eeee6813",
+      "rows": 60
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1996;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1996;type=year",
+      "format": "ODI",
+      "year": 1996,
+      "fetched_at": "2026-10-25T23:23:21Z",
+      "sha256": "8aac5e50d3876bb68ff5aed6eeb67471160751c10cd5c7355f907b9cef4a0952",
+      "rows": 127
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1997;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1997;type=year",
+      "format": "ODI",
+      "year": 1997,
+      "fetched_at": "2026-10-25T23:23:34Z",
+      "sha256": "eead65d6307fe7c8ae9927a15b38e11ff42b10709d523af650c0532ca4c9b36a",
+      "rows": 115
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1998;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1998;type=year",
+      "format": "ODI",
+      "year": 1998,
+      "fetched_at": "2026-10-25T23:23:46Z",
+      "sha256": "005d4902931d9a8787d5e34d198df3976e76c3adba05c16ea8b8479e588921e7",
+      "rows": 108
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1999;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1999;type=year",
+      "format": "ODI",
+      "year": 1999,
+      "fetched_at": "2026-10-25T23:23:58Z",
+      "sha256": "8e9fe570cfa228c904ab70318342c5a7a13d36107bf0164487fd65e30a63efe5",
+      "rows": 154
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2000;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2000;type=year",
+      "format": "ODI",
+      "year": 2000,
+      "fetched_at": "2026-10-25T23:24:11Z",
+      "sha256": "dbef384f920ebd7284d26944d45e8e4d48fe0193fa51d4d7c65b8b5548c158df",
+      "rows": 131
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2001;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2001;type=year",
+      "format": "ODI",
+      "year": 2001,
+      "fetched_at": "2026-10-25T23:24:24Z",
+      "sha256": "84eb044fa36cc5a7d486446118b0edfeda23f9405cf5dcd7bc84e137b8874a17",
+      "rows": 120
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2002;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2002;type=year",
+      "format": "ODI",
+      "year": 2002,
+      "fetched_at": "2026-10-25T23:24:45Z",
+      "sha256": "85cf3ee17c8f7b1dce679a61b75bd24281936c7ee14675ca9508a65ebdc4a80e",
+      "rows": 145
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2003;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2003;type=year",
+      "format": "ODI",
+      "year": 2003,
+      "fetched_at": "2026-10-25T23:24:54Z",
+      "sha256": "f0f87733a5c2b6a4ad0395fb43c094f4a1a0684e5ef15d1b4c63d5d41446c248",
+      "rows": 147
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2004;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2004;type=year",
+      "format": "ODI",
+      "year": 2004,
+      "fetched_at": "2026-10-25T23:25:06Z",
+      "sha256": "070f963d9098da6dd21fc2c43d6f547489d864360259a7b7a93d8722f227109d",
+      "rows": 128
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2005;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2005;type=year",
+      "format": "ODI",
+      "year": 2005,
+      "fetched_at": "2026-10-25T23:25:22Z",
+      "sha256": "7b792af5361f7b0f4d05baec0a3c8b85c05b2b6712319ce643dc4734ff81cde0",
+      "rows": 107
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2006;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2006;type=year",
+      "format": "ODI",
+      "year": 2006,
+      "fetched_at": "2026-10-25T23:25:35Z",
+      "sha256": "fdb102be269ca1bf2bcc77672676ff67e5161f79d5ec32c308b51eab79a40ea6",
+      "rows": 160
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2007;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2007;type=year",
+      "format": "ODI",
+      "year": 2007,
+      "fetched_at": "2026-10-25T23:25:48Z",
+      "sha256": "42b7ef5810635c97a1b46f72045d52066541c21bc93e52f3f81023ddba98c036",
+      "rows": 191
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2008;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2008;type=year",
+      "format": "ODI",
+      "year": 2008,
+      "fetched_at": "2026-10-25T23:26:00Z",
+      "sha256": "6b49eb0f5b79607fa54613463244f502f1c0346a10d628a255db094b36aab86a",
+      "rows": 126
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2009;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2009;type=year",
+      "format": "ODI",
+      "year": 2009,
+      "fetched_at": "2026-10-25T23:26:12Z",
+      "sha256": "2e60700184f9423f538075cffbfebf2b0e96da98cac403cbbe72989e5f3c6c7d",
+      "rows": 150
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2010;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2010;type=year",
+      "format": "ODI",
+      "year": 2010,
+      "fetched_at": "2026-10-25T23:26:24Z",
+      "sha256": "20d6ea3be7bfbb4ed85eba6ddc88334564b001a99246dcf240520c19b072f18e",
+      "rows": 142
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2011;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2011;type=year",
+      "format": "ODI",
+      "year": 2011,
+      "fetched_at": "2026-10-25T23:26:36Z",
+      "sha256": "73ccd39518c5fc161ca8c20c221604f358118e17bcef9d93cca7544575d80c7a",
+      "rows": 146
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2012;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2012;type=year",
+      "format": "ODI",
+      "year": 2012,
+      "fetched_at": "2026-10-25T23:26:48Z",
+      "sha256": "b440ea8ef95156360e708cb59784b2ad43c78970f1e0024cd163004dc7ccf468",
+      "rows": 90
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2013;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2013;type=year",
+      "format": "ODI",
+      "year": 2013,
+      "fetched_at": "2026-10-25T23:27:06Z",
+      "sha256": "00915f4e8333ff2dd1f93593dbf36089ff4f3341ec731f91433860ef4134c12f",
+      "rows": 136
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2014;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2014;type=year",
+      "format": "ODI",
+      "year": 2014,
+      "fetched_at": "2026-10-25T23:27:18Z",
+      "sha256": "012270470e1ddb3909150357d4768b051acd45341970024ff3b8fde18dfabb9c",
+      "rows": 121
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2015;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2015;type=year",
+      "format": "ODI",
+      "year": 2015,
+      "fetched_at": "2026-10-25T23:27:30Z",
+      "sha256": "5001396fa779ad0301c2a1255fdb867d6e3a27086e59e37e631be5555edd8fcd",
+      "rows": 146
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2016;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2016;type=year",
+      "format": "ODI",
+      "year": 2016,
+      "fetched_at": "2026-10-25T23:27:42Z",
+      "sha256": "bb124b3cdd7bdde043e7c54d6bab0ea8f552866485e9fcac8dc3f5e14385ca84",
+      "rows": 99
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2017;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2017;type=year",
+      "format": "ODI",
+      "year": 2017,
+      "fetched_at": "2026-10-25T23:27:59Z",
+      "sha256": "17075828de9fdaad50a163ad6de8a6f14a83dccd0f1eb3197397d2ff4124676b",
+      "rows": 129
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2018;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2018;type=year",
+      "format": "ODI",
+      "year": 2018,
+      "fetched_at": "2026-10-25T23:28:11Z",
+      "sha256": "d089a89f1cafe0819c5b42ac4395900f27405f7b8f67362ace213a3d7273908a",
+      "rows": 128
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2019;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2019;type=year",
+      "format": "ODI",
+      "year": 2019,
+      "fetched_at": "2026-10-25T23:28:28Z",
+      "sha256": "caae8007f83579457035834a79df83e46c6246d65de6edb5b3168d373229b80d",
+      "rows": 150
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2020;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2020;type=year",
+      "format": "ODI",
+      "year": 2020,
+      "fetched_at": "2026-10-25T23:28:41Z",
+      "sha256": "47fbf17c71364b29bf16b185d245f3ae24b20362dcbe25390bfc4f30e4900f55",
+      "rows": 44
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2021;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2021;type=year",
+      "format": "ODI",
+      "year": 2021,
+      "fetched_at": "2026-10-25T23:28:52Z",
+      "sha256": "c55dbe004cf6ce58553d1a4a3491d477cffe7eafeca5687fe023bd138308ef29",
+      "rows": 71
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2022;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2022;type=year",
+      "format": "ODI",
+      "year": 2022,
+      "fetched_at": "2026-10-25T23:29:10Z",
+      "sha256": "53385ceaade5ca70ad5cbbbe2de417128cfb7e9e77e10de28a19275de81639dd",
+      "rows": 161
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2023;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2023;type=year",
+      "format": "ODI",
+      "year": 2023,
+      "fetched_at": "2026-10-25T23:29:23Z",
+      "sha256": "5a0ba7dd9e63e6e31af7faf877e128b694710cf10415fb09d3a9f6ca24209f30",
+      "rows": 218
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2024;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2024;type=year",
+      "format": "ODI",
+      "year": 2024,
+      "fetched_at": "2026-10-25T23:29:35Z",
+      "sha256": "fee30346d96252a08933e84ba42e54d1ee241196d496c6371f3d1e2736e4363b",
+      "rows": 104
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2025;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2025;type=year",
+      "format": "ODI",
+      "year": 2025,
+      "fetched_at": "2026-10-26T00:19:54Z",
+      "sha256": "7c0e35d688370e98333dd37d2fa53df4eac9e5e4931d96d04a17d1de0eddb043",
+      "rows": 115
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2026;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=2026;type=year",
+      "format": "ODI",
+      "year": 2026,
+      "fetched_at": "2026-10-26T00:19:59Z",
+      "sha256": "ddf03c550362de1c3217514dafb1fc2172d37066204c7a0ed05a0c0113739899",
+      "rows": 111
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2005;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2005;type=year",
+      "format": "T20I",
+      "year": 2005,
+      "fetched_at": "2026-10-26T00:20:04Z",
+      "sha256": "0fedd7e87a58e357aa726c54cc81caf534129665018c5511fb038693e8f80aa7",
+      "rows": 3
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2006;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2006;type=year",
+      "format": "T20I",
+      "year": 2006,
+      "fetched_at": "2026-10-26T00:20:09Z",
+      "sha256": "d2f1249cd9a937635d7431e09f954d6b72adfaff900d93a6dbb2daa2e09da7b9",
+      "rows": 9
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2007;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2007;type=year",
+      "format": "T20I",
+      "year": 2007,
+      "fetched_at": "2026-10-26T00:20:16Z",
+      "sha256": "d2b5719b4ab881ec4783bb7d3cc98b4a5a05571a4aa03efa30151c9d07705449",
+      "rows": 38
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2008;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2008;type=year",
+      "format": "T20I",
+      "year": 2008,
+      "fetched_at": "2026-10-26T00:20:22Z",
+      "sha256": "94d3fb98143b2f27c37b3f5b0602afa106e074837fc0f797d89b7d3eec07fbd3",
+      "rows": 29
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2009;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2009;type=year",
+      "format": "T20I",
+      "year": 2009,
+      "fetched_at": "2026-10-26T00:20:28Z",
+      "sha256": "da936094949ea2221c78f5b2df20918b7db4675b8d64a344c2eb23aca07c1109",
+      "rows": 48
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2010;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2010;type=year",
+      "format": "T20I",
+      "year": 2010,
+      "fetched_at": "2026-10-26T00:20:34Z",
+      "sha256": "e3a44ae90588bbed869616df54ca5a6087d51a6fe89b129d9abfefb2398fd830",
+      "rows": 68
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2011;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2011;type=year",
+      "format": "T20I",
+      "year": 2011,
+      "fetched_at": "2026-10-26T00:20:50Z",
+      "sha256": "b2649d38c612fe5617948e999c6b613e4398e7818ff2255c228a0dc4cb0c7b18",
+      "rows": 21
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2012;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2012;type=year",
+      "format": "T20I",
+      "year": 2012,
+      "fetched_at": "2026-10-26T00:21:07Z",
+      "sha256": "67cfcf2e8b8e3ffcd96cb4a5f5010a612013e81f6f0b5322bef4aa231629a9dc",
+      "rows": 82
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2013;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2013;type=year",
+      "format": "T20I",
+      "year": 2013,
+      "fetched_at": "2026-10-26T00:21:24Z",
+      "sha256": "f75d5a189757f9ccd884abc22feec6736d4350cf71cd12203dedd9aa42d054b3",
+      "rows": 53
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2014;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2014;type=year",
+      "format": "T20I",
+      "year": 2014,
+      "fetched_at": "2026-10-26T00:21:41Z",
+      "sha256": "a10f3a82a34b21012421cc3475ac6675b2a06dd48f5e03b2939696532b9915ad",
+      "rows": 61
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2015;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2015;type=year",
+      "format": "T20I",
+      "year": 2015,
+      "fetched_at": "2026-10-26T00:21:58Z",
+      "sha256": "8dd821c66fe6dc7673f0e19a41fe30042a1e65bad0be6ec61f367902179b097c",
+      "rows": 61
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2016;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2016;type=year",
+      "format": "T20I",
+      "year": 2016,
+      "fetched_at": "2026-10-26T00:22:15Z",
+      "sha256": "8a3db7afb60f5471ad6f49769f8819b336d5296d7011735682a372bf1a439d22",
+      "rows": 100
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2017;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2017;type=year",
+      "format": "T20I",
+      "year": 2017,
+      "fetched_at": "2026-10-26T00:22:32Z",
+      "sha256": "8c23aaed64c3c9ec3202256d1f45a33cab44e28230addd3da04354135a364fdf",
+      "rows": 63
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2018;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2018;type=year",
+      "format": "T20I",
+      "year": 2018,
+      "fetched_at": "2026-10-26T00:22:49Z",
+      "sha256": "34c49840fbb5a193d6303e03e3ce41bd46fbc94b5d27905aef29b89ff20897db",
+      "rows": 81
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2019;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2019;type=year",
+      "format": "T20I",
+      "year": 2019,
+      "fetched_at": "2026-10-26T00:23:27Z",
+      "sha256": "432ca39840888b26f7655e213857c2652a572b144d0149b0b2574eced9fb43c2",
+      "rows": 307
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2020;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2020;type=year",
+      "format": "T20I",
+      "year": 2020,
+      "fetched_at": "2026-10-26T00:23:28Z",
+      "sha256": "9bb03b2b9ae7813b9fdcc7fe5fb456f430a83717578faca588e507c435c996c6",
+      "rows": 95
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2021;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2021;type=year",
+      "format": "T20I",
+      "year": 2021,
+      "fetched_at": "2026-10-26T00:23:47Z",
+      "sha256": "d01b1d061e34f1bc003e27bf665f4e1a6ebfe9b04fadfc15990b11a46782af97",
+      "rows": 333
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2022;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2022;type=year",
+      "format": "T20I",
+      "year": 2022,
+      "fetched_at": "2026-10-26T00:24:03Z",
+      "sha256": "4c6222d8ae92ffea3bca15d525e8da1b6369cec01d65c3c03d21a14ebd4c3f70",
+      "rows": 531
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2023;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2023;type=year",
+      "format": "T20I",
+      "year": 2023,
+      "fetched_at": "2026-10-26T00:24:18Z",
+      "sha256": "a5cf8939ced2d8c0cf80ad4f18c62d7cf4f5025729491af399683ea724f4afdc",
+      "rows": 443
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2024;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2024;type=year",
+      "format": "T20I",
+      "year": 2024,
+      "fetched_at": "2026-10-26T00:24:35Z",
+      "sha256": "ee369117a278aa57e8de6c4a2a94fea308191839dffe2816c5246721f4c8a258",
+      "rows": 654
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2025;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2025;type=year",
+      "format": "T20I",
+      "year": 2025,
+      "fetched_at": "2026-10-26T00:24:51Z",
+      "sha256": "a43c9ba16f63ba634f1691cae5a4e2fbbc3c75fec3d51e087e5bb9a539dd13f3",
+      "rows": 579
+    },
+    {
+      "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2026;type=year",
+      "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=3;id=2026;type=year",
+      "format": "T20I",
+      "year": 2026,
+      "fetched_at": "2026-10-26T00:25:07Z",
+      "sha256": "9fcd15563bf63e740dde04a1b2edb95767c55036b2865c4b23492c62186fa5fe",
+      "rows": 561
+    }
+  ],
+  "matches_sha256": "439cc41070cc71fd798f8d0fecfbf61c24629c5605182a1a18eaf34e35dd6c57",
+  "code_sha256": {
+    "R/acquisition.R": "70a51080e845100a95fe9b96cdc70a5803a1f1ecc4b19872eafedd37a8abdf0e",
+    "R/elo.R": "3bca27c1c77aa1f83d4b61ab5ac6b9e4b82ece4b31547806a4fdb2abaacf325e",
+    "R/paths.R": "c267c8c657ffa7b4641f2d36e792d57fe50e95186ebb8ca1571e35855198cad1",
+    "R/pipeline.R": "72f5f88f8ca237ab7d4ba46b571a3cf618a50d9076ea0ccb82c930766bc127c0",
+    "renv.lock": "85f4824ac9844eeb077248a141de2d681998cd4d6a8bf5630ebf6633beeb3e2b",
+    "scripts/pipeline.R": "667412826aaf152f23a26f3d7bd2d45d94c97d13315dc171da7c90679c8d8b03"
+  }
+}

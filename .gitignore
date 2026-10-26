@@ -1,6 +1,20 @@
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# R
-scripts/stan/stan_ignore/
+.ipynb_checkpoints/
 .DS_Store
+scripts/stan/stan_ignore/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.tmp
+.Rhistory
+.RData
+.Renviron
+.Rproj.user/
+renv/local/
+data/**/stage-*/
+data/**/*.previous/
+out/analysis/**/fits.rds
+out/**/stage-*/
+out/**/*.previous/
+figs/stage-*/
+figs/*.previous/

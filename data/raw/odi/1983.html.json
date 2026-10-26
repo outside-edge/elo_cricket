@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1983;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1983;type=year",
+  "format": "ODI",
+  "year": 1983,
+  "fetched_at": "2026-10-25T23:19:47Z",
+  "sha256": "7e96916db412fb27a1b8b0228bc18eeb6e2cb2c054e92a988fa1fea5357b7de7",
+  "rows": 66
+}

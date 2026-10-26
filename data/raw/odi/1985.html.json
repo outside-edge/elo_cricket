@@ -1,0 +1,9 @@
+{
+  "url": "https://stats.espncricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1985;type=year",
+  "request_url": "https://stats.cricinfo.com/ci/engine/records/team/match_results.html?class=2;id=1985;type=year",
+  "format": "ODI",
+  "year": 1985,
+  "fetched_at": "2026-10-25T23:20:21Z",
+  "sha256": "5581df3a8183088257d542121c6c6a484ebead3924cbb2d96c623a674de1b71a",
+  "rows": 65
+}

@@ -77,10 +77,11 @@ res_date <- res %>%
             left_join(cric_tests_o[, c("Date", "newdat")], by = c("date" = "newdat"))
 
 # Write output
-write.csv(res_date, file = "data/glicko2_test_ratings_1881_2021.csv")
+dir.create("out/analysis/glicko2", recursive = TRUE, showWarnings = FALSE)
+write.csv(res_date, file = "out/analysis/glicko2/glicko2_test_ratings_1881_2021.csv")
 
 # Glicko2 vs. Elo
-elo     <- read.csv("data/glicko2_test_ratings_1881_2021.csv")
+elo     <- read.csv("out/analysis/glicko2/glicko2_test_ratings_1881_2021.csv")
 elo$key <- paste0(elo$teams, elo$Date)
 res_date$key <- paste0(res_date$teams, res_date$Date)
 elo_glicko2 <- res_date %>% inner_join(elo, by = "key")
