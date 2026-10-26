@@ -80,6 +80,10 @@ previously recorded match stops before overwriting that page.
 Matches retain both start and completion dates. Only completed matches through
 the requested cutoff enter analysis. Stable team IDs connect name changes.
 No-result matches remain in the shared table, with a missing score.
+Team IDs are the identifiers in these tables' team-profile links. Some differ
+from the old scraper's API IDs, notably invitational teams. Join older covariates
+by match ID and reconcile participant identities before combining team IDs across
+the two sources.
 
 ## Elo specification
 
@@ -149,11 +153,12 @@ Docker daemon. The GitHub checks run the same R tests on Ubuntu.
 
 ## Research and historical outputs
 
-Obsolete rating CSVs are available in Git history. The original inputs, figures, `scripts/elo.R`, `scripts/glickman.R`, and
-`scripts/stan/` remain for provenance and continued model development. They are
-outside the scheduled pipeline and its dependency environment. Their historical
-outputs are not current validated ratings; see the [audit](docs/correctness.md)
-for known defects and unresolved reproduction differences. The shared legacy
-importer in `scripts/prepare_matches.R` fixes BOM handling and outcome coding.
+The superseded parser, preparation script, Elo driver, and Elo outputs are
+available in Git history. The original inputs, `scripts/glickman.R`, and
+`scripts/stan/` remain for continued model development. The Glickman and Stan
+scripts are outside the scheduled pipeline and its dependency environment; see
+the [audit](docs/correctness.md) for known defects and unresolved reproduction
+differences. The legacy importer in `scripts/prepare_matches.R` fixes BOM handling
+and outcome coding for checks against the old data.
 
 Authors: Gaurav Sood and Derek Willis.

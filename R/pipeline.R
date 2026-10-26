@@ -143,7 +143,8 @@ write_report <- function(data, path) {
   lines <- c(
     paste0("# ", toupper(data$manifest$model), " cricket ratings through ", data$manifest$as_of), "",
     "Independent ratings of men's international teams. Results enter on their completion date.", "",
-    "[Latest ratings](latest.csv) · [Monthly history](monthly.csv) · [Match updates](updates.csv)", ""
+    "[Latest ratings](latest.csv) · [Monthly history](monthly.csv) · [Match updates](updates.csv)", "",
+    "[Methods and limitations](../../../README.md#elo-specification)", ""
   )
   for (format in unique(data$latest$format)) {
     rows <- data$latest[data$latest$format == format & data$latest$is_active, ]

@@ -61,6 +61,32 @@ starts at the source's earliest international years, adds subsequent results,
 uses completion dates, joins team aliases by ID, fixes outcomes, and changes
 monthly extraction. Each of those choices is explicit in the manifest/README.
 
+The full Test history through October 24, 2026 contains 2,638 rated matches.
+Every update agrees exactly with `elo.seq()`. All 2,416 rated Tests shared with
+the legacy dataset agree on outcomes; its 12 abandoned/cancelled Tests are not
+listed in the annual results tables. The ODI overlap also exposes different
+identifier namespaces: for example, Africa XI is API ID 4058 in the legacy data
+and profile-link ID 213709 in the annual tables. An ID-only comparison across
+these sources can therefore report a false outcome disagreement. Participant
+identities must be reconciled when adding legacy covariates.
+
+The complete build through October 24, 2026 contains 11,900 matches, including
+280 no-results. The independent sequence comparison checked both teams' ratings
+before and after every rated match:
+
+| Format | Rated matches | Rating values checked | Maximum absolute difference |
+| --- | ---: | ---: | ---: |
+| Test | 2,638 | 10,552 | 0 |
+| ODI | 4,868 | 19,472 | 0 |
+| T20I | 4,114 | 16,456 | 0 |
+
+Historical snapshots at December 31, 2021 and December 31, 2025 also match fits
+that exclude all subsequent matches, in every format. The downloaded tables
+contain every numbered source match from 1 through Test 2,638, ODI 5,047, and
+T20I 4,220, without duplicate numbers or gaps. Five records fall after the build
+cutoff and are excluded. These checks establish consistency with this source,
+not independent certification of every match's underlying scorecard.
+
 ## Other model work
 
 The historical Glickman script uses `PlayerRatings::glicko2()` but repeats the
