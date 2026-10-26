@@ -27,7 +27,7 @@ coverage <- data.frame(
   Format = names(counts), Matches = as.integer(unlist(counts)),
   `Latest result` = unlist(publication$manifest$analysis$last_result[names(counts)]), check.names = FALSE
 )
-knitr::kable(coverage, format = "html", escape = TRUE)
+knitr::kable(coverage, format = "html", escape = TRUE, row.names = FALSE)
 ```
 
 The match counts include no-results, which do not contribute rating updates.

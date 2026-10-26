@@ -32,7 +32,8 @@ A higher Elo rating means a stronger team under this model. Results update each
 format separately; rating points should not be compared across formats.
 
 The format pages show recent trajectories, full histories by team, and all
-currently active teams. Teams with fewer than ten rated matches are marked
+currently active teams. Teams with fewer than
+`r publication$manifest$analysis$specification$provisional_matches` rated matches are marked
 provisional. These are baseline Elo estimates, without uncertainty intervals
 or venue adjustments.
 
