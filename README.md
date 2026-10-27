@@ -2,10 +2,11 @@
 
 Independent ratings of men's international cricket teams. Elo ratings for Tests,
 ODIs, and T20Is are updated weekly, with monthly histories available to download.
-GAM, Stan, and Glicko-2 models have also been fitted and evaluated on Tests;
-these remain experimental and are separate from the published Elo ratings.
+Current Test ratings are also available from GAM, Stan, Glicko-2, and TrueSkill.
+These experimental methods have separate scales, uncertainty estimates, and outputs.
 
 [Ratings website](https://outside-edge.github.io/elo_cricket/) ·
+[Other Test models](https://outside-edge.github.io/elo_cricket/docs/models.html) ·
 [Latest Elo ratings](out/release/elo/latest.csv) ·
 [Monthly history](out/release/elo/monthly.csv) ·
 [Match data](data/build/matches.csv)
@@ -44,6 +45,11 @@ The experimental models add different accounts of team strength:
 - **GAM:** smooth team trajectories, with home advantage varying by country and ground.
 - **Stan:** a dynamic TrueSkill-style model with strength uncertainty and venue and time effects on draws.
 - **Glicko-2:** ratings with uncertainty and inactivity handling, using `PlayerRatings`.
+- **TrueSkill:** Gaussian skill updates with calendar-time uncertainty, using `TrueSkillThroughTime`.
+
+[Current ratings](https://outside-edge.github.io/elo_cricket/docs/models.html)
+use all eligible completed Tests through their stated cutoff.
+[Reproduction commands](docs/current_models.md) are separate from model evaluation.
 
 The first comparison trains on 1,039 Tests completed before 2024 and forecasts
 53 Tests in 2024. This pilot is too small to establish a preferred model.
@@ -55,7 +61,7 @@ validation protocol, and commands to reproduce the fits.
 
 ## Documentation
 
-- [Research and experimental ratings](https://outside-edge.github.io/elo_cricket/docs/research.html): Stan, GAM, and Glicko-2 results, charts, and evaluation.
+- [Research and evaluation](https://outside-edge.github.io/elo_cricket/docs/research.html): historical forecasts and model development.
 - [Pipeline guide](docs/pipeline.md): data sources, Elo specification, updates, and local checks.
 - [Modeling agenda](docs/rating_models.md): team versus lineup strength, venue context, and forecast evaluation.
 - [Correctness audit](docs/correctness.md): historical bugs, fixes, and numerical verification.

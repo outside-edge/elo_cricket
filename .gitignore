@@ -21,6 +21,8 @@ figs/*.previous/
 out/site/
 out/analysis/models/**/stan_draws/
 out/analysis/models/**/failed-*/
+out/analysis/current/**/stan_draws/
+out/analysis/current/**/failed-*/
 
 /.quarto/
 **/*.quarto_ipynb

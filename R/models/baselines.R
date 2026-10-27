@@ -68,7 +68,7 @@ fit_elo_history <- function(train, origin, horizon_months = 12L) {
 }
 
 fit_score_calibration <- function(x, train, origin, with_home = FALSE) {
-  inner <- as.Date(sprintf("%d-%s", as.integer(format(origin, "%Y")) - 1L, format(origin, "%m-%d")))
+  inner <- previous_year(origin)
   recent <- train$start_date >= origin - 5L * 365L
   earlier <- train$end_date < inner & recent
   validation <- train$start_date >= inner

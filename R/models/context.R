@@ -67,8 +67,8 @@ join_match_context <- function(matches, profiles, legacy, grounds, periods = NUL
     crosswalk <- crosswalk[!crosswalk$ground_profile_id %in% periods$ground_profile_id, ]
   }
   if (anyDuplicated(crosswalk$ground_profile_id)) stop("Conflicting countries for a ground profile")
-  crosswalk$valid_from <- as.Date("1877-01-01")
-  crosswalk$valid_until <- as.Date("9999-12-31")
+  crosswalk$valid_from <- rep(as.Date("1877-01-01"), nrow(crosswalk))
+  crosswalk$valid_until <- rep(as.Date("9999-12-31"), nrow(crosswalk))
   if (!is.null(periods)) crosswalk <- rbind(crosswalk, periods[names(crosswalk)])
   matches$ground_profile_id <- profiles$ground_profile_id
   matches$ground_label <- profiles$ground_label
@@ -85,6 +85,10 @@ join_match_context <- function(matches, profiles, legacy, grounds, periods = NUL
   matches$home_sign <- as.integer(normalize_jurisdiction(matches$team1) == matches$country) -
     as.integer(normalize_jurisdiction(matches$team2) == matches$country)
   matches$context_source <- ifelse(is.na(matches$country), NA_character_, "fairly_random grounds via legacy match")
+  if (!is.null(periods)) {
+    explicit <- !is.na(matches$country) & matches$ground_profile_id %in% periods$ground_profile_id
+    matches$context_source[explicit] <- "audited ground jurisdiction periods"
+  }
   list(matches = matches, crosswalk = crosswalk)
 }
 
