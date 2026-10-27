@@ -2,7 +2,7 @@ quarter_date <- function(index) {
   as.Date(sprintf("%04d-%02d-01", index %/% 4L, (index %% 4L) * 3L + 1L))
 }
 
-export_model_strengths <- function(spline, stan, train, origin, output) {
+export_model_strengths <- function(spline, stan, train, origin, output, current = FALSE) {
   teams <- unique(rbind(
     data.frame(team_id = train$team1_id, team = train$team1),
     data.frame(team_id = train$team2_id, team = train$team2)
@@ -10,7 +10,7 @@ export_model_strengths <- function(spline, stan, train, origin, output) {
   teams <- teams[order(teams$team_id), ]
   quarters <- seq(min(quarter_index(train$start_date)), quarter_index(origin))
   dates <- quarter_date(quarters)
-  dates <- dates[dates >= min(train$start_date)]
+  dates <- sort(unique(c(dates[dates >= min(train$start_date)], as.Date(origin))))
   covariance <- vcov(spline$model, unconditional = TRUE)
   gam <- do.call(rbind, lapply(as.list(dates), function(date) {
     grid <- train[rep(1L, nrow(teams)), ]
@@ -39,6 +39,12 @@ export_model_strengths <- function(spline, stan, train, origin, output) {
   )
   first <- tapply(c(train$start_date, train$start_date), c(train$team1_id, train$team2_id), min)
   strengths <- rbind(gam, dynamic)
+  if (current) {
+    strengths$interpretation <- "retrospective at cutoff"
+    latest <- (strengths$model == "gam" & strengths$date == origin) |
+      (strengths$model == "stan_dynamic_probit" & quarter_index(strengths$date) == quarter_index(origin))
+    strengths$interpretation[latest] <- "current estimate"
+  }
   strengths <- strengths[as.numeric(strengths$date) >= first[as.character(strengths$team_id)], ]
   readr::write_csv(strengths, file.path(output, "strengths.csv"))
   invisible(strengths)

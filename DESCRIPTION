@@ -22,4 +22,5 @@ Imports:
     renv,
     styler,
     testthat,
+    TrueSkillThroughTime,
     withr

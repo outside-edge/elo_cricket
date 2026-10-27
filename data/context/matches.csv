@@ -391,7 +391,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 62776,Test,1954-08-12,1954-08-17,1,England,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/62776.html,57127,The Oval,England,1,fairly_random grounds via legacy match
 62777,Test,1954-11-26,1954-12-01,2,Australia,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/62777.html,56336,Brisbane,Australia,1,fairly_random grounds via legacy match
 62778,Test,1954-12-17,1954-12-22,2,Australia,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/62778.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
-62782,Test,1955-01-01,1955-01-04,7,Pakistan,6,India,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62782.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+62782,Test,1955-01-01,1955-01-04,7,Pakistan,6,India,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62782.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 62779,Test,1954-12-31,1955-01-05,2,Australia,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/62779.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 62783,Test,1955-01-15,1955-01-18,7,Pakistan,6,India,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62783.html,58921,Bahawalpur,Pakistan,1,fairly_random grounds via legacy match
 62784,Test,1955-01-29,1955-02-01,7,Pakistan,6,India,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62784.html,58965,Lahore,Pakistan,1,fairly_random grounds via legacy match
@@ -413,7 +413,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 62798,Test,1955-08-13,1955-08-17,1,England,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/62798.html,57127,The Oval,England,1,fairly_random grounds via legacy match
 62799,Test,1955-10-13,1955-10-17,7,Pakistan,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/62799.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 62800,Test,1955-10-26,1955-10-31,7,Pakistan,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/62800.html,58965,Lahore,Pakistan,1,fairly_random grounds via legacy match
-62801,Test,1955-11-07,1955-11-12,7,Pakistan,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62801.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+62801,Test,1955-11-07,1955-11-12,7,Pakistan,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62801.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 62802,Test,1955-11-19,1955-11-24,6,India,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62802.html,58136,Hyderabad (Deccan),India,1,fairly_random grounds via legacy match
 62803,Test,1955-12-02,1955-12-07,6,India,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/62803.html,58317,Brabourne,India,1,fairly_random grounds via legacy match
 62804,Test,1955-12-16,1955-12-21,6,India,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62804.html,58040,Delhi,India,1,fairly_random grounds via legacy match
@@ -469,7 +469,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 62854,Test,1959-02-13,1959-02-18,2,Australia,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/62854.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 62855,Test,1959-02-20,1959-02-25,7,Pakistan,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/62855.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 62858,Test,1959-02-27,1959-03-02,5,New Zealand,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/62858.html,58812,Christchurch,New Zealand,1,fairly_random grounds via legacy match
-62856,Test,1959-03-06,1959-03-08,7,Pakistan,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/62856.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+62856,Test,1959-03-06,1959-03-08,7,Pakistan,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/62856.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 62859,Test,1959-03-14,1959-03-18,5,New Zealand,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62859.html,58792,Auckland,New Zealand,1,fairly_random grounds via legacy match
 62857,Test,1959-03-26,1959-03-31,7,Pakistan,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/62857.html,58965,Lahore,Pakistan,1,fairly_random grounds via legacy match
 62860,Test,1959-06-04,1959-06-08,1,England,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/62860.html,57219,Nottingham,England,1,fairly_random grounds via legacy match
@@ -477,7 +477,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 62862,Test,1959-07-02,1959-07-04,1,England,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/62862.html,57092,Leeds,England,1,fairly_random grounds via legacy match
 62863,Test,1959-07-23,1959-07-28,1,England,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/62863.html,57160,Manchester,England,1,fairly_random grounds via legacy match
 62864,Test,1959-08-20,1959-08-24,1,England,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/62864.html,57127,The Oval,England,1,fairly_random grounds via legacy match
-62865,Test,1959-11-13,1959-11-18,7,Pakistan,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/62865.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+62865,Test,1959-11-13,1959-11-18,7,Pakistan,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/62865.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 62866,Test,1959-11-21,1959-11-26,7,Pakistan,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/62866.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 62867,Test,1959-12-04,1959-12-09,7,Pakistan,2,Australia,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62867.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 62868,Test,1959-12-12,1959-12-16,6,India,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/62868.html,58040,Delhi,India,1,fairly_random grounds via legacy match
@@ -519,7 +519,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 62904,Test,1961-12-30,1962-01-04,6,India,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/62904.html,57980,Eden Gardens,India,1,fairly_random grounds via legacy match
 62908,Test,1962-01-01,1962-01-04,3,South Africa,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/62908.html,59068,Cape Town,South Africa,1,fairly_random grounds via legacy match
 62905,Test,1962-01-10,1962-01-15,6,India,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/62905.html,58009,Chennai,India,1,fairly_random grounds via legacy match
-62899,Test,1962-01-19,1962-01-24,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62899.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+62899,Test,1962-01-19,1962-01-24,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62899.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 62909,Test,1962-02-02,1962-02-05,3,South Africa,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/62909.html,59120,Johannesburg,South Africa,1,fairly_random grounds via legacy match
 62900,Test,1962-02-02,1962-02-07,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/62900.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 62910,Test,1962-02-16,1962-02-20,3,South Africa,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/62910.html,59159,Gqeberha,South Africa,1,fairly_random grounds via legacy match
@@ -647,7 +647,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63032,Test,1969-02-14,1969-02-20,2,Australia,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/63032.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
 63033,Test,1969-02-21,1969-02-24,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63033.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 63036,Test,1969-02-27,1969-03-03,5,New Zealand,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/63036.html,58792,Auckland,New Zealand,1,fairly_random grounds via legacy match
-63034,Test,1969-02-28,1969-03-03,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63034.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+63034,Test,1969-02-28,1969-03-03,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63034.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 63035,Test,1969-03-06,1969-03-10,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63035.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 63037,Test,1969-03-07,1969-03-11,5,New Zealand,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/63037.html,58895,Wellington,New Zealand,1,fairly_random grounds via legacy match
 63038,Test,1969-03-13,1969-03-17,5,New Zealand,4,West Indies,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63038.html,58812,Christchurch,New Zealand,1,fairly_random grounds via legacy match
@@ -663,7 +663,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63048,Test,1969-10-24,1969-10-27,7,Pakistan,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63048.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 63049,Test,1969-10-30,1969-11-02,7,Pakistan,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/63049.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 63051,Test,1969-11-04,1969-11-09,6,India,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/63051.html,58317,Brabourne,India,1,fairly_random grounds via legacy match
-63050,Test,1969-11-08,1969-11-11,7,Pakistan,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63050.html,56661,Dhaka,Pakistan,1,fairly_random grounds via legacy match
+63050,Test,1969-11-08,1969-11-11,7,Pakistan,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63050.html,56661,Dhaka,Pakistan,1,audited ground jurisdiction periods
 63052,Test,1969-11-15,1969-11-20,6,India,2,Australia,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63052.html,58204,Kanpur,India,1,fairly_random grounds via legacy match
 63053,Test,1969-11-28,1969-12-02,6,India,2,Australia,win,1,https://www.espncricinfo.com/ci/engine/match/63053.html,58040,Delhi,India,1,fairly_random grounds via legacy match
 63054,Test,1969-12-12,1969-12-16,6,India,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/63054.html,57980,Eden Gardens,India,1,fairly_random grounds via legacy match
@@ -1632,13 +1632,13 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 65843,ODI,1988-10-19,1988-10-19,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65843.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 65844,ODI,1988-10-21,1988-10-21,6,India,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/65844.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 65845,ODI,1988-10-22,1988-10-22,7,Pakistan,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/65845.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
-65674,ODI,1988-10-27,1988-10-27,7,Pakistan,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65674.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+65674,ODI,1988-10-27,1988-10-27,7,Pakistan,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65674.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 65675,ODI,1988-10-27,1988-10-27,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/65675.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
-65676,ODI,1988-10-29,1988-10-29,6,India,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65676.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+65676,ODI,1988-10-29,1988-10-29,6,India,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65676.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 65677,ODI,1988-10-29,1988-10-29,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65677.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
-65678,ODI,1988-10-31,1988-10-31,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/65678.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-65679,ODI,1988-11-02,1988-11-02,25,Bangladesh,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65679.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-65680,ODI,1988-11-04,1988-11-04,6,India,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65680.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+65678,ODI,1988-10-31,1988-10-31,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/65678.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+65679,ODI,1988-11-02,1988-11-02,25,Bangladesh,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65679.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+65680,ODI,1988-11-04,1988-11-04,6,India,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65680.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63493,Test,1988-11-12,1988-11-17,6,India,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/63493.html,57897,Bengaluru,India,1,fairly_random grounds via legacy match
 63496,Test,1988-11-18,1988-11-21,2,Australia,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/63496.html,56336,Brisbane,Australia,1,fairly_random grounds via legacy match
 63494,Test,1988-11-24,1988-11-29,6,India,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/63494.html,58324,Wankhede,India,1,fairly_random grounds via legacy match
@@ -2662,18 +2662,18 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63778,Test,1997-12-26,1997-12-30,2,Australia,3,South Africa,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63778.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 63779,Test,1998-01-02,1998-01-05,2,Australia,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/63779.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
 65561,ODI,1998-01-09,1998-01-09,5,New Zealand,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65561.html,56336,Brisbane,Australia,0,fairly_random grounds via legacy match
-66131,ODI,1998-01-10,1998-01-10,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66131.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+66131,ODI,1998-01-10,1998-01-10,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66131.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 63781,Test,1998-01-07,1998-01-11,8,Sri Lanka,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63781.html,59329,Kandy,Sri Lanka,1,fairly_random grounds via legacy match
 65562,ODI,1998-01-11,1998-01-11,2,Australia,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65562.html,56336,Brisbane,Australia,1,fairly_random grounds via legacy match
-66132,ODI,1998-01-11,1998-01-11,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/66132.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66133,ODI,1998-01-12,1998-01-12,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66133.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+66132,ODI,1998-01-11,1998-01-11,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/66132.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66133,ODI,1998-01-12,1998-01-12,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66133.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 65563,ODI,1998-01-14,1998-01-14,2,Australia,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/65563.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
-66134,ODI,1998-01-14,1998-01-14,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/66134.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66134,ODI,1998-01-14,1998-01-14,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/66134.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 65564,ODI,1998-01-16,1998-01-16,5,New Zealand,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65564.html,56490,W.A.C.A,Australia,0,fairly_random grounds via legacy match
-66135,ODI,1998-01-16,1998-01-16,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66135.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66135,ODI,1998-01-16,1998-01-16,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66135.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63782,Test,1998-01-14,1998-01-18,8,Sri Lanka,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63782.html,59308,Colombo (SSC),Sri Lanka,1,fairly_random grounds via legacy match
 65565,ODI,1998-01-18,1998-01-18,2,Australia,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65565.html,56490,W.A.C.A,Australia,1,fairly_random grounds via legacy match
-66136,ODI,1998-01-18,1998-01-18,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/66136.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66136,ODI,1998-01-18,1998-01-18,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/66136.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 65566,ODI,1998-01-21,1998-01-21,2,Australia,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/65566.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 64570,ODI,1998-01-22,1998-01-22,8,Sri Lanka,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64570.html,59308,Colombo (SSC),Sri Lanka,1,fairly_random grounds via legacy match
 65567,ODI,1998-01-23,1998-01-23,2,Australia,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65567.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
@@ -2781,15 +2781,15 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63810,Test,1998-10-01,1998-10-05,7,Pakistan,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/63810.html,59006,Rawalpindi,Pakistan,1,fairly_random grounds via legacy match
 63813,Test,1998-10-07,1998-10-10,9,Zimbabwe,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/63813.html,59545,Harare,Zimbabwe,1,fairly_random grounds via legacy match
 63811,Test,1998-10-15,1998-10-19,7,Pakistan,2,Australia,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63811.html,58988,Peshawar,Pakistan,1,fairly_random grounds via legacy match
-66162,ODI,1998-10-24,1998-10-24,5,New Zealand,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/66162.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66163,ODI,1998-10-25,1998-10-25,1,England,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66163.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66162,ODI,1998-10-24,1998-10-24,5,New Zealand,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/66162.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66163,ODI,1998-10-25,1998-10-25,1,England,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66163.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63812,Test,1998-10-22,1998-10-26,7,Pakistan,2,Australia,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63812.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
-66164,ODI,1998-10-26,1998-10-26,5,New Zealand,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/66164.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66165,ODI,1998-10-28,1998-10-28,2,Australia,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66165.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66166,ODI,1998-10-29,1998-10-29,7,Pakistan,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/66166.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66167,ODI,1998-10-30,1998-10-30,3,South Africa,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/66167.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66168,ODI,1998-10-31,1998-10-31,6,India,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/66168.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66169,ODI,1998-11-01,1998-11-01,3,South Africa,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/66169.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66164,ODI,1998-10-26,1998-10-26,5,New Zealand,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/66164.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66165,ODI,1998-10-28,1998-10-28,2,Australia,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66165.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66166,ODI,1998-10-29,1998-10-29,7,Pakistan,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/66166.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66167,ODI,1998-10-30,1998-10-30,3,South Africa,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/66167.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66168,ODI,1998-10-31,1998-10-31,6,India,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/66168.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66169,ODI,1998-11-01,1998-11-01,3,South Africa,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/66169.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 64592,ODI,1998-11-06,1998-11-06,7,Pakistan,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/64592.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 65880,ODI,1998-11-06,1998-11-06,6,India,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65880.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 65881,ODI,1998-11-07,1998-11-07,8,Sri Lanka,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/65881.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
@@ -2857,24 +2857,24 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63832,Test,1999-03-04,1999-03-08,7,Pakistan,8,Sri Lanka,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63832.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 63837,Test,1999-03-05,1999-03-08,4,West Indies,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/63837.html,59475,Port of Spain,West Indies,1,fairly_random grounds via legacy match
 63835,Test,1999-03-11,1999-03-15,5,New Zealand,3,South Africa,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63835.html,58812,Christchurch,New Zealand,1,fairly_random grounds via legacy match
-63833,Test,1999-03-12,1999-03-15,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/63833.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+63833,Test,1999-03-12,1999-03-15,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/63833.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63838,Test,1999-03-13,1999-03-16,4,West Indies,2,Australia,win,1,https://www.espncricinfo.com/ci/engine/match/63838.html,59458,Kingston,West Indies,1,fairly_random grounds via legacy match
-64613,ODI,1999-03-16,1999-03-16,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64613.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64613,ODI,1999-03-16,1999-03-16,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64613.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 66211,ODI,1999-03-19,1999-03-19,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/66211.html,58180,Jamshedpur,India,0,fairly_random grounds via legacy match
-66218,ODI,1999-03-19,1999-03-19,26,Kenya,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66218.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66219,ODI,1999-03-20,1999-03-20,25,Bangladesh,26,Kenya,win,0,https://www.espncricinfo.com/ci/engine/match/66219.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-66220,ODI,1999-03-21,1999-03-21,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66220.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+66218,ODI,1999-03-19,1999-03-19,26,Kenya,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66218.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66219,ODI,1999-03-20,1999-03-20,25,Bangladesh,26,Kenya,win,0,https://www.espncricinfo.com/ci/engine/match/66219.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+66220,ODI,1999-03-21,1999-03-21,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66220.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 63836,Test,1999-03-18,1999-03-22,5,New Zealand,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/63836.html,58895,Wellington,New Zealand,1,fairly_random grounds via legacy match
 66212,ODI,1999-03-22,1999-03-22,6,India,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/66212.html,58344,Nagpur,India,1,fairly_random grounds via legacy match
-66221,ODI,1999-03-23,1999-03-23,26,Kenya,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66221.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66221,ODI,1999-03-23,1999-03-23,26,Kenya,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66221.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 66213,ODI,1999-03-24,1999-03-24,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66213.html,58162,Jaipur,India,1,fairly_random grounds via legacy match
-66222,ODI,1999-03-24,1999-03-24,25,Bangladesh,26,Kenya,win,0,https://www.espncricinfo.com/ci/engine/match/66222.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+66222,ODI,1999-03-24,1999-03-24,25,Bangladesh,26,Kenya,win,0,https://www.espncricinfo.com/ci/engine/match/66222.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64614,ODI,1999-03-25,1999-03-25,5,New Zealand,3,South Africa,no result,NA,https://www.espncricinfo.com/ci/engine/match/64614.html,58857,Napier,New Zealand,1,fairly_random grounds via legacy match
-66223,ODI,1999-03-25,1999-03-25,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66223.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+66223,ODI,1999-03-25,1999-03-25,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66223.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64615,ODI,1999-03-26,1999-03-26,5,New Zealand,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/64615.html,58857,Napier,New Zealand,1,fairly_random grounds via legacy match
 64616,ODI,1999-03-27,1999-03-27,5,New Zealand,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/64616.html,58792,Auckland,New Zealand,1,fairly_random grounds via legacy match
 66214,ODI,1999-03-27,1999-03-27,7,Pakistan,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/66214.html,58542,Visakhapatnam,India,0,fairly_random grounds via legacy match
-66224,ODI,1999-03-27,1999-03-27,26,Kenya,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66224.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66224,ODI,1999-03-27,1999-03-27,26,Kenya,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/66224.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63839,Test,1999-03-26,1999-03-30,4,West Indies,2,Australia,win,1,https://www.espncricinfo.com/ci/engine/match/63839.html,59429,Bridgetown,West Indies,1,fairly_random grounds via legacy match
 64617,ODI,1999-03-30,1999-03-30,5,New Zealand,3,South Africa,no result,NA,https://www.espncricinfo.com/ci/engine/match/64617.html,58895,Wellington,New Zealand,1,fairly_random grounds via legacy match
 66215,ODI,1999-03-30,1999-03-30,6,India,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/66215.html,58383,Pune,India,1,fairly_random grounds via legacy match
@@ -2969,8 +2969,8 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 66246,ODI,1999-10-01,1999-10-01,6,India,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/66246.html,58661,Nairobi (Gym),Kenya,0,fairly_random grounds via legacy match
 66247,ODI,1999-10-03,1999-10-03,6,India,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66247.html,58661,Nairobi (Gym),Kenya,0,fairly_random grounds via legacy match
 63847,Test,1999-09-30,1999-10-04,8,Sri Lanka,2,Australia,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63847.html,59308,Colombo (SSC),Sri Lanka,1,fairly_random grounds via legacy match
-64625,ODI,1999-10-08,1999-10-08,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64625.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-64626,ODI,1999-10-09,1999-10-09,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64626.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64625,ODI,1999-10-08,1999-10-08,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64625.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+64626,ODI,1999-10-09,1999-10-09,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64626.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 65887,ODI,1999-10-13,1999-10-13,8,Sri Lanka,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/65887.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 63848,Test,1999-10-10,1999-10-14,6,India,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63848.html,57991,Mohali,India,1,fairly_random grounds via legacy match
 65888,ODI,1999-10-14,1999-10-14,7,Pakistan,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/65888.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
@@ -3091,14 +3091,14 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63883,Test,2000-05-18,2000-05-21,1,England,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63883.html,57129,Lord's,England,1,fairly_random grounds via legacy match
 63881,Test,2000-05-18,2000-05-22,4,West Indies,7,Pakistan,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63881.html,59429,Bridgetown,West Indies,1,fairly_random grounds via legacy match
 63882,Test,2000-05-25,2000-05-29,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/63882.html,59495,St John's,West Indies,1,fairly_random grounds via legacy match
-65699,ODI,2000-05-29,2000-05-29,25,Bangladesh,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65699.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-65700,ODI,2000-05-30,2000-05-31,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/65700.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-65701,ODI,2000-06-01,2000-06-01,6,India,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65701.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-65702,ODI,2000-06-02,2000-06-02,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65702.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-65703,ODI,2000-06-03,2000-06-03,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65703.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+65699,ODI,2000-05-29,2000-05-29,25,Bangladesh,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65699.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+65700,ODI,2000-05-30,2000-05-31,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/65700.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+65701,ODI,2000-06-01,2000-06-01,6,India,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/65701.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+65702,ODI,2000-06-02,2000-06-02,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65702.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+65703,ODI,2000-06-03,2000-06-03,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65703.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63884,Test,2000-06-01,2000-06-05,1,England,9,Zimbabwe,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63884.html,57219,Nottingham,England,1,fairly_random grounds via legacy match
-65704,ODI,2000-06-05,2000-06-05,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65704.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-65705,ODI,2000-06-07,2000-06-07,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65705.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+65704,ODI,2000-06-05,2000-06-05,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65704.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+65705,ODI,2000-06-07,2000-06-07,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65705.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 63885,Test,2000-06-14,2000-06-17,8,Sri Lanka,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/63885.html,59308,Colombo (SSC),Sri Lanka,1,fairly_random grounds via legacy match
 63888,Test,2000-06-15,2000-06-17,1,England,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/63888.html,56788,Birmingham,England,1,fairly_random grounds via legacy match
 63886,Test,2000-06-21,2000-06-24,8,Sri Lanka,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/63886.html,59325,Galle,Sri Lanka,1,fairly_random grounds via legacy match
@@ -3165,7 +3165,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64677,ODI,2000-10-30,2000-10-30,7,Pakistan,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/64677.html,59006,Rawalpindi,Pakistan,1,fairly_random grounds via legacy match
 64678,ODI,2000-11-01,2000-11-01,3,South Africa,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/64678.html,59089,Durban,South Africa,1,fairly_random grounds via legacy match
 64679,ODI,2000-11-04,2000-11-04,3,South Africa,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/64679.html,59068,Cape Town,South Africa,1,fairly_random grounds via legacy match
-63898,Test,2000-11-10,2000-11-13,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/63898.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+63898,Test,2000-11-10,2000-11-13,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/63898.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 63899,Test,2000-11-15,2000-11-19,7,Pakistan,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63899.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 63902,Test,2000-11-17,2000-11-21,3,South Africa,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/63902.html,59042,Bloemfontein,South Africa,1,fairly_random grounds via legacy match
 63905,Test,2000-11-18,2000-11-22,6,India,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63905.html,58040,Delhi,India,1,fairly_random grounds via legacy match
@@ -3336,15 +3336,15 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 65907,ODI,2001-11-04,2001-11-04,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/65907.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 63951,Test,2001-11-03,2001-11-06,3,South Africa,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/63951.html,59042,Bloemfontein,South Africa,1,fairly_random grounds via legacy match
 63953,Test,2001-11-08,2001-11-12,2,Australia,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63953.html,56336,Brisbane,Australia,1,fairly_random grounds via legacy match
-63956,Test,2001-11-08,2001-11-12,25,Bangladesh,9,Zimbabwe,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63956.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+63956,Test,2001-11-08,2001-11-12,25,Bangladesh,9,Zimbabwe,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63956.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 63958,Test,2001-11-13,2001-11-17,8,Sri Lanka,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/63958.html,59325,Galle,Sri Lanka,1,fairly_random grounds via legacy match
 63957,Test,2001-11-15,2001-11-19,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/63957.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 63952,Test,2001-11-16,2001-11-20,3,South Africa,6,India,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63952.html,59159,Gqeberha,South Africa,1,fairly_random grounds via legacy match
 64733,ODI,2001-11-23,2001-11-23,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64733.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 63959,Test,2001-11-21,2001-11-25,8,Sri Lanka,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/63959.html,59329,Kandy,Sri Lanka,1,fairly_random grounds via legacy match
-64734,ODI,2001-11-25,2001-11-25,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64734.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64734,ODI,2001-11-25,2001-11-25,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64734.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 63954,Test,2001-11-22,2001-11-26,2,Australia,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63954.html,56407,Hobart,Australia,1,fairly_random grounds via legacy match
-64735,ODI,2001-11-26,2001-11-26,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64735.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64735,ODI,2001-11-26,2001-11-26,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64735.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 63960,Test,2001-11-29,2001-12-03,8,Sri Lanka,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/63960.html,59308,Colombo (SSC),Sri Lanka,1,fairly_random grounds via legacy match
 63955,Test,2001-11-30,2001-12-04,2,Australia,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/63955.html,56490,W.A.C.A,Australia,1,fairly_random grounds via legacy match
 63961,Test,2001-12-03,2001-12-06,6,India,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/63961.html,57991,Mohali,India,1,fairly_random grounds via legacy match
@@ -3364,7 +3364,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 63969,Test,2001-12-27,2001-12-31,8,Sri Lanka,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63969.html,59308,Colombo (SSC),Sri Lanka,1,fairly_random grounds via legacy match
 63966,Test,2002-01-02,2002-01-05,2,Australia,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/63966.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
 63970,Test,2002-01-04,2002-01-07,8,Sri Lanka,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63970.html,59329,Kandy,Sri Lanka,1,fairly_random grounds via legacy match
-63972,Test,2002-01-09,2002-01-11,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/63972.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+63972,Test,2002-01-09,2002-01-11,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/63972.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 65615,ODI,2002-01-11,2002-01-11,2,Australia,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/65615.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 65616,ODI,2002-01-13,2002-01-13,2,Australia,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65616.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 63971,Test,2002-01-12,2002-01-15,8,Sri Lanka,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/63971.html,59325,Galle,Sri Lanka,1,fairly_random grounds via legacy match
@@ -3377,8 +3377,8 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64737,ODI,2002-01-22,2002-01-22,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64737.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64738,ODI,2002-01-22,2002-01-22,6,India,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64738.html,58027,Cuttack,India,1,fairly_random grounds via legacy match
 65621,ODI,2002-01-22,2002-01-22,2,Australia,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/65621.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
-64739,ODI,2002-01-24,2002-01-24,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64739.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-64740,ODI,2002-01-25,2002-01-25,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64740.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64739,ODI,2002-01-24,2002-01-24,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64739.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+64740,ODI,2002-01-25,2002-01-25,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64740.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64741,ODI,2002-01-25,2002-01-25,6,India,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/64741.html,58008,Chennai,India,1,fairly_random grounds via legacy match
 65622,ODI,2002-01-26,2002-01-26,2,Australia,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/65622.html,56293,Adelaide,Australia,1,fairly_random grounds via legacy match
 65623,ODI,2002-01-27,2002-01-27,5,New Zealand,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/65623.html,56293,Adelaide,Australia,0,fairly_random grounds via legacy match
@@ -3536,13 +3536,13 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64011,Test,2002-11-29,2002-12-01,2,Australia,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/64011.html,56490,W.A.C.A,Australia,1,fairly_random grounds via legacy match
 64799,ODI,2002-12-01,2002-12-01,9,Zimbabwe,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64799.html,59545,Harare,Zimbabwe,1,fairly_random grounds via legacy match
 64800,ODI,2002-12-01,2002-12-01,3,South Africa,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/64800.html,59039,Benoni,South Africa,1,fairly_random grounds via legacy match
-64801,ODI,2002-12-02,2002-12-02,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64801.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-64802,ODI,2002-12-03,2002-12-03,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64802.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64801,ODI,2002-12-02,2002-12-02,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64801.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+64802,ODI,2002-12-03,2002-12-03,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64802.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64803,ODI,2002-12-04,2002-12-04,3,South Africa,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/64803.html,59135,Kimberley,South Africa,1,fairly_random grounds via legacy match
 64804,ODI,2002-12-06,2002-12-06,3,South Africa,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/64804.html,59042,Bloemfontein,South Africa,1,fairly_random grounds via legacy match
 64805,ODI,2002-12-08,2002-12-08,9,Zimbabwe,26,Kenya,no result,NA,https://www.espncricinfo.com/ci/engine/match/64805.html,59545,Harare,Zimbabwe,1,fairly_random grounds via legacy match
 64806,ODI,2002-12-08,2002-12-08,3,South Africa,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/64806.html,59089,Durban,South Africa,1,fairly_random grounds via legacy match
-64018,Test,2002-12-08,2002-12-10,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64018.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64018,Test,2002-12-08,2002-12-10,25,Bangladesh,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64018.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64807,ODI,2002-12-11,2002-12-11,9,Zimbabwe,26,Kenya,win,1,https://www.espncricinfo.com/ci/engine/match/64807.html,59560,Kwekwe,Zimbabwe,1,fairly_random grounds via legacy match
 64808,ODI,2002-12-11,2002-12-11,3,South Africa,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/64808.html,59159,Gqeberha,South Africa,1,fairly_random grounds via legacy match
 64809,ODI,2002-12-13,2002-12-13,3,South Africa,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/64809.html,59098,KuGumpo City,South Africa,1,fairly_random grounds via legacy match
@@ -3636,18 +3636,18 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 65807,ODI,2003-04-07,2003-04-07,8,Sri Lanka,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/65807.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 65808,ODI,2003-04-08,2003-04-08,26,Kenya,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65808.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
 65809,ODI,2003-04-10,2003-04-10,7,Pakistan,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/65809.html,59392,Sharjah,United Arab Emirates,0,fairly_random grounds via legacy match
-66350,ODI,2003-04-11,2003-04-11,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66350.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+66350,ODI,2003-04-11,2003-04-11,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66350.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64024,Test,2003-04-10,2003-04-13,4,West Indies,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/64024.html,59447,Georgetown,West Indies,1,fairly_random grounds via legacy match
-66351,ODI,2003-04-13,2003-04-13,6,India,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/66351.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66352,ODI,2003-04-14,2003-04-14,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66352.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-66353,ODI,2003-04-16,2003-04-16,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66353.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-66354,ODI,2003-04-17,2003-04-17,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66354.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-66355,ODI,2003-04-18,2003-04-18,6,India,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66355.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
-66356,ODI,2003-04-21,2003-04-21,6,India,3,South Africa,no result,NA,https://www.espncricinfo.com/ci/engine/match/66356.html,56661,Dhaka,Bangladesh,0,fairly_random grounds via legacy match
+66351,ODI,2003-04-13,2003-04-13,6,India,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/66351.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66352,ODI,2003-04-14,2003-04-14,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66352.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+66353,ODI,2003-04-16,2003-04-16,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/66353.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+66354,ODI,2003-04-17,2003-04-17,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66354.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+66355,ODI,2003-04-18,2003-04-18,6,India,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/66355.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
+66356,ODI,2003-04-21,2003-04-21,6,India,3,South Africa,no result,NA,https://www.espncricinfo.com/ci/engine/match/66356.html,56661,Dhaka,Bangladesh,0,audited ground jurisdiction periods
 64025,Test,2003-04-19,2003-04-23,4,West Indies,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/64025.html,59475,Port of Spain,West Indies,1,fairly_random grounds via legacy match
 64028,Test,2003-04-24,2003-04-27,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/64028.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64030,Test,2003-04-25,2003-04-29,8,Sri Lanka,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64030.html,59303,Colombo (PSS),Sri Lanka,1,fairly_random grounds via legacy match
-64029,Test,2003-05-01,2003-05-04,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/64029.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64029,Test,2003-05-01,2003-05-04,25,Bangladesh,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/64029.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64026,Test,2003-05-01,2003-05-05,4,West Indies,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/64026.html,59429,Bridgetown,West Indies,1,fairly_random grounds via legacy match
 64031,Test,2003-05-03,2003-05-07,8,Sri Lanka,5,New Zealand,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64031.html,59329,Kandy,Sri Lanka,1,fairly_random grounds via legacy match
 66357,ODI,2003-05-10,2003-05-10,8,Sri Lanka,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66357.html,59368,Dambulla,Sri Lanka,1,fairly_random grounds via legacy match
@@ -3714,7 +3714,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64049,Test,2003-10-17,2003-10-20,2,Australia,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64049.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
 64050,Test,2003-10-17,2003-10-21,7,Pakistan,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/64050.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 66364,ODI,2003-10-23,2003-10-23,6,India,5,New Zealand,no result,NA,https://www.espncricinfo.com/ci/engine/match/66364.html,58008,Chennai,India,1,fairly_random grounds via legacy match
-64052,Test,2003-10-21,2003-10-25,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64052.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64052,Test,2003-10-21,2003-10-25,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64052.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 66365,ODI,2003-10-26,2003-10-26,6,India,2,Australia,win,1,https://www.espncricinfo.com/ci/engine/match/66365.html,58119,Gwalior,India,1,fairly_random grounds via legacy match
 64051,Test,2003-10-24,2003-10-28,7,Pakistan,3,South Africa,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64051.html,58927,Faisalabad,Pakistan,1,fairly_random grounds via legacy match
 66366,ODI,2003-10-29,2003-10-29,2,Australia,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/66366.html,58081,Faridabad,India,0,fairly_random grounds via legacy match
@@ -3725,8 +3725,8 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64843,ODI,2003-11-07,2003-11-07,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64843.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64054,Test,2003-11-04,2003-11-08,9,Zimbabwe,4,West Indies,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64054.html,59545,Harare,Zimbabwe,1,fairly_random grounds via legacy match
 66370,ODI,2003-11-09,2003-11-09,2,Australia,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/66370.html,58114,Guwahati,India,0,fairly_random grounds via legacy match
-64844,ODI,2003-11-10,2003-11-10,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64844.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-64845,ODI,2003-11-12,2003-11-12,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64845.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64844,ODI,2003-11-10,2003-11-10,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64844.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+64845,ODI,2003-11-12,2003-11-12,25,Bangladesh,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64845.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 66371,ODI,2003-11-12,2003-11-12,6,India,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/66371.html,57897,Bengaluru,India,1,fairly_random grounds via legacy match
 66372,ODI,2003-11-15,2003-11-15,6,India,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/66372.html,58136,Hyderabad (Deccan),India,1,fairly_random grounds via legacy match
 64055,Test,2003-11-12,2003-11-16,9,Zimbabwe,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/64055.html,59537,Bulawayo,Zimbabwe,1,fairly_random grounds via legacy match
@@ -3901,15 +3901,15 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 66382,ODI,2004-10-14,2004-10-14,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/66382.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 66383,ODI,2004-10-16,2004-10-16,7,Pakistan,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/66383.html,58967,Lahore,Pakistan,1,fairly_random grounds via legacy match
 64100,Test,2004-10-14,2004-10-18,6,India,2,Australia,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64100.html,58008,Chennai,India,1,fairly_random grounds via legacy match
-64103,Test,2004-10-19,2004-10-22,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64103.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64103,Test,2004-10-19,2004-10-22,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64103.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64105,Test,2004-10-20,2004-10-24,7,Pakistan,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/64105.html,58927,Faisalabad,Pakistan,1,fairly_random grounds via legacy match
 64101,Test,2004-10-26,2004-10-29,6,India,2,Australia,win,0,https://www.espncricinfo.com/ci/engine/match/64101.html,58344,Nagpur,India,1,fairly_random grounds via legacy match
 64104,Test,2004-10-26,2004-10-29,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64104.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64106,Test,2004-10-28,2004-11-01,7,Pakistan,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/64106.html,58956,Karachi,Pakistan,1,fairly_random grounds via legacy match
 64907,ODI,2004-11-02,2004-11-02,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64907.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64102,Test,2004-11-03,2004-11-05,6,India,2,Australia,win,1,https://www.espncricinfo.com/ci/engine/match/64102.html,58324,Wankhede,India,1,fairly_random grounds via legacy match
-64908,ODI,2004-11-05,2004-11-05,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64908.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-64909,ODI,2004-11-07,2004-11-07,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64909.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64908,ODI,2004-11-05,2004-11-05,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64908.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+64909,ODI,2004-11-07,2004-11-07,25,Bangladesh,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/64909.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 66384,ODI,2004-11-13,2004-11-13,6,India,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/66384.html,57980,Eden Gardens,India,1,fairly_random grounds via legacy match
 64107,Test,2004-11-18,2004-11-21,2,Australia,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/64107.html,56336,Brisbane,Australia,1,fairly_random grounds via legacy match
 64109,Test,2004-11-20,2004-11-24,6,India,3,South Africa,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64109.html,58204,Kanpur,India,1,fairly_random grounds via legacy match
@@ -3921,14 +3921,14 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64913,ODI,2004-12-05,2004-12-05,9,Zimbabwe,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64913.html,59537,Bulawayo,Zimbabwe,1,fairly_random grounds via legacy match
 66385,ODI,2004-12-05,2004-12-05,2,Australia,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/66385.html,56450,Melbourne (Docklands),Australia,1,fairly_random grounds via legacy match
 66386,ODI,2004-12-08,2004-12-08,2,Australia,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/66386.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
-64111,Test,2004-12-10,2004-12-13,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/64111.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64111,Test,2004-12-10,2004-12-13,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/64111.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64113,Test,2004-12-16,2004-12-19,2,Australia,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/64113.html,56490,W.A.C.A,Australia,1,fairly_random grounds via legacy match
 64112,Test,2004-12-17,2004-12-20,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/64112.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64116,Test,2004-12-17,2004-12-21,3,South Africa,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64116.html,59159,Gqeberha,South Africa,1,fairly_random grounds via legacy match
 64914,ODI,2004-12-23,2004-12-23,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/64914.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 64915,ODI,2004-12-26,2004-12-26,5,New Zealand,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/64915.html,58792,Auckland,New Zealand,1,fairly_random grounds via legacy match
-64916,ODI,2004-12-26,2004-12-26,25,Bangladesh,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/64916.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
-64917,ODI,2004-12-27,2004-12-27,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/64917.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64916,ODI,2004-12-26,2004-12-26,25,Bangladesh,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/64916.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
+64917,ODI,2004-12-27,2004-12-27,25,Bangladesh,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/64917.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64114,Test,2004-12-26,2004-12-29,2,Australia,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/64114.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 64117,Test,2004-12-26,2004-12-30,3,South Africa,1,England,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64117.html,59089,Durban,South Africa,1,fairly_random grounds via legacy match
 64115,Test,2005-01-02,2005-01-05,2,Australia,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/64115.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
@@ -3938,9 +3938,9 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 65657,ODI,2005-01-14,2005-01-14,2,Australia,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/65657.html,56441,Melbourne,Australia,1,fairly_random grounds via legacy match
 65658,ODI,2005-01-16,2005-01-16,2,Australia,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/65658.html,56407,Hobart,Australia,1,fairly_random grounds via legacy match
 64119,Test,2005-01-13,2005-01-17,3,South Africa,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64119.html,59120,Johannesburg,South Africa,1,fairly_random grounds via legacy match
-64122,Test,2005-01-14,2005-01-18,25,Bangladesh,9,Zimbabwe,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64122.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64122,Test,2005-01-14,2005-01-18,25,Bangladesh,9,Zimbabwe,drawn,0.5,https://www.espncricinfo.com/ci/engine/match/64122.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 65659,ODI,2005-01-19,2005-01-19,7,Pakistan,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/65659.html,56336,Brisbane,Australia,0,fairly_random grounds via legacy match
-64918,ODI,2005-01-20,2005-01-20,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64918.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64918,ODI,2005-01-20,2005-01-20,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64918.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 65660,ODI,2005-01-21,2005-01-21,2,Australia,4,West Indies,no result,NA,https://www.espncricinfo.com/ci/engine/match/65660.html,56336,Brisbane,Australia,1,fairly_random grounds via legacy match
 65661,ODI,2005-01-23,2005-01-23,2,Australia,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/65661.html,56544,Sydney,Australia,1,fairly_random grounds via legacy match
 64919,ODI,2005-01-24,2005-01-24,25,Bangladesh,9,Zimbabwe,win,0,https://www.espncricinfo.com/ci/engine/match/64919.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
@@ -3948,10 +3948,10 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 64920,ODI,2005-01-26,2005-01-26,25,Bangladesh,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64920.html,56656,Chattogram,Bangladesh,1,fairly_random grounds via legacy match
 65662,ODI,2005-01-26,2005-01-26,2,Australia,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/65662.html,56293,Adelaide,Australia,1,fairly_random grounds via legacy match
 65663,ODI,2005-01-28,2005-01-28,7,Pakistan,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/65663.html,56293,Adelaide,Australia,0,fairly_random grounds via legacy match
-64921,ODI,2005-01-29,2005-01-29,25,Bangladesh,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64921.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64921,ODI,2005-01-29,2005-01-29,25,Bangladesh,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64921.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 64922,ODI,2005-01-30,2005-01-30,3,South Africa,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/64922.html,59120,Johannesburg,South Africa,1,fairly_random grounds via legacy match
 65664,ODI,2005-01-30,2005-01-30,2,Australia,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/65664.html,56490,W.A.C.A,Australia,1,fairly_random grounds via legacy match
-64923,ODI,2005-01-31,2005-01-31,25,Bangladesh,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64923.html,56661,Dhaka,Bangladesh,1,fairly_random grounds via legacy match
+64923,ODI,2005-01-31,2005-01-31,25,Bangladesh,9,Zimbabwe,win,1,https://www.espncricinfo.com/ci/engine/match/64923.html,56661,Dhaka,Bangladesh,1,audited ground jurisdiction periods
 65665,ODI,2005-02-01,2005-02-01,7,Pakistan,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/65665.html,56490,W.A.C.A,Australia,0,fairly_random grounds via legacy match
 64924,ODI,2005-02-02,2005-02-02,3,South Africa,1,England,tied,0.5,https://www.espncricinfo.com/ci/engine/match/64924.html,59042,Bloemfontein,South Africa,1,fairly_random grounds via legacy match
 64925,ODI,2005-02-04,2005-02-04,3,South Africa,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/64925.html,59159,Gqeberha,South Africa,1,fairly_random grounds via legacy match
@@ -8610,7 +8610,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1321295,T20I,2022-07-28,2022-07-28,75,Czech Rep.,78,Estonia,win,1,https://www.espncricinfo.com/ci/engine/match/1321295.html,1321048,Vantaa,NA,NA,NA
 1321296,T20I,2022-07-28,2022-07-28,1043,Guernsey,146,Slovenia,win,1,https://www.espncricinfo.com/ci/engine/match/1321296.html,1195112,Kerava,Finland,0,fairly_random grounds via legacy match
 1307478,T20I,2022-07-29,2022-07-29,30,Scotland,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/1307478.html,59269,Edinburgh,Scotland,1,fairly_random grounds via legacy match
-1317903,T20I,2022-07-29,2022-07-29,4,West Indies,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1317903.html,247418,Tarouba,NA,NA,NA
+1317903,T20I,2022-07-29,2022-07-29,4,West Indies,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1317903.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1326825,T20I,2022-07-29,2022-07-29,300710,Eswatini,120,Mozambique,win,0,https://www.espncricinfo.com/ci/engine/match/1326825.html,1326810,Malkerns,NA,NA,NA
 1326826,T20I,2022-07-29,2022-07-29,300710,Eswatini,120,Mozambique,win,0,https://www.espncricinfo.com/ci/engine/match/1326826.html,1326810,Malkerns,NA,NA,NA
 1321297,T20I,2022-07-30,2022-07-30,41,Austria,63,Bulgaria,win,1,https://www.espncricinfo.com/ci/engine/match/1321297.html,1321048,Vantaa,NA,NA,NA
@@ -9323,9 +9323,9 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1336047,Test,2023-07-27,2023-07-31,1,England,2,Australia,win,1,https://www.espncricinfo.com/ci/engine/match/1336047.html,57127,The Oval,England,1,fairly_random grounds via legacy match
 1383108,T20I,2023-07-31,2023-07-31,61,Bhutan,156,Thailand,win,0,https://www.espncricinfo.com/ci/engine/match/1383108.html,304364,Kuala Lumpur,Malaysia,0,fairly_random grounds via legacy match
 1383109,T20I,2023-07-31,2023-07-31,70,China,1116403,Myanmar,win,1,https://www.espncricinfo.com/ci/engine/match/1383109.html,304364,Kuala Lumpur,Malaysia,0,fairly_random grounds via legacy match
-1381216,ODI,2023-08-01,2023-08-01,4,West Indies,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1381216.html,247418,Tarouba,NA,NA,NA
+1381216,ODI,2023-08-01,2023-08-01,4,West Indies,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1381216.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1383110,T20I,2023-08-01,2023-08-01,16,Malaysia,156,Thailand,win,1,https://www.espncricinfo.com/ci/engine/match/1383110.html,304364,Kuala Lumpur,Malaysia,1,fairly_random grounds via legacy match
-1381217,T20I,2023-08-03,2023-08-03,4,West Indies,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/1381217.html,247418,Tarouba,NA,NA,NA
+1381217,T20I,2023-08-03,2023-08-03,4,West Indies,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/1381217.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1390167,T20I,2023-08-05,2023-08-05,88,Hungary,72,Croatia,win,1,https://www.espncricinfo.com/ci/engine/match/1390167.html,1390143,Szodliget,NA,NA,NA
 1381218,T20I,2023-08-06,2023-08-06,4,West Indies,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/1381218.html,208544,Providence,West Indies,1,fairly_random grounds via legacy match
 1390169,T20I,2023-08-06,2023-08-06,88,Hungary,72,Croatia,win,1,https://www.espncricinfo.com/ci/engine/match/1390169.html,1390143,Szodliget,NA,NA,NA
@@ -9641,12 +9641,12 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1412222,T20I,2023-12-17,2023-12-17,84,Ghana,145,Sierra Leone,win,1,https://www.espncricinfo.com/ci/engine/match/1412222.html,59039,Benoni,South Africa,0,fairly_random grounds via legacy match
 1412223,T20I,2023-12-18,2023-12-18,65,Botswana,35,Uganda,win,0,https://www.espncricinfo.com/ci/engine/match/1412223.html,59039,Benoni,South Africa,0,fairly_random grounds via legacy match
 1412224,T20I,2023-12-18,2023-12-18,26,Kenya,118,Malawi,win,1,https://www.espncricinfo.com/ci/engine/match/1412224.html,59039,Benoni,South Africa,0,fairly_random grounds via legacy match
-1373582,T20I,2023-12-19,2023-12-19,4,West Indies,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/1373582.html,247418,Tarouba,NA,NA,NA
+1373582,T20I,2023-12-19,2023-12-19,4,West Indies,1,England,win,0,https://www.espncricinfo.com/ci/engine/match/1373582.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1387601,ODI,2023-12-19,2023-12-19,3,South Africa,6,India,win,1,https://www.espncricinfo.com/ci/engine/match/1387601.html,59159,Gqeberha,South Africa,1,fairly_random grounds via legacy match
 1412225,T20I,2023-12-19,2023-12-19,65,Botswana,118,Malawi,win,1,https://www.espncricinfo.com/ci/engine/match/1412225.html,59039,Benoni,South Africa,0,fairly_random grounds via legacy match
 1412226,T20I,2023-12-19,2023-12-19,26,Kenya,35,Uganda,win,0,https://www.espncricinfo.com/ci/engine/match/1412226.html,59039,Benoni,South Africa,0,fairly_random grounds via legacy match
 1388211,ODI,2023-12-20,2023-12-20,5,New Zealand,25,Bangladesh,win,1,https://www.espncricinfo.com/ci/engine/match/1388211.html,424917,Nelson,New Zealand,1,fairly_random grounds via legacy match
-1373583,T20I,2023-12-21,2023-12-21,4,West Indies,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/1373583.html,247418,Tarouba,NA,NA,NA
+1373583,T20I,2023-12-21,2023-12-21,4,West Indies,1,England,win,1,https://www.espncricinfo.com/ci/engine/match/1373583.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1387602,ODI,2023-12-21,2023-12-21,3,South Africa,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1387602.html,59147,Paarl,South Africa,1,fairly_random grounds via legacy match
 1412530,T20I,2023-12-22,2023-12-22,91,Indonesia,128,Philippines,win,0,https://www.espncricinfo.com/ci/engine/match/1412530.html,1179866,Bali,NA,NA,NA
 1388212,ODI,2023-12-23,2023-12-23,5,New Zealand,25,Bangladesh,win,0,https://www.espncricinfo.com/ci/engine/match/1388212.html,58857,Napier,New Zealand,1,fairly_random grounds via legacy match
@@ -9948,20 +9948,20 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1415722,T20I,2024-06-11,2024-06-11,17,Canada,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/1415722.html,1417066,New York,NA,NA,NA
 1415724,T20I,2024-06-11,2024-06-11,2,Australia,28,Namibia,win,1,https://www.espncricinfo.com/ci/engine/match/1415724.html,208543,North Sound,West Indies,0,fairly_random grounds via legacy match
 1415725,T20I,2024-06-12,2024-06-12,11,U.S.A.,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1415725.html,1417066,New York,NA,NA,NA
-1415726,T20I,2024-06-12,2024-06-12,4,West Indies,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/1415726.html,247418,Tarouba,NA,NA,NA
+1415726,T20I,2024-06-12,2024-06-12,4,West Indies,5,New Zealand,win,1,https://www.espncricinfo.com/ci/engine/match/1415726.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1436479,T20I,2024-06-12,2024-06-12,31,Italy,96,Isle of Man,win,1,https://www.espncricinfo.com/ci/engine/match/1436479.html,1272298,Spinaceto,NA,NA,NA
 1436480,T20I,2024-06-12,2024-06-12,41,Austria,134,Portugal,win,1,https://www.espncricinfo.com/ci/engine/match/1436480.html,1434553,Rome,NA,NA,NA
 1436481,T20I,2024-06-12,2024-06-12,110,Luxembourg,158,Turkey,win,1,https://www.espncricinfo.com/ci/engine/match/1436481.html,1272298,Spinaceto,NA,NA,NA
 1436482,T20I,2024-06-12,2024-06-12,88,Hungary,22,Israel,win,1,https://www.espncricinfo.com/ci/engine/match/1436482.html,1434553,Rome,NA,NA,NA
 1415727,T20I,2024-06-13,2024-06-13,25,Bangladesh,15,Netherlands,win,1,https://www.espncricinfo.com/ci/engine/match/1415727.html,59463,Kingstown,West Indies,0,fairly_random grounds via legacy match
 1415728,T20I,2024-06-13,2024-06-13,1,England,37,Oman,win,1,https://www.espncricinfo.com/ci/engine/match/1415728.html,208543,North Sound,West Indies,0,fairly_random grounds via legacy match
-1415729,T20I,2024-06-13,2024-06-13,40,Afghanistan,20,P.N.G.,win,1,https://www.espncricinfo.com/ci/engine/match/1415729.html,247418,Tarouba,NA,NA,NA
+1415729,T20I,2024-06-13,2024-06-13,40,Afghanistan,20,P.N.G.,win,1,https://www.espncricinfo.com/ci/engine/match/1415729.html,247418,Tarouba,West Indies,0,audited ground jurisdiction periods
 1436483,T20I,2024-06-13,2024-06-13,88,Hungary,137,Romania,win,0,https://www.espncricinfo.com/ci/engine/match/1436483.html,1272298,Spinaceto,NA,NA,NA
 1436484,T20I,2024-06-13,2024-06-13,34,France,110,Luxembourg,win,1,https://www.espncricinfo.com/ci/engine/match/1436484.html,1434553,Rome,NA,NA,NA
 1436485,T20I,2024-06-13,2024-06-13,22,Israel,134,Portugal,win,1,https://www.espncricinfo.com/ci/engine/match/1436485.html,1272298,Spinaceto,NA,NA,NA
 1436486,T20I,2024-06-13,2024-06-13,31,Italy,158,Turkey,win,1,https://www.espncricinfo.com/ci/engine/match/1436486.html,1434553,Rome,NA,NA,NA
 1415731,T20I,2024-06-14,2024-06-14,33,Nepal,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/1415731.html,59463,Kingstown,West Indies,0,fairly_random grounds via legacy match
-1415732,T20I,2024-06-14,2024-06-14,5,New Zealand,35,Uganda,win,1,https://www.espncricinfo.com/ci/engine/match/1415732.html,247418,Tarouba,NA,NA,NA
+1415732,T20I,2024-06-14,2024-06-14,5,New Zealand,35,Uganda,win,1,https://www.espncricinfo.com/ci/engine/match/1415732.html,247418,Tarouba,West Indies,0,audited ground jurisdiction periods
 1438257,T20I,2024-06-14,2024-06-14,80,Finland,124,Norway,win,0,https://www.espncricinfo.com/ci/engine/match/1438257.html,1195112,Kerava,Finland,1,fairly_random grounds via legacy match
 1415734,T20I,2024-06-15,2024-06-15,1,England,28,Namibia,win,1,https://www.espncricinfo.com/ci/engine/match/1415734.html,208543,North Sound,West Indies,0,fairly_random grounds via legacy match
 1415735,T20I,2024-06-15,2024-06-15,2,Australia,30,Scotland,win,1,https://www.espncricinfo.com/ci/engine/match/1415735.html,59518,Gros Islet,West Indies,0,fairly_random grounds via legacy match
@@ -9980,7 +9980,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1438073,T20I,2024-06-16,2024-06-16,13,Denmark,218211,Jersey,win,0,https://www.espncricinfo.com/ci/engine/match/1438073.html,209731,Brondby,Denmark,1,fairly_random grounds via legacy match
 1438074,T20I,2024-06-16,2024-06-16,13,Denmark,218211,Jersey,win,0,https://www.espncricinfo.com/ci/engine/match/1438074.html,209731,Brondby,Denmark,1,fairly_random grounds via legacy match
 1438262,T20I,2024-06-16,2024-06-16,80,Finland,124,Norway,win,0,https://www.espncricinfo.com/ci/engine/match/1438262.html,1195112,Kerava,Finland,1,fairly_random grounds via legacy match
-1415739,T20I,2024-06-17,2024-06-17,5,New Zealand,20,P.N.G.,win,1,https://www.espncricinfo.com/ci/engine/match/1415739.html,247418,Tarouba,NA,NA,NA
+1415739,T20I,2024-06-17,2024-06-17,5,New Zealand,20,P.N.G.,win,1,https://www.espncricinfo.com/ci/engine/match/1415739.html,247418,Tarouba,West Indies,0,audited ground jurisdiction periods
 1415740,T20I,2024-06-17,2024-06-17,4,West Indies,40,Afghanistan,win,1,https://www.espncricinfo.com/ci/engine/match/1415740.html,59518,Gros Islet,West Indies,1,fairly_random grounds via legacy match
 1438075,T20I,2024-06-17,2024-06-17,74,Cyprus,78,Estonia,win,0,https://www.espncricinfo.com/ci/engine/match/1438075.html,1279324,Episkopi,NA,NA,NA
 1438076,T20I,2024-06-17,2024-06-17,74,Cyprus,78,Estonia,win,0,https://www.espncricinfo.com/ci/engine/match/1438076.html,1279324,Episkopi,NA,NA,NA
@@ -10003,7 +10003,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1440131,T20I,2024-06-23,2024-06-23,1043,Guernsey,218211,Jersey,win,1,https://www.espncricinfo.com/ci/engine/match/1440131.html,366641,Port Soif,NA,NA,NA
 1415751,T20I,2024-06-24,2024-06-24,2,Australia,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1415751.html,59518,Gros Islet,West Indies,0,fairly_random grounds via legacy match
 1415752,T20I,2024-06-24,2024-06-24,40,Afghanistan,25,Bangladesh,win,1,https://www.espncricinfo.com/ci/engine/match/1415752.html,59463,Kingstown,West Indies,0,fairly_random grounds via legacy match
-1415753,T20I,2024-06-26,2024-06-26,40,Afghanistan,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/1415753.html,247418,Tarouba,NA,NA,NA
+1415753,T20I,2024-06-26,2024-06-26,40,Afghanistan,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/1415753.html,247418,Tarouba,West Indies,0,audited ground jurisdiction periods
 1415754,T20I,2024-06-27,2024-06-27,1,England,6,India,win,0,https://www.espncricinfo.com/ci/engine/match/1415754.html,208544,Providence,West Indies,0,fairly_random grounds via legacy match
 1441133,T20I,2024-06-28,2024-06-28,118,Malawi,140,Rwanda,win,1,https://www.espncricinfo.com/ci/engine/match/1441133.html,1346394,Nairobi,NA,NA,NA
 1415755,T20I,2024-06-29,2024-06-29,6,India,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1415755.html,59429,Bridgetown,West Indies,0,fairly_random grounds via legacy match
@@ -10094,7 +10094,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1443772,T20I,2024-08-22,2024-08-22,1043,Guernsey,45,Malta,win,1,https://www.espncricinfo.com/ci/engine/match/1443772.html,366605,Castel,Guernsey,1,fairly_random grounds via legacy match
 1443773,T20I,2024-08-22,2024-08-22,75,Czech Rep.,149,Spain,win,0,https://www.espncricinfo.com/ci/engine/match/1443773.html,366641,Port Soif,NA,NA,NA
 1446772,T20I,2024-08-22,2024-08-22,16,Malaysia,38,Kuwait,win,1,https://www.espncricinfo.com/ci/engine/match/1446772.html,58671,Kuala Lumpur,NA,NA,NA
-1433367,T20I,2024-08-23,2024-08-23,4,West Indies,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1433367.html,247418,Tarouba,NA,NA,NA
+1433367,T20I,2024-08-23,2024-08-23,4,West Indies,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1433367.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1444960,T20I,2024-08-23,2024-08-23,10,Fiji,165,Vanuatu,win,1,https://www.espncricinfo.com/ci/engine/match/1444960.html,579731,Apia (No 2),Samoa,0,fairly_random grounds via legacy match
 1444961,T20I,2024-08-23,2024-08-23,141,Samoa,71,Cook Islands,win,0,https://www.espncricinfo.com/ci/engine/match/1444961.html,579731,Apia (No 2),Samoa,1,fairly_random grounds via legacy match
 1446761,T20I,2024-08-23,2024-08-23,15,Netherlands,17,Canada,win,1,https://www.espncricinfo.com/ci/engine/match/1446761.html,58705,Utrecht,Netherlands,1,fairly_random grounds via legacy match
@@ -10108,7 +10108,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1446762,T20I,2024-08-24,2024-08-24,17,Canada,11,U.S.A.,no result,NA,https://www.espncricinfo.com/ci/engine/match/1446762.html,58705,Utrecht,Netherlands,0,fairly_random grounds via legacy match
 1446774,T20I,2024-08-24,2024-08-24,19,Hong Kong,38,Kuwait,win,0,https://www.espncricinfo.com/ci/engine/match/1446774.html,58671,Kuala Lumpur,NA,NA,NA
 1442213,Test,2024-08-21,2024-08-25,7,Pakistan,25,Bangladesh,win,0,https://www.espncricinfo.com/ci/engine/match/1442213.html,59006,Rawalpindi,Pakistan,1,fairly_random grounds via legacy match
-1433368,T20I,2024-08-25,2024-08-25,4,West Indies,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1433368.html,247418,Tarouba,NA,NA,NA
+1433368,T20I,2024-08-25,2024-08-25,4,West Indies,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1433368.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1443778,T20I,2024-08-25,2024-08-25,63,Bulgaria,45,Malta,win,0,https://www.espncricinfo.com/ci/engine/match/1443778.html,366605,Castel,Guernsey,0,fairly_random grounds via legacy match
 1443779,T20I,2024-08-25,2024-08-25,74,Cyprus,75,Czech Rep.,win,0,https://www.espncricinfo.com/ci/engine/match/1443779.html,366641,Port Soif,NA,NA,NA
 1443780,T20I,2024-08-25,2024-08-25,1043,Guernsey,78,Estonia,win,1,https://www.espncricinfo.com/ci/engine/match/1443780.html,366605,Castel,Guernsey,1,fairly_random grounds via legacy match
@@ -10117,7 +10117,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1446775,T20I,2024-08-25,2024-08-25,16,Malaysia,38,Kuwait,win,0,https://www.espncricinfo.com/ci/engine/match/1446775.html,58671,Kuala Lumpur,NA,NA,NA
 1446764,T20I,2024-08-26,2024-08-26,15,Netherlands,17,Canada,win,0,https://www.espncricinfo.com/ci/engine/match/1446764.html,58705,Utrecht,Netherlands,1,fairly_random grounds via legacy match
 1446776,T20I,2024-08-26,2024-08-26,16,Malaysia,19,Hong Kong,win,0,https://www.espncricinfo.com/ci/engine/match/1446776.html,58671,Kuala Lumpur,NA,NA,NA
-1433369,T20I,2024-08-27,2024-08-27,4,West Indies,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1433369.html,247418,Tarouba,NA,NA,NA
+1433369,T20I,2024-08-27,2024-08-27,4,West Indies,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1433369.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1443782,T20I,2024-08-27,2024-08-27,74,Cyprus,13,Denmark,win,0,https://www.espncricinfo.com/ci/engine/match/1443782.html,366605,Castel,Guernsey,0,fairly_random grounds via legacy match
 1443783,T20I,2024-08-27,2024-08-27,63,Bulgaria,80,Finland,win,0,https://www.espncricinfo.com/ci/engine/match/1443783.html,366641,Port Soif,NA,NA,NA
 1443784,T20I,2024-08-27,2024-08-27,75,Czech Rep.,86,Greece,win,1,https://www.espncricinfo.com/ci/engine/match/1443784.html,366605,Castel,Guernsey,0,fairly_random grounds via legacy match
@@ -10883,7 +10883,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1496820,T20I,2025-08-07,2025-08-07,153,Sweden,34,France,win,1,https://www.espncricinfo.com/ci/engine/match/1496820.html,1496476,Stockholm,NA,NA,NA
 1496828,T20I,2025-08-07,2025-08-07,72,Croatia,74,Cyprus,win,0,https://www.espncricinfo.com/ci/engine/match/1496828.html,1444358,Zagreb,NA,NA,NA
 1496829,T20I,2025-08-07,2025-08-07,72,Croatia,74,Cyprus,win,0,https://www.espncricinfo.com/ci/engine/match/1496829.html,1444358,Zagreb,NA,NA,NA
-1472528,ODI,2025-08-08,2025-08-08,4,West Indies,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/1472528.html,247418,Tarouba,NA,NA,NA
+1472528,ODI,2025-08-08,2025-08-08,4,West Indies,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/1472528.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1496821,T20I,2025-08-08,2025-08-08,153,Sweden,41,Austria,win,0,https://www.espncricinfo.com/ci/engine/match/1496821.html,1496476,Stockholm,NA,NA,NA
 1496822,T20I,2025-08-08,2025-08-08,34,France,124,Norway,win,0,https://www.espncricinfo.com/ci/engine/match/1496822.html,1496476,Stockholm,NA,NA,NA
 1496830,T20I,2025-08-08,2025-08-08,72,Croatia,74,Cyprus,win,0,https://www.espncricinfo.com/ci/engine/match/1496830.html,1444358,Zagreb,NA,NA,NA
@@ -10891,11 +10891,11 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1478873,Test,2025-08-07,2025-08-09,9,Zimbabwe,5,New Zealand,win,0,https://www.espncricinfo.com/ci/engine/match/1478873.html,59537,Bulawayo,Zimbabwe,1,fairly_random grounds via legacy match
 1496823,T20I,2025-08-09,2025-08-09,153,Sweden,124,Norway,win,0,https://www.espncricinfo.com/ci/engine/match/1496823.html,1496476,Stockholm,NA,NA,NA
 1496824,T20I,2025-08-09,2025-08-09,41,Austria,34,France,win,1,https://www.espncricinfo.com/ci/engine/match/1496824.html,1496476,Stockholm,NA,NA,NA
-1472529,ODI,2025-08-10,2025-08-10,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1472529.html,247418,Tarouba,NA,NA,NA
+1472529,ODI,2025-08-10,2025-08-10,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1472529.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1478898,T20I,2025-08-10,2025-08-10,2,Australia,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1478898.html,56390,Darwin,Australia,1,fairly_random grounds via legacy match
 1496825,T20I,2025-08-10,2025-08-10,153,Sweden,34,France,win,0,https://www.espncricinfo.com/ci/engine/match/1496825.html,1496476,Stockholm,NA,NA,NA
 1496826,T20I,2025-08-10,2025-08-10,41,Austria,124,Norway,win,1,https://www.espncricinfo.com/ci/engine/match/1496826.html,1496476,Stockholm,NA,NA,NA
-1472530,ODI,2025-08-12,2025-08-12,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1472530.html,247418,Tarouba,NA,NA,NA
+1472530,ODI,2025-08-12,2025-08-12,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1472530.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1478899,T20I,2025-08-12,2025-08-12,2,Australia,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/1478899.html,56390,Darwin,Australia,1,fairly_random grounds via legacy match
 1498689,T20I,2025-08-14,2025-08-14,1043,Guernsey,20,P.N.G.,win,0,https://www.espncricinfo.com/ci/engine/match/1498689.html,366605,Castel,Guernsey,1,fairly_random grounds via legacy match
 1478900,T20I,2025-08-16,2025-08-16,2,Australia,3,South Africa,win,1,https://www.espncricinfo.com/ci/engine/match/1478900.html,56362,Cairns,Australia,1,fairly_random grounds via legacy match
@@ -11171,7 +11171,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1513825,T20I,2025-12-09,2025-12-09,16,Malaysia,128,Philippines,win,1,https://www.espncricinfo.com/ci/engine/match/1513825.html,491951,Bangkok,Thailand,0,fairly_random grounds via legacy match
 1513826,T20I,2025-12-10,2025-12-10,91,Indonesia,16,Malaysia,win,0,https://www.espncricinfo.com/ci/engine/match/1513826.html,491951,Bangkok,Thailand,0,fairly_random grounds via legacy match
 1513827,T20I,2025-12-10,2025-12-10,128,Philippines,23,Singapore,win,1,https://www.espncricinfo.com/ci/engine/match/1513827.html,491951,Bangkok,Thailand,0,fairly_random grounds via legacy match
-1479577,T20I,2025-12-11,2025-12-11,6,India,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/1479577.html,1290799,New Chandigarh,NA,NA,NA
+1479577,T20I,2025-12-11,2025-12-11,6,India,3,South Africa,win,0,https://www.espncricinfo.com/ci/engine/match/1479577.html,1290799,New Chandigarh,India,1,audited ground jurisdiction periods
 1513097,T20I,2025-12-11,2025-12-11,140,Rwanda,48,Zambia,win,0,https://www.espncricinfo.com/ci/engine/match/1513097.html,1461783,Abuja,NA,NA,NA
 1513100,T20I,2025-12-11,2025-12-11,61,Bhutan,57,Bahrain,win,0,https://www.espncricinfo.com/ci/engine/match/1513100.html,1453446,Gelephu,NA,NA,NA
 1513298,T20I,2025-12-11,2025-12-11,122,Nigeria,145,Sierra Leone,win,1,https://www.espncricinfo.com/ci/engine/match/1513298.html,1461783,Abuja,NA,NA,NA
@@ -11532,7 +11532,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1538219,T20I,2026-06-07,2026-06-07,300710,Eswatini,120,Mozambique,win,1,https://www.espncricinfo.com/ci/engine/match/1538219.html,1326810,Malkerns,NA,NA,NA
 1538452,T20I,2026-06-07,2026-06-07,33,Nepal,37,Oman,win,1,https://www.espncricinfo.com/ci/engine/match/1538452.html,1453993,Singapore,NA,NA,NA
 1538453,T20I,2026-06-07,2026-06-07,19,Hong Kong,16,Malaysia,win,1,https://www.espncricinfo.com/ci/engine/match/1538453.html,1453993,Singapore,NA,NA,NA
-1527150,Test,2026-06-06,2026-06-08,6,India,40,Afghanistan,win,1,https://www.espncricinfo.com/ci/engine/match/1527150.html,1290799,New Chandigarh,NA,NA,NA
+1527150,Test,2026-06-06,2026-06-08,6,India,40,Afghanistan,win,1,https://www.espncricinfo.com/ci/engine/match/1527150.html,1290799,New Chandigarh,India,1,audited ground jurisdiction periods
 1538426,ODI,2026-06-08,2026-06-08,15,Netherlands,11,U.S.A.,win,1,https://www.espncricinfo.com/ci/engine/match/1538426.html,56717,King City (NW),Canada,0,fairly_random grounds via legacy match
 1538454,T20I,2026-06-08,2026-06-08,16,Malaysia,37,Oman,win,1,https://www.espncricinfo.com/ci/engine/match/1538454.html,1453993,Singapore,NA,NA,NA
 1538455,T20I,2026-06-08,2026-06-08,19,Hong Kong,33,Nepal,win,0,https://www.espncricinfo.com/ci/engine/match/1538455.html,1453993,Singapore,NA,NA,NA
@@ -11668,7 +11668,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1544127,ODI,2026-07-27,2026-07-27,28,Namibia,33,Nepal,win,1,https://www.espncricinfo.com/ci/engine/match/1544127.html,58705,Utrecht,Netherlands,0,fairly_random grounds via legacy match
 1546381,T20I,2026-07-27,2026-07-27,34,France,158,Turkey,win,1,https://www.espncricinfo.com/ci/engine/match/1546381.html,1197827,Ilfov County,Romania,0,fairly_random grounds via legacy match
 1546382,T20I,2026-07-27,2026-07-27,137,Romania,22,Israel,win,1,https://www.espncricinfo.com/ci/engine/match/1546382.html,1197827,Ilfov County,Romania,1,fairly_random grounds via legacy match
-1538630,Test,2026-07-25,2026-07-28,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1538630.html,247418,Tarouba,NA,NA,NA
+1538630,Test,2026-07-25,2026-07-28,4,West Indies,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1538630.html,247418,Tarouba,West Indies,1,audited ground jurisdiction periods
 1546383,T20I,2026-07-28,2026-07-28,41,Austria,22,Israel,win,1,https://www.espncricinfo.com/ci/engine/match/1546383.html,1197827,Ilfov County,Romania,0,fairly_random grounds via legacy match
 1546384,T20I,2026-07-28,2026-07-28,22,Israel,158,Turkey,win,0,https://www.espncricinfo.com/ci/engine/match/1546384.html,1197827,Ilfov County,Romania,0,fairly_random grounds via legacy match
 1546385,T20I,2026-07-28,2026-07-28,41,Austria,34,France,win,0,https://www.espncricinfo.com/ci/engine/match/1546385.html,1197827,Ilfov County,Romania,0,fairly_random grounds via legacy match
@@ -11810,7 +11810,7 @@ match_id,format,start_date,end_date,team1_id,team1,team2_id,team2,result,score,s
 1529228,ODI,2026-09-30,2026-09-30,6,India,4,West Indies,win,1,https://www.espncricinfo.com/ci/engine/match/1529228.html,680295,Guwahati,India,1,fairly_random grounds via legacy match
 1552776,T20I,2026-10-01,2026-10-01,25,Bangladesh,7,Pakistan,win,0,https://www.espncricinfo.com/ci/engine/match/1552776.html,1531879,Nisshin,NA,NA,NA
 1552777,T20I,2026-10-01,2026-10-01,6,India,8,Sri Lanka,win,1,https://www.espncricinfo.com/ci/engine/match/1552777.html,1531879,Nisshin,NA,NA,NA
-1529229,ODI,2026-10-03,2026-10-03,6,India,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/1529229.html,1290799,New Chandigarh,NA,NA,NA
+1529229,ODI,2026-10-03,2026-10-03,6,India,4,West Indies,win,0,https://www.espncricinfo.com/ci/engine/match/1529229.html,1290799,New Chandigarh,India,1,audited ground jurisdiction periods
 1552778,T20I,2026-10-03,2026-10-03,25,Bangladesh,8,Sri Lanka,win,0,https://www.espncricinfo.com/ci/engine/match/1552778.html,1531879,Nisshin,NA,NA,NA
 1552779,T20I,2026-10-03,2026-10-03,6,India,7,Pakistan,win,1,https://www.espncricinfo.com/ci/engine/match/1552779.html,1531879,Nisshin,NA,NA,NA
 1554409,ODI,2026-10-03,2026-10-03,28,Namibia,27,U.A.E.,no result,NA,https://www.espncricinfo.com/ci/engine/match/1554409.html,1381196,Dallas,NA,NA,NA

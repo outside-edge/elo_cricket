@@ -10,9 +10,11 @@ project:
     - docs/methods.qmd
     - docs/data.qmd
     - docs/research.qmd
+    - docs/models.qmd
     - docs/correctness.qmd
   resources:
     - out/release/elo/**
+    - out/release/models/**
 
 website:
   title: Outside Edge
@@ -33,6 +35,8 @@ website:
             text: ODI
           - href: docs/t20i.qmd
             text: T20I
+          - href: docs/models.qmd
+            text: Other models (Tests)
       - href: docs/methods.qmd
         text: Methods
       - href: docs/data.qmd

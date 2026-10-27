@@ -38,6 +38,11 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
         with:
           version: '1.10.19'
+      - name: Install CmdStan
+        id: cmdstan
+        continue-on-error: true
+        timeout-minutes: 15
+        run: Rscript -e 'dir.create("renv/local/cmdstan", recursive=TRUE, showWarnings=FALSE); cmdstanr::install_cmdstan(dir="renv/local/cmdstan", version="2.40.0", cores=2)'
       - run: make check
       - name: Fetch, prepare, fit, and render
         env:
@@ -48,6 +53,19 @@ jobs:
             args+=(--refresh)
           fi
           Rscript scripts/pipeline.R "${args[@]}"
+      - name: Fit and publish current Test models
+        id: current_models
+        if: steps.cmdstan.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 40
+        run: |
+          make model-data
+          make current-models
+          make visualize-models
+          make publish-models
+      - name: Report retained model ratings
+        if: steps.cmdstan.outcome != 'success' || steps.current_models.outcome != 'success'
+        run: echo '::warning::Current model update failed. Publishing Elo with the previous model ratings and their original cutoff.'
       - name: Validate website before publishing data
         run: make site
       - name: Publish validated results
@@ -55,7 +73,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/raw data/build out/analysis figs out/release
+          git add data/raw data/build data/context out/analysis figs out/release
           if ! git diff --cached --quiet; then
             git commit -m 'Update cricket ratings'
             git push origin HEAD:main

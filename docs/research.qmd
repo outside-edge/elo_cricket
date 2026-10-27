@@ -1,12 +1,15 @@
 ---
-title: Research and experimental ratings
+title: Research and model evaluation
 ---
 
-GAM, Stan, and Glicko-2 have been fitted to 1,039 Tests completed before
-January 2024 and evaluated on 53 Tests starting in 2024. These are experimental
-results, not current ratings. Elo remains the model updated weekly.
+[Current Stan, GAM, Glicko-2, and TrueSkill ratings](models.qmd) have their own
+page and data cutoff. This page covers historical evaluation and model development.
 
-## See the experimental ratings
+GAM, Stan, and Glicko-2 were fitted to 1,039 Tests completed before
+January 2024 and evaluated on 53 Tests starting in 2024. These are experimental
+results, not current ratings. TrueSkill was not included in this evaluation.
+
+## January 2024 evaluation artifacts
 
 | Model | Ratings | Charts |
 | --- | --- | --- |

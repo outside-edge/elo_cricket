@@ -5,10 +5,20 @@ for (module in list.files("R/models", pattern = "\\.R$", full.names = TRUE)) sou
 
 args <- commandArgs(trailingOnly = TRUE)
 if (!length(args)) {
-  stop("Usage: models.R prepare | compare [format] [origin] [until] [iterations] | visualize <output-dir>")
+  stop("Usage: models.R prepare | current [format] [iterations] | compare [format] [origin] [until] [iterations]",
+    " | visualize <output-dir> | visualize-current [format] | publish-current [format]"
+  )
 }
 if (args[1] == "prepare") {
   prepare_model_context()
+} else if (args[1] == "current") {
+  format <- if (length(args) >= 2L) args[2] else "Test"
+  iterations <- if (length(args) >= 3L) as.integer(args[3]) else 1000L
+  run_current_models(format, iterations)
+} else if (args[1] == "publish-current") {
+  publish_current_models(if (length(args) >= 2L) args[2] else "Test")
+} else if (args[1] == "visualize-current") {
+  plot_current_models(if (length(args) >= 2L) args[2] else "Test")
 } else if (args[1] == "compare") {
   format <- if (length(args) >= 2L) args[2] else "Test"
   origin <- as.Date(if (length(args) >= 3L) args[3] else "2024-01-01")

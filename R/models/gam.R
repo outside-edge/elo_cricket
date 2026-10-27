@@ -45,7 +45,7 @@ predict_spline <- function(model, matches) {
 }
 
 select_spline <- function(train, origin, k = 6L) {
-  inner_origin <- as.Date(sprintf("%d-%s", as.integer(format(origin, "%Y")) - 1L, format(origin, "%m-%d")))
+  inner_origin <- previous_year(origin)
   earlier <- train[train$end_date < inner_origin, ]
   validation <- train[train$start_date >= inner_origin, ]
   teams <- unique(c(earlier$team1_id, earlier$team2_id))

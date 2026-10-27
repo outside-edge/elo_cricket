@@ -160,7 +160,8 @@ Prepared context lives in `data/context/`; the copied source mapping is in
 including `predictions.csv`, `metrics.csv`, `calibration.csv`, tuning scores,
 `strengths.csv`, posterior diagnostics and a hash manifest. MCMC draws and fit
 objects are ignored build products. Figures are rendered separately into
-`figs/models/<format>/<origin>/`. Nothing schedules or publishes these models.
+`figs/models/<format>/<origin>/`. These evaluation runs are not scheduled.
+[Current ratings](current_models.md) have separate fitting and publication commands.
 
 Strength CSVs distinguish retrospective trajectories from forecasts and retain
 each model's scale. GAM intervals are approximate normal 90% intervals, including

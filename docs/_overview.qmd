@@ -42,6 +42,7 @@ or venue adjustments.
 
 ## Beyond Elo
 
-GAM, Stan, and Glicko-2 have been fitted and evaluated in a Test-match experiment.
-See [Research](docs/research.qmd) for their ratings, charts, and forecast scores.
-These experimental results are separate from the weekly Elo publication.
+See [other Test models](docs/models.qmd) for current Stan, GAM, Glicko-2, and
+TrueSkill ratings, with uncertainty intervals and downloads. Each model uses
+its own scale. [Research](docs/research.qmd) presents the separate historical
+forecast evaluation and plans for extending the models.

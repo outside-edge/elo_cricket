@@ -1,9 +1,9 @@
-stan_inputs <- function(train, test, prior_only = FALSE) {
+stan_inputs <- function(train, test, prior_only = FALSE, state_date = max(train$start_date)) {
   matches <- rbind(train, test)
   levels <- list(
     team = sort(unique(c(matches$team1_id, matches$team2_id))),
     country = sort(unique(matches$country)), ground = sort(unique(matches$ground_profile_id)),
-    quarter = seq(min(quarter_index(matches$start_date)), max(quarter_index(matches$start_date)))
+    quarter = seq(min(quarter_index(matches$start_date)), max(quarter_index(c(matches$start_date, state_date))))
   )
   if (anyNA(matches$country) || anyNA(matches$home_sign)) stop("Stan requires known venue countries")
   data <- list(
@@ -32,8 +32,9 @@ compile_skill_model <- function() {
   cmdstanr::cmdstan_model(target, quiet = TRUE, stanc_options = list("warn-pedantic" = TRUE))
 }
 
-fit_dynamic_skill <- function(train, test, output_dir, seed = 20261025L, iterations = 1000L, prior_only = FALSE) {
-  inputs <- stan_inputs(train, test, prior_only)
+fit_dynamic_skill <- function(train, test, output_dir, seed = 20261025L, iterations = 1000L,
+                              prior_only = FALSE, state_date = max(train$start_date)) {
+  inputs <- stan_inputs(train, test, prior_only, state_date)
   dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
   jsonlite::write_json(inputs$levels, file.path(dirname(output_dir), "stan_levels.json"), pretty = TRUE)
   model <- compile_skill_model()
@@ -69,10 +70,12 @@ fit_dynamic_skill <- function(train, test, output_dir, seed = 20261025L, iterati
     auto_unbox = TRUE, pretty = TRUE
   )
   readr::write_csv(summary, file.path(dirname(output_dir), "stan_parameters.csv"))
-  p_summary <- fit$summary(variables = "p")
   p <- matrix(NA_real_, nrow(test), 3L)
-  indices <- strcapture("p\\[([0-9]+),([0-9]+)\\]", p_summary$variable, list(row = integer(), col = integer()))
-  p[as.matrix(indices)] <- p_summary$mean
+  if (nrow(test)) {
+    p_summary <- fit$summary(variables = "p")
+    indices <- strcapture("p\\[([0-9]+),([0-9]+)\\]", p_summary$variable, list(row = integer(), col = integer()))
+    p[as.matrix(indices)] <- p_summary$mean
+  }
   check_probabilities(p)
   ppc <- fit$summary(variables = "replicated_counts")
   ppc$observed <- tabulate(outcome_category(train$score), nbins = 3L)

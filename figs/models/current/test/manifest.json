@@ -1,0 +1,13 @@
+{
+  "analysis_sha256": "f8feb200ea0fc620e8c85da09ee3df2b52bed02630fd871effd5e4372c6dc312",
+  "files": {
+    "gam.png": "b65d8896df24e699f8cf19c56c06fd9d41ae32073f35a46a0a46bb15e1a0116c",
+    "gam.svg": "7f9c39443a88e2b17988b3d9a3d6f8ab384b4f8c61b49673d23e140bc254a272",
+    "glicko2.png": "5fff3ad386177096b6d086e7513a2d3b600781132c297a397ab0829f37eaca7f",
+    "glicko2.svg": "66d31cecd1b6473917ec6d9c0089fba5868bc74a8cedfd2d2ee7a7a8b716b5bc",
+    "stan_dynamic_probit.png": "c01dd0e0ad2821c48164c80b094c5fa9ac65be38552f9ae3dc4406f4c2dad277",
+    "stan_dynamic_probit.svg": "b2dd39fd9d2c57b7d26c5f2370a03edca9664342029780bad0a151d318d0e28c",
+    "trueskill.png": "5feb99684a294568603bef764b5fa62617383c63714216df21f12eed4dd58150",
+    "trueskill.svg": "a15cd0bde2ccda487e43e2712cc6c59e0044e76840341d64064ca74ce418c722"
+  }
+}

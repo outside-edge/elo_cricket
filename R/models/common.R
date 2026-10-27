@@ -60,6 +60,12 @@ month_index <- function(date) as.integer(format(date, "%Y")) * 12L + as.integer(
 month_date <- function(index) as.Date(sprintf("%04d-%02d-01", index %/% 12L, index %% 12L + 1L))
 quarter_index <- function(date) as.integer(format(date, "%Y")) * 4L + (as.integer(format(date, "%m")) - 1L) %/% 3L
 
+previous_year <- function(date) {
+  day <- format(date, "%m-%d")
+  day[day == "02-29"] <- "02-28"
+  as.Date(sprintf("%d-%s", as.integer(format(date, "%Y")) - 1L, day))
+}
+
 swap_teams <- function(matches) {
   result <- matches
   result$team1 <- matches$team2

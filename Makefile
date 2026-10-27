@@ -1,6 +1,7 @@
-.PHONY: sync fetch prepare analyze visualize publish update site lint test check ci-docker model-data models check-models
+.PHONY: sync fetch prepare analyze visualize publish update site lint test check ci-docker model-data models check-models current-models visualize-models publish-models
 
 QUARTO ?= quarto
+MODEL_FORMAT ?= Test
 
 sync:
 	Rscript -e 'renv::restore(prompt = FALSE)'
@@ -21,6 +22,15 @@ model-data:
 
 models:
 	Rscript scripts/models.R compare $(MODEL_ARGS)
+
+current-models:
+	Rscript scripts/models.R current $(MODEL_ARGS)
+
+publish-models:
+	Rscript scripts/models.R publish-current $(MODEL_FORMAT)
+
+visualize-models:
+	Rscript scripts/models.R visualize-current $(MODEL_FORMAT)
 
 check-models:
 	Rscript scripts/check_models.R

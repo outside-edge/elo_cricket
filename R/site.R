@@ -25,6 +25,43 @@ read_publication <- function(directory) {
   list(manifest = manifest, latest = latest)
 }
 
+read_current_publication <- function(directory) {
+  manifest <- jsonlite::read_json(file.path(directory, "manifest.json"))
+  models <- c("gam", "stan_dynamic_probit", "glicko2", "trueskill")
+  required <- c("latest.csv", "coverage.csv", "strengths.csv", "stan_diagnostics.json",
+    as.vector(outer(models, c(".png", ".svg"), paste0))
+  )
+  if (!isTRUE(manifest$stan_diagnostics_passed) || !all(required %in% names(manifest$files))) {
+    stop("Invalid current model publication")
+  }
+  for (name in names(manifest$files)) {
+    if (basename(name) != name || !file.exists(file.path(directory, name))) stop("Missing model file: ", name)
+    if (!identical(digest::digest(file = file.path(directory, name), algo = "sha256"), manifest$files[[name]])) {
+      stop("Current publication checksum mismatch: ", name)
+    }
+  }
+  latest <- readr::read_csv(file.path(directory, "latest.csv"), show_col_types = FALSE)
+  if (!setequal(unique(latest$model), models) || anyNA(latest$as_of) ||
+        !identical(unique(as.character(latest$as_of)), manifest$as_of)) {
+    stop("Inconsistent current publication models or cutoff")
+  }
+  if (anyDuplicated(latest[c("model", "team_id")])) stop("Duplicate current team ratings")
+  list(manifest = manifest, latest = latest)
+}
+
+site_model_ratings <- function(publication, model) {
+  rows <- publication$latest[publication$latest$model == model, ]
+  if (!nrow(rows)) stop("Missing current model: ", model)
+  rows <- rows[order(!rows$is_active, -rows$estimate, rows$team_id), ]
+  data.frame(
+    Rank = ifelse(rows$is_active, rows$rank, "Inactive"),
+    Team = paste0(rows$team, ifelse(rows$is_provisional, " (provisional)", "")),
+    Strength = sprintf("%.2f", rows$estimate),
+    `90% interval` = sprintf("%.2f to %.2f", rows$lower, rows$upper),
+    `Last match` = rows$last_rated_match, check.names = FALSE
+  )
+}
+
 site_ratings <- function(publication, format) {
   rows <- publication$latest
   if (!format %in% rows$format) stop("Missing publication format: ", format)
