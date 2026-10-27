@@ -4,7 +4,7 @@ testthat::test_that("site checks resolve project URLs and reject missing or esca
   writeLines('<a href="docs/ratings.html">Ratings</a>', file.path(directory, "index.html"))
   testthat::expect_error(check_site(directory), "Broken site link")
   page <- file.path(directory, "docs/ratings.html")
-  writeLines('<a href="/elo_cricket/">Home</a><img src="../chart.svg">', page)
+  writeLines('<a href="/side_order/">Home</a><img src="../chart.svg">', page)
   testthat::expect_error(check_site(directory), "chart.svg")
   writeLines("<svg/>", file.path(directory, "chart.svg"))
   testthat::expect_equal(check_site(directory), 2)

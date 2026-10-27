@@ -74,7 +74,7 @@ site_ratings <- function(publication, format) {
   )
 }
 
-check_site <- function(directory, base_path = "/elo_cricket/") {
+check_site <- function(directory, base_path = "/side_order/") {
   directory <- normalizePath(directory, mustWork = TRUE)
   pages <- list.files(directory, pattern = "[.]html$", recursive = TRUE, full.names = TRUE)
   if (!file.exists(file.path(directory, "index.html"))) stop("Missing site index")

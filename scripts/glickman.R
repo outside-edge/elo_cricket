@@ -2,7 +2,7 @@
 
 # Set dir.
 setwd(githubdir)
-setwd("elo_cricket/")
+setwd("side_order/")
 
 # Load libs
 library(PlayerRatings)

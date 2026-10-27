@@ -17,10 +17,10 @@ project:
     - out/release/models/**
 
 website:
-  title: Outside Edge
+  title: Side Order
   description: Independent international cricket ratings, histories, and methods.
-  site-url: https://outside-edge.github.io/elo_cricket/
-  repo-url: https://github.com/outside-edge/elo_cricket
+  site-url: https://outside-edge.github.io/side_order/
+  repo-url: https://github.com/outside-edge/side_order
   navbar:
     background: '#173744'
     foreground: '#ffffff'
@@ -45,14 +45,14 @@ website:
         text: Research
     right:
       - icon: github
-        href: https://github.com/outside-edge/elo_cricket
+        href: https://github.com/outside-edge/side_order
         aria-label: Source code on GitHub
   page-footer:
-    left: Outside Edge · Independent of ICC rankings
+    left: Side Order · Outside Edge · Independent of ICC rankings
     right:
       - href: docs/correctness.qmd
         text: Correctness audit
-      - href: https://github.com/outside-edge/elo_cricket/issues
+      - href: https://github.com/outside-edge/side_order/issues
         text: Report an issue
 
 format:

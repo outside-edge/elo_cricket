@@ -4,7 +4,7 @@
 
 # Set dir.
 setwd(githubdir)
-setwd("elo_cricket/scripts/")
+setwd("side_order/scripts/")
 
 # Load lib.
 library(rstan)

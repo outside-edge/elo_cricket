@@ -68,4 +68,4 @@ reads saved results and does not refit the model.
 
 The [correctness audit](correctness.qmd) documents the old outcome and timing
 errors, the corrections, and the numerical validation. Code and tests are
-available in the [repository](https://github.com/outside-edge/elo_cricket).
+available in the [repository](https://github.com/outside-edge/side_order).

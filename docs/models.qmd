@@ -29,7 +29,7 @@ predicts better than the others. [Elo ratings](test.qmd) use a longer history.
 
 [Download all current ratings](../out/release/models/test/latest.csv) ·
 [Fit metadata](../out/release/models/test/manifest.json) ·
-[Methods and reproduction](https://github.com/outside-edge/elo_cricket/blob/main/docs/current_models.md)
+[Methods and reproduction](https://github.com/outside-edge/side_order/blob/main/docs/current_models.md)
 
 ## Stan
 

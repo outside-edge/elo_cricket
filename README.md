@@ -1,12 +1,12 @@
-# Cricket team ratings
+# Side Order
 
 Independent ratings of men's international cricket teams. Elo ratings for Tests,
 ODIs, and T20Is are updated weekly, with monthly histories available to download.
 Current Test ratings are also available from GAM, Stan, Glicko-2, and TrueSkill.
 These experimental methods have separate scales, uncertainty estimates, and outputs.
 
-[Ratings website](https://outside-edge.github.io/elo_cricket/) ·
-[Other Test models](https://outside-edge.github.io/elo_cricket/docs/models.html) ·
+[Ratings website](https://outside-edge.github.io/side_order/) ·
+[Other Test models](https://outside-edge.github.io/side_order/docs/models.html) ·
 [Latest Elo ratings](out/release/elo/latest.csv) ·
 [Monthly history](out/release/elo/monthly.csv) ·
 [Match data](data/build/matches.csv)
@@ -47,7 +47,7 @@ The experimental models add different accounts of team strength:
 - **Glicko-2:** ratings with uncertainty and inactivity handling, using `PlayerRatings`.
 - **TrueSkill:** Gaussian skill updates with calendar-time uncertainty, using `TrueSkillThroughTime`.
 
-[Current ratings](https://outside-edge.github.io/elo_cricket/docs/models.html)
+[Current ratings](https://outside-edge.github.io/side_order/docs/models.html)
 use all eligible completed Tests through their stated cutoff.
 [Reproduction commands](docs/current_models.md) are separate from model evaluation.
 
@@ -61,7 +61,7 @@ validation protocol, and commands to reproduce the fits.
 
 ## Documentation
 
-- [Research and evaluation](https://outside-edge.github.io/elo_cricket/docs/research.html): historical forecasts and model development.
+- [Research and evaluation](https://outside-edge.github.io/side_order/docs/research.html): historical forecasts and model development.
 - [Pipeline guide](docs/pipeline.md): data sources, Elo specification, updates, and local checks.
 - [Modeling agenda](docs/rating_models.md): team versus lineup strength, venue context, and forecast evaluation.
 - [Correctness audit](docs/correctness.md): historical bugs, fixes, and numerical verification.

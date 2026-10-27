@@ -44,7 +44,7 @@ use the current-ratings file for the latest cutoff.
 
 The files are regenerated together after successful checks. Earlier publications
 remain available through the repository's
-[publication history](https://github.com/outside-edge/elo_cricket/commits/main/out/release/elo).
+[publication history](https://github.com/outside-edge/side_order/commits/main/out/release/elo).
 
 Charts can be downloaded as SVG or PNG from the [Test](test.qmd), [ODI](odi.qmd),
 and [T20I](t20i.qmd) pages. See [methods](methods.qmd) for the rating definitions.
